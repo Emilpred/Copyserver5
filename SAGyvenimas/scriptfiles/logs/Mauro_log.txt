@@ -1,0 +1,25 @@
+
+
+[0:50:1 10-2-2024] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 18,
+	PR_NickName - Andreas_Harrington,
+	PR_uiClientChallengeResponse - 1458991175,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 10C783BA7BAABBF2E31529E1C33BDECE891AC088DE4,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[7:33:25 10-2-2024] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 6,
+	PR_NickName - Maffin,
+	PR_uiClientChallengeResponse - 1458991175,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 120FF76DD4DEAF759BDF4E3924C50C970F7FEC4FD8A,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};

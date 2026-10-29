@@ -1,0 +1,262 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:48:17] 
+[00:48:17] Server Plugins
+[00:48:17] --------------
+[00:48:17]  Loading plugin: crashdetect.so
+[00:48:17]   CrashDetect plugin 4.19
+[00:48:17]   Loaded.
+[00:48:17]  Loading plugin: streamer.so
+[00:48:17] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[00:48:17]   Loaded.
+[00:48:17]  Loading plugin: sscanf.so
+[00:48:17] 
+
+[00:48:17]  ===============================
+
+[00:48:17]       sscanf plugin loaded.     
+
+[00:48:17]          Version:  2.8.3        
+
+[00:48:17]   (c) 2018 Alex "Y_Less" Cole  
+
+[00:48:17]  ===============================
+
+[00:48:17]   Loaded.
+[00:48:17]  Loading plugin: mysql_static.so
+[00:48:17]  >> plugin.mysql: R39-6 successfully loaded.
+[00:48:17]   Loaded.
+[00:48:17]  Loading plugin: pawncmd.so
+[00:48:17] Pawn.CMD plugin v3.2.0 by urShadow has been loaded
+[00:48:17]   Loaded.
+[00:48:17]  Loading plugin: TOTP.so
+[00:48:17] TOTP plugin v1.0.1 by Games loaded.
+[00:48:17]   Loaded.
+[00:48:17]  Loading plugin: mapandreas.so
+[00:48:17]   Loaded.
+[00:48:17]  Loading plugin: YSF.so
+[00:48:17] 
+[00:48:17]  ==============================================
+[00:48:17]  YSF 2.1 (compiled Nov 14 2020 15:44:52) loaded
+[00:48:17]   (c) 2008 Alex "Y_Less" Cole
+[00:48:17]   (c) 2010 - 2018 kurta999
+[00:48:17]   (c) 2018 - 2020 IllidanS4
+[00:48:17]  Server version: 0.3.7 R2-1 or R2-2, Linux
+[00:48:17]  ==============================================
+[00:48:17] 
+[00:48:17]   Loaded.
+[00:48:17]  Loading plugin: CLA.so
+[00:48:17]   Loaded.
+[00:48:17]  Loading plugin: LauncherAddon.so
+[00:48:18] 
+[00:48:18]  ========[ LauncherAddon 1.3 ]========
+[00:48:18]    
+[00:48:18]    Версия сервера: 0.3.7 R2
+[00:48:18]    Операционная система: Linux
+[00:48:18]    
+[00:48:18]    (c) - legendabrn -
+[00:48:18]    crack by vk.com/legendabrn
+[00:48:18]    
+[00:48:18]    Проверка активации...
+[00:48:18]    Проверка активации успешно пройдена
+[00:48:18]  ===============================
+[00:48:18]   Loaded.
+[00:48:18]  Loading plugin: pawnraknet.so
+[00:48:18] [Pawn.RakNet] plugin v1.6.0 loading...
+[00:48:18] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:35:06
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[00:48:18]   Loaded.
+[00:48:18]  Loading plugin: FCNPC.so
+[00:48:18] 
+[00:48:18] -------------------------------------------------
+[00:48:18]      FCNPC - Fully Controllable NPC v2.0.8
+[00:48:18]             GNU/Linux SA-MP 0.3.7 R2
+[00:48:18]            Aug 28 2023 at 14:30:18
+[00:48:18] 
+[00:48:18]   Author:       OrMisicL (2013 - 2015)
+[00:48:18]   Continued by: ziggi    (2016 - present)
+[00:48:18] 
+[00:48:18]   See full credits in the README.md file
+[00:48:18] -------------------------------------------------
+[00:48:18] 
+[00:48:18] Loading...
+[00:48:18] 
+[00:48:18] -------------------------------------------------
+[00:48:18]    ColAndreasv1.4.0
+[00:48:18] 
+[00:48:18]    Created By:
+[00:48:18]      [uL]Chris42O
+[00:48:18]      [uL]Slice
+[00:48:18]      [uL]Pottus
+[00:48:18] -------------------------------------------------
+[00:48:18] 
+[00:48:18] Loading...
+[00:48:18] ColAndreas v1.4.0 Loaded.
+[00:48:18]   Loaded.
+[00:48:18]  Loaded 12 plugins.
+
+[00:48:18] 
+[00:48:18] Filterscripts
+[00:48:18] ---------------
+[00:48:18]   Loading filterscript 'Uzrasudelete.amx'...
+[00:48:18] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[00:48:19] No collision data found.
+[00:48:19]   Loading filterscript 'newcmdcars.amx'...
+[00:48:19] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[00:48:19]   Loading filterscript 'halloween.amx'...
+[00:48:19] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[00:48:19] --------------------------------------
+[00:48:19]  Helovyno sistema pajungta!           
+[00:48:19]  Komanda testavimui: /helo            
+[00:48:19] --------------------------------------
+[00:48:19]   Loading filterscript 'poker.amx'...
+[00:48:19] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[00:48:19] 
+--- Texas Hold'em poker (LSG) loaded ---
+
+[00:48:19]   Loading filterscript 'biuras.amx'...
+[00:48:19]   Unable to load filterscript 'biuras.amx'.
+[00:48:19]   Loaded 4 filterscripts.
+
+[00:48:19] [Pawn.CMD] n_PC_RegAlias: alias 'cl' is occupied
+[00:48:19] [Pawn.CMD] n_PC_RegAlias: alias 'finditem' is occupied
+[00:48:19]  
+[00:48:19] --------------------------------------
+[00:48:19]  Античит Nex-AC загружен!
+[00:48:19]  Версия античита: 1.9.54
+[00:48:19]  Автор: Nexius
+[00:48:19] --------------------------------------
+
+[00:48:19] [ALGOS] Atlyginimu sistema ikelta (Tr/S 17:00-19:00, /algos). Stulpeliai: accounts.AlgosMin/AlgosSum/AlgosOrg
+[00:48:19]   Filterscript 'cef.amx' unload failed.
+[00:48:19]   Filterscript 'cef.amx' load failed'.
+[00:48:19] [MYSQL]: Klaidu nerasta, ikelimas tesiasi!
+[00:48:19]   Filterscript 'map.amx' unload failed.
+[00:48:19] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[00:48:20]   Filterscript 'map.amx' loaded.
+[00:48:20]   Filterscript 'ilya.amx' unload failed.
+[00:48:20] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[00:48:20] [Filterscript] All Loaded Actors =~ 155/unlimited
+[00:48:20] [Filterscript] All Loaded 3D Texts =~ 341/unlimited
+[00:48:20] [SEMENENKO Base] Is viso buvo ikelta 140/Unlimited Пикапов.
+[00:48:20] [SEMENENKO Base] Is viso buvo ikelta 143/Unlimited MapIcon.
+[00:48:20] [SEMENENKO Base] Is viso buvo ikelta 96/Unlimited (NoDynamic)
+[00:48:20]   Filterscript 'ilya.amx' loaded.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:20] sscanf warning: String buffer overflow.
+[00:48:21] -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_[Ikeliami duomenu bazes parametrai]-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+[00:48:21] [MYSQL] Is viso buvo ikelta 246/1221 namu.
+[00:48:21] [MYSQL] Is viso buvo ikelta 89/297 verslu
+[00:48:21] [MYSQL] Is viso buvo sukurta 665 transporto priemoniu.
+[00:48:21] [MYSQL] Buvo ikelta 74490 serverio objektu
+[00:48:21] [MYSQL] Buvo ikelta 131/1024 serverio zonu (GangZone)
+[00:48:21] [MYSQL] Buvo ikelta 156 seimos teritoriju
+[00:48:21] [MYSQL] Buvo ikelta 752 ikonu mini zemelapyje
+[00:48:21] [MYSQL] Buvo ikelta 4168 3D Tekstu.
+[00:48:21] [MYSQL] Buvo ikelta/sukurta 2 priekabu.
+[00:48:21] [MYSQL (Administrator)] Buvo ikeltos 198 serverio komandu administracijai.
+[00:48:21] -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_[Duomenu bazes parametru ikelimas baigtas]-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+[00:48:21] Serverio zurnalai sekmingai prijungti per: 0 milisekundziu! Unix_time: (1793310501)
+[00:48:21] Server settings was connect by 0 id
+[00:48:21] Number of vehicle models: 85
+[00:48:26] [connection] 78.63.22.16:58493 requests connection cookie.
+[00:48:27] [connection] incoming connection: 78.63.22.16:58493 id: 0
+[00:48:28] [join] Milancholi has joined the server (0:78.63.22.16)
+[00:48:37] sscanf warning: String buffer overflow.
+[00:48:37] sscanf warning: String buffer overflow.
+[00:48:37] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[00:50:10] [part] Milancholi has left the server (0:1)

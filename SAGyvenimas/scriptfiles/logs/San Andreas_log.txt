@@ -1,0 +1,3685 @@
+
+
+[19:10:10 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 846528486,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:20:45 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2030113628,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:27:33 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1205393355,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:32:23 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1829919978,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:38:14 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1393547070,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:1:23 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 657025553,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:6:44 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2095299125,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:11:22 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 232943027,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:18:7 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1469927981,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:34:34 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2102725669,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:41:41 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 788017162,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:51:19 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 151123122,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:22:33 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 151123122,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:25:5 15-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 151123122,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:18:19 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 151123122,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:24:56 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 151123122,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:29:12 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 151123122,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:9:43 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 151123122,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:9:43 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 151123122,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:13:26 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 151123122,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:35:52 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1425918988,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:38:12 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 1425918988,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:51:14 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1123318321,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:58:57 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1123318321,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:1:18 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1123318321,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:10:21 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1123318321,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:15:4 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 12,
+	PR_NickName - ROBOT_EBANAI,
+	PR_uiClientChallengeResponse - 1123318321,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 311657436FE38FA11E5F74E1C427BA8C9219B724BBC,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:30:45 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2022956881,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:31:36 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 12,
+	PR_NickName - ROBOT_EBANAI,
+	PR_uiClientChallengeResponse - 2022956881,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 311657436FE38FA11E5F74E1C427BA8C9219B724BBC,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:32:56 16-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2022956881,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:21:43 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2022956881,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:22:36 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 2022956881,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:24:50 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1216223738,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:25:17 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 1216223738,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:26:48 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 617873963,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:27:24 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 617873963,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:29:8 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:29:38 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:30:40 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:31:23 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:32:50 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[9:37:21 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[12:13:17 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[12:17:21 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[12:20:15 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - mudakas,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 2287198AB207D69FCD54842DEAB3012312593D1B550,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[12:23:22 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - mudakas,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 2287198AB207D69FCD54842DEAB3012312593D1B550,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[12:53:48 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[12:54:19 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[12:55:7 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[14:27:54 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1125818705,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[21:53:6 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1796809432,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:5:19 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1796809432,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:7:7 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1218891418,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:7:19 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1218891418,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:8:19 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1141902422,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:8:28 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1141902422,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:9:49 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1141902422,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:21:48 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 487850123,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:21:59 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 487850123,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:38:44 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1949497029,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:38:51 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1949497029,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:41:12 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1949497029,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:41:23 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1949497029,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:42:41 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1949497029,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:43:57 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1949497029,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:54:41 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 237680884,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:55:4 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 237680884,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:57:45 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 237680884,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:57:59 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 237680884,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[23:12:30 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 237680884,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[23:12:54 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 237680884,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[23:14:1 17-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 237680884,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:52:32 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1733030765,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[11:5:26 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1733030765,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[11:7:59 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1733030765,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[11:9:11 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1733030765,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[11:11:30 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1733030765,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[11:18:35 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1733030765,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[11:19:47 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1733030765,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[11:21:15 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1733030765,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[12:57:12 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1733030765,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[13:8:37 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1910406714,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[18:49:3 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 99976356,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:40:39 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 99976356,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:53:8 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2137960152,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:54:6 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2137960152,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:55:30 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 2137960152,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[19:56:53 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2137960152,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:4:6 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2137960152,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:9:56 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2137960152,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:38:36 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1544121589,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:39:43 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 782307726,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:40:45 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 782307726,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[20:41:39 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 782307726,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[20:43:47 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1316316357,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:48:48 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 587845698,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:49:24 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 587845698,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:49:32 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 587845698,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[20:50:34 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 587845698,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[20:57:34 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 587845698,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:8:6 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 587845698,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:10:34 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1616809803,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:27:31 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1616809803,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:46:13 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1616809803,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:6:6 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2007662460,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:7:27 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 2007662460,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:9:3 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 2007662460,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:23:14 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2132694917,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:23:28 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 2132694917,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:25:45 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 2132694917,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:48:2 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1449843888,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:48:22 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1449843888,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:49:0 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1449843888,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[23:48:56 18-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1449843888,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:25:13 19-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1855503389,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:41:41 19-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1897076135,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:45:35 19-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 852894795,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:49:11 19-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2052962778,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[18:38:14 19-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 2052962778,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[18:38:44 19-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2052962778,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:3:9 19-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2052962778,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:11:53 19-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 2052962778,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[21:32:4 19-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2052962778,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:44:31 19-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1956782476,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:51:50 19-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1576613204,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:3:23 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2017412022,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:19:24 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1602466928,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:35:17 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1987346912,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:13:52 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 164578128,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:23:25 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 164578128,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:28:56 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 557460030,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:32:34 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 849340313,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:34:38 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1624422860,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:43:9 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1428506859,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:0:47 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1047239118,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:1:13 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1047239118,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:5:10 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1047239118,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:9:19 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 264637062,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:9:32 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 264637062,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:32:29 20-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1914130940,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[14:39:2 21-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1914130940,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:15:39 21-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1914130940,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:51:9 21-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 936630311,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:6:6 21-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 936630311,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:10:4 21-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1207360405,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:12:11 21-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1537468369,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:34:45 21-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 1537468369,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:38:54 21-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 1537468369,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:41:44 21-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1537468369,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[19:16:45 22-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 998096806,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:30:39 22-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 478553144,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:39:50 22-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 342029393,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:45:35 22-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 81137001,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:22:46 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 81137001,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:24:12 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 13,
+	PR_NickName - Samuel_Sparks,
+	PR_uiClientChallengeResponse - 81137001,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:24:34 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 81137001,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:25:16 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 81137001,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:26:39 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 13,
+	PR_NickName - Samuel_Cargov,
+	PR_uiClientChallengeResponse - 81137001,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:32:12 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 81137001,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:34:50 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 9,
+	PR_NickName - WilliKrov,
+	PR_uiClientChallengeResponse - 81137001,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 33F4A6B1A6BB57D7499859B6FE2B78A8EACFB403A17,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[15:18:12 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 81137001,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[15:32:38 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 294083689,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[16:1:51 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 785148423,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[16:22:9 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 423569543,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[16:24:11 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 698578580,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[16:51:39 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 698578580,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[16:57:29 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 698578580,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:13:45 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 698578580,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:14:4 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 698578580,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:22:12 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 270511182,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:23:5 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 270511182,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:22:14 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 270511182,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:44:48 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2048146801,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:46:0 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1204370547,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:48:17 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 151437988,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:52:39 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 648489844,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:0:8 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 634645283,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:11:41 24-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1138850799,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:6:41 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 151351596,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:9:29 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1428848337,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:12:46 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1428848337,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:13:46 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1428848337,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:17:8 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1428848337,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:23:17 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1249347755,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[10:54:53 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 537510092,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[13:2:0 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 624514239,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[13:6:51 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 333395246,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[13:9:49 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 537844877,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[13:19:5 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 537844877,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[13:20:3 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1863670862,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[13:41:15 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1053418788,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[13:45:32 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 288639952,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[14:23:53 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2086795981,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[14:38:20 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2086795981,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[16:44:53 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1432818683,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:10:46 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 567980970,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:23:50 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 800518211,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:27:31 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1152829217,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:32:16 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 36417359,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:45:30 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1858738636,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:48:17 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1858738636,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:59:36 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 373177721,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[18:9:29 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 414889609,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[18:19:48 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 180563234,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[18:22:37 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 683467068,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[18:26:42 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1065170781,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[18:42:32 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1259882824,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[18:45:18 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 172249085,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[18:54:1 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 654076154,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:7:34 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1039322767,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:11:13 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 527404384,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:20:32 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 527404384,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:43:57 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 24671102,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:19:54 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1766855385,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:29:54 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1766855385,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[20:32:27 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1766855385,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:32:47 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1766855385,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[20:45:15 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1054325141,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:45:33 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1054325141,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[20:47:3 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1054325141,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[20:57:7 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1054325141,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:4:11 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 232089488,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:4:33 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 232089488,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[21:25:17 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 359831225,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:25:39 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 359831225,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[21:26:31 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 359831225,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[21:28:16 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 359831225,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:28:17 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 359831225,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[21:29:28 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 359831225,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[21:39:20 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 468073294,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:39:36 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 468073294,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:1:6 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 251519652,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:19:1 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 38454746,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:30:7 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1500115724,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:35:45 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1500115724,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:36:12 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1500115724,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:36:40 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1500115724,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:37:41 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1500115724,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:38:7 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1500115724,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:42:25 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1500115724,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:57:4 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1961224481,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:57:23 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1961224481,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:58:15 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1961224481,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[23:0:22 25-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1961224481,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[20:39:12 26-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1961224481,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:8:34 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 784835915,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:12:12 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 784835915,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:26:29 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1772523694,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:26:40 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1772523694,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:31:15 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1772523694,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:46:17 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 403723491,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:46:51 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 403723491,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:48:59 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 403723491,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:1:23 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1420126099,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:1:46 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1420126099,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:4:44 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1420126099,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:5:48 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1420126099,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:15:28 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1237345052,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:15:59 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1237345052,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:21:15 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1237345052,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:27:13 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1237345052,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:27:19 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1237345052,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:35:1 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1889464896,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:35:9 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 7,
+	PR_NickName - Mudakas,
+	PR_uiClientChallengeResponse - 1889464896,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 11E823436D19A6B79EADD1D4DD019DA7F7D23DFF8F4,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[22:57:1 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 350392126,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[23:44:31 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1285983988,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[23:54:3 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 841839383,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[23:55:0 27-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 841839383,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[0:8:42 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1933658403,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[0:18:55 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[0:20:37 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[14:16:41 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[17:50:36 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:5:23 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:21:7 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:38:28 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[19:42:35 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:43:28 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[19:45:7 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 8,
+	PR_ClientVersion - 0.3.7-R5
+};
+
+[19:48:10 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:23:24 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1573525805,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:35:25 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1877528530,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:38:4 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 138943073,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:40:10 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 340046532,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:42:46 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 708139122,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:52:15 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2104921273,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[20:58:18 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 767251545,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:3:51 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 887106776,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:6:14 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 46648246,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:16:38 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 5916472,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:18:18 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1041299061,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:20:22 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1359045124,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:22:52 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 387043599,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:26:12 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 290597842,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:29:26 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 54031029,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:31:45 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 115717611,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:34:20 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1441780592,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:42:39 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1063705505,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:44:30 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1064187940,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[21:51:48 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1472006677,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:2:0 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1472006677,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:19:49 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 368343365,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:20:26 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 368343365,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[22:23:30 28-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 368343365,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[23:30:44 29-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 1595671021,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[23:39:28 29-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 2080106668,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
+
+[23:48:28 29-10-2026] JoinServer => {
+	PR_iVersion - 4057,
+	PR_byteMod - 1,
+	PR_byteNicknameLen - 10,
+	PR_NickName - Milancholi,
+	PR_uiClientChallengeResponse - 300092738,
+	PR_byteAuthKeyLen - 43,
+	PR_auth_key - 20771D007D0AE0771CB4D828EA918956A6638032528,
+	PR_iClientVerLen - 10,
+	PR_ClientVersion - Arizona PC
+};
