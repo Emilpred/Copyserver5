@@ -543,3 +543,11 @@
 [00:48:21 10/30/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
 [00:48:42 10/30/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
 [00:48:42 10/30/26] [ERROR] cache_get_row_int - invalid datatype
+[01:22:00 10/30/26] [ERROR] mysql_tquery - invalid connection handle (id: 0)
+[01:22:02 10/30/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[01:22:02 10/30/26] [WARNING] cache_get_row_count - no active cache
+[01:22:02 10/30/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[01:22:27 10/30/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[01:22:27 10/30/26] [ERROR] cache_get_row_int - invalid datatype
+[01:33:41 10/30/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[01:33:41 10/30/26] [ERROR] cache_get_row_int - invalid datatype

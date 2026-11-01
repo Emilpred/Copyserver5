@@ -13083,17 +13083,17 @@ public OnGameModeInit()
     //Привязка БД
 	new serverType, baseInfo[][][] = 
 	{
-		{"Локальный сервер", "185.189.255.97", "gs104939", "gs104939", "64cupfz8"}, // ip не трогать, userDB, DB, password
-		{"Тестовый сервер", "185.189.255.97", "gs104939", "gs104939", "64cupfz8"}, // внешний ip, userDB, DB, password
-		{"Arizona Games", "185.189.255.97", "gs104939", "gs104939", "64cupfz8"} // внешний ip, userDB, DB, password
+		{"Локальный сервер", "185.189.255.97", "gs113459", "gs113459", "tn38alpb"}, // ip не трогать, userDB, DB, password
+		{"Тестовый сервер", "185.189.255.97", "gs113459", "gs113459", "tn38alpb"}, // внешний ip, userDB, DB, password
+		{"Arizona Games", "185.189.255.97", "gs113459", "gs113459", "tn38alpb"} // внешний ip, userDB, DB, password
 	};
 	//Привязка БД
 
 	GetServerVarAsString("bind", mysql_string, sizeof(mysql_string));
 
 	if(TextFind(mysql_string, "127.0.0.1")) serverType = 1; // не трогать
-	else if(TextFind(mysql_string, "185.189.255.97")) serverType = 2; // айпи сервера БЕЗ ПОРТА
-	else if(TextFind(mysql_string, "185.189.255.97")) serverType = 3; // айпи сервера БЕЗ ПОРТА
+	else if(TextFind(mysql_string, "195.18.27.226")) serverType = 2; // айпи сервера БЕЗ ПОРТА
+	else if(TextFind(mysql_string, "195.18.27.226")) serverType = 3; // айпи сервера БЕЗ ПОРТА
 	else return printf("  [IP NO %s]: Мод не привязан к codescompany.hgweb.ru - vk.com/codevsc (Привязка тута).! (error: serverType or baseInfo)", Setting_Server[7]);
 
 	mysql = mysql_connect(baseInfo[serverType-1][1], baseInfo[serverType-1][2], baseInfo[serverType-1][3], baseInfo[serverType-1][4]);

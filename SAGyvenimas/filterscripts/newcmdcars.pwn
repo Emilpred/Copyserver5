@@ -74,10 +74,10 @@ new const CarNames[][] = {
     "[441] Hummer (Gun) [15730]", "[442] Impala (Gun) [15731]", "[443] Bike Apocalypse [15743]", "[444] Vanda Dendrobium [15561]", "[445] Whiplash [15562]", "[446] Bus Halloween [15563]", "[447] Opel Delivery [15564]", "[448] Audi Q8 Mansory [15565]", "[449] Martini Racing [15566]", "[450] Porsche 911 GT3 [15568]",
     // Puslapis 10
     "[451] BMW XM Mansory [15569]", "[452] Rolls Royce Spectre Mansory [15572]", "[453] Lorus Emira [15457]", "[454] Lixiang L7 [15456]", "[455] Hot Rod Flying [15455]", "[456] Kia EV9 [15454]", "[457] Porsche Cayenne Turbo GT [15453]", "[458] BMW R nineT [15452]", "[459] BMW M4 [15451]", "[460] Volkswagen Amarok [15449]",
-    "[461] Nissan Fairlady Z [15742]", "[462] Tuscia [0]", "[463] Tuscia [0]", "[464] Tuscia [0]", "[465] Tuscia [0]", "[466] Tuscia [0]", "[467] Tuscia [0]", "[468] Tuscia [0]", "[469] Tuscia [0]", "[470] Tuscia [0]",
-    "[471] Tuscia [0]", "[472] Tuscia [0]", "[473] Tuscia [0]", "[474] Tuscia [0]", "[475] Tuscia [0]", "[476] Tuscia [0]", "[477] Tuscia [0]", "[478] Tuscia [0]", "[479] Tuscia [0]", "[480] Tuscia [0]",
-	"[481] Tuscia [0]", "[482] Tuscia [0]", "[483] Tuscia [0]", "[484] Tuscia [0]", "[485] Tuscia [0]", "[486] Tuscia [0]", "[487] Tuscia [0]", "[488] Tuscia [0]", "[489] Tuscia [0]", "[490] Tuscia [0]",
-    "[491] Tuscia [0]", "[492] Tuscia [0]", "[493] Tuscia [0]", "[494] Tuscia [0]", "[495] Tuscia [0]", "[496] Tuscia [0]", "[497] Tuscia [0]", "[498] Tuscia [0]", "[499] Tuscia [0]", "[500] Tuscia [0]"
+    "[461] Nissan Fairlady Z [15742]", "[462] Mack Anthem Packer [6830]", "[463] Apollo Intensa Emozione [6835]", "[464] BMW XM Off-road [6842]", "[465] BMW XM [6848]", "[466] Porsche 992 Off-Road [6860]", "[467] Tanarg 912 [7408]", "[468] Aerostar 700 [7976]", "[469] Mini Cooper Countryman [11860]", "[470] Dodge Charger Daytona [11866]",
+    "[471] Nissan 240Z S30 [14244]", "[472] Bugatti Centodieci [14245]", "[473] Cadillac Escalade [14246]", "[474] Ferrari Purosangue [14247]", "[475] Lamborghini Huracan [14248]", "[476] Lamborghini Huracan Sterrato Off-Road [14249]", "[477] Lamborghini Urus Off-Road [14250]", "[478] Ferrari SF90 Off-Road [14251]", "[479] Plymouth GTX Custom [14252]", "[480] Shelby Cobra 427 Custom [14253]",
+	"[481] Mitsubishi Eclipse 1995 [14254]", "[482] Cadillac Escalade Larte Design [14255]", "[483] Skate Transparent [14281]", "[484] Kwin [16861]", "[485] Lada 2107 [16862]", "[486] Clover BomjGang [16863]", "[487] New Police car [16864]", "[488] DsxTn [16865]", "[489] Mercedes E63 AMG 25 [16866]", "[490] Nissan R35 10 Years [16867]",
+    "[491] Mitsubishi Evo 6 10 Years [16868]", "[492] F1 Bolide 23 [16869]", "[493] Kawasaki R10 [16870]", "[494] Nissan Silvia s15 HB edition [16872]", "[495] Honda NSX 10 Years [16873]", "[496] LC 200 FBI [16874]", "[497] Mercedes-Benz GLE [14912]", "[498] Tuscia [0]", "[499] Tuscia [0]", "[500] Tuscia [0]"
 
 };
 

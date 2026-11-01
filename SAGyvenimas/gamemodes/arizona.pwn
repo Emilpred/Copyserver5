@@ -1118,24 +1118,6 @@ new const InfoCar[][infocars] = {
 	{14193, "aur8dr", "Audi R8 Darius", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
 	{14194, "dodangie", "Dodge Charger Angie", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
 	{14195, "frdmrzr", "Ford Mustang Razor", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{14338, "airship", "Airship", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{14355, "rcmavic", "RC Mavic", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6673, "bveyron", "Bugatti Veyron", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6674, "cente", "Lamborghini Centenario", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6675, "rbronco", "Ford Bonco", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6676, "srubicon", "Jeep Rubicon", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6677, "mitsupaj3", "Mitsubishi Pajero 3", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6678, "bmwm3g80", "BMW M3 G80", {6660, 6694, 6695, 6696, 6697}, {6747, 6748, 6749, 6750, 6751}, {6774, 6780, 6787, 6794, -1}},
-	{6679, "bmwx3e83", "BMW X3 E83", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6680, "ghostrll", "Rolls-Royce Ghost", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6681, "shaman", "Avtoros Shaman", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6682, "lambtouch", "Lamborghini Countach", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6683, "amggtr", "Mercedes-AMG GT R", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6684, "hummerh2", "Hummer H2", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6685, "mitsuevo8", "Mitsubishi Evo 8", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6686, "amggtbs", "Mercedes-AMG GT Black", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6687, "cls55", "Mercedes-Benz CLS55", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{6693, "jmcholiday", "JMC", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
 	{15605, "madcar", "Madcar", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
 	{15618, "peterbilt", "Peterblit Track \"Advance\"", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
 	{15619, "pturbos", "Porsche 911 Turbo S", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
@@ -1210,7 +1192,102 @@ new const InfoCar[][infocars] = {
 	{15733, "honda", "Honda NSX 1990", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
 	{15732, "nissan", "Nissan 240z Apocalypse", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
 	{15743, "bike", "Bike Apocalypse", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
-	{15742, "nissan", "Nissan Fairlady Z", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}
+	{15742, "nissan", "Nissan Fairlady Z", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}},
+	{6830, "an_mackanthempa", "Mack Anthem Packer", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6835, "an_apollointens", "Apollo Intensa Emozione", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6842, "an_bmwxmoffroad", "BMW XM Off-road", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6848, "an_bmwxm", "BMW XM", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6860, "an_porsche992of", "Porsche 992 Off-Road", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{7408, "an_tanarg912", "Tanarg 912", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{7976, "an_aerostar700", "Aerostar 700", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{11860, "an_minicooperco", "Mini Cooper Countryman", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{11866, "an_dodgecharger", "Dodge Charger Daytona", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14244, "an_nissan240zs3", "Nissan 240Z S30", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14245, "an_bugatticento", "Bugatti Centodieci", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14246, "an_cadillacesca", "Cadillac Escalade", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14247, "an_ferraripuros", "Ferrari Purosangue", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14248, "an_lamborghinih", "Lamborghini Huracan", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14249, "an_lamborghinih2", "Lamborghini Huracan Sterrato Off-Road", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14250, "an_lamborghiniu", "Lamborghini Urus Off-Road", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14251, "an_ferrarisf90o", "Ferrari SF90 Off-Road", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14252, "an_plymouthgtxc", "Plymouth GTX Custom", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14253, "an_shelbycobra4", "Shelby Cobra 427 Custom", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14254, "an_mitsubishiec", "Mitsubishi Eclipse 1995", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14255, "an_cadillacesca2", "Cadillac Escalade Larte Design", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14281, "an_skatetranspa", "Skate Transparent", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16861, "an_kwin", "Kwin", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16862, "an_lada2107", "Lada 2107", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16863, "an_cloverbomjga", "Clover BomjGang", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16864, "an_newpolicecar", "New Police car", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16865, "an_dsxtn", "DsxTn", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16866, "an_mercedese63a", "Mercedes E63 AMG 25", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16867, "an_nissanr3510y", "Nissan R35 10 Years", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16868, "an_mitsubishiev", "Mitsubishi Evo 6 10 Years", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16869, "an_f1bolide23", "F1 Bolide 23", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16870, "an_kawasakir10", "Kawasaki R10", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16872, "an_nissansilvia", "Nissan Silvia s15 HB edition", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16873, "an_hondansx10ye", "Honda NSX 10 Years", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16874, "an_lc200fbi", "LC 200 FBI", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6673, "an_veyron", "Bugatti Veyron", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6674, "an_centenario", "Lamborghini Centenario", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6675, "an_bonco", "Ford Bonco", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6676, "an_rubicon", "Jeep Rubicon", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6677, "an_pajero3", "Mitsubishi Pajero 3", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6678, "an_bmwm3g80", "BMW M3 G80", {6660, 6694, 6695, 6696, 6697}, {6660, 6694, 6695, 6696, 6697}, {6660, 6694, 6695, 6696, 6697}}, // Arizona Night
+	{6679, "an_bmwx3e83", "BMW X3 E83", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6680, "rr_ghost", "Rolls-Royce Ghost", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6681, "an_shaman", "Avtoros Shaman", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6682, "lambo_countach", "Lamborghini Countach", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6683, "mercedes_gtr", "Mercedes-AMG GT R", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6684, "an_hummerh2", "Hummer H2", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6685, "mitsubishievo", "Mitsubishi Evo 8", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6686, "mercedesblack", "Mercedes-AMG GT Black", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6687, "an_cls55", "Mercedes-Benz CLS55", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6693, "an_jmc", "JMC", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16932, "bmwm30g80", "BMW M30 G80", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{15934, "an_kamaz", "Kamaz", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{15935, "Primetrack", "Optimus Prime Track", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{15937, "twistedmetal", "Twisted Metal", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{15942, "hellhotrod", "Hell Hot Rod", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{15943, "hulkhotrod", "Hulk Hot Rod", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{16909, "explorer20", "Ford Explorer 20", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12622, "astonmartindbs", "Aston Martin DBS", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12623, "bentleyflying", "Bentley Flying Spur", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12624, "an_buran", "Snowmobile Buran", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12625, "golfgti", "Volkswagen Golf GTI", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12626, "alfaromeogulia", "Alfa Romeo Gulia", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12627, "hyndaiioniq", "Hyndai Ioniq", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12628, "bmwm2", "BMW M2", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12630, "snowmizu", "Snowmobile Mizu", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12631, "snowmobileretro", "Snowmobile Retro", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12633, "wrangler24", "Jeep Wrangler 24", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12598, "silverado", "Chevrolet Silverado", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12599, "venenoroadster", "Lamborghini Veneno Roadster", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12600, "navigator", "Lincoln Navigator", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12602, "paganihuayra", "Pagani Huayra", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12603, "rr_boattail", "Rolls-Royce Boat Tail", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12604, "volkswagenarteon", "Volkswagen Arteon", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12605, "dronekiller", "Drone-Killer", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12606, "grinchsleigh", "Grinch Sleigh", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12607, "santassleigh", "Santa Sleigh", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12611, "ferrarif250", "Ferrari F250 GTO", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12616, "skodakodiaq", "Skoda Kodiaq", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12614, "priusphv", "Prius PHV", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12615, "spacecruiser", "Space Cruiser", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14355, "rcmavic", "RC Mavic", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12601, "mercedeseqs53", "Mercedes-Benz EQS 53", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12613, "maserati2018", "Maserati 2018", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{12632, "skodaoctavia", "Skoda Octavia", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{14221, "rezvanivengeance", "Rezvani Vengeance", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6709, "uralasponchik", "Uralas Ponchik", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6720, "uralasskoobi", "Uralas Skoobi-Do", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6733, "uralasslender", "Uralas Slenderman", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{6824, "uralaswednesday", "Uralas Wednesday", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{7396, "mercedeswednesday", "Mercedes Wednesday", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{9199, "laidojimowednesday", "Laidojimo automobilis Wednesday", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{9268, "hunterauto", "Hunter Auto", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
+	{15888, "cadillac2023taxi", "Cadillac Escalade 2023 Taxi", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}} // Arizona Night
+	
 };
 
 static AdminCostForLevel[8] = {100, 200, 300, 400, 500, 600, 700, 800};
@@ -3984,24 +4061,6 @@ static const InfoConfigVehicle[][infonew] = {
     {"aur8dr", "aur8dr", 400, 14193, 30, 30, 30, 300},
     {"dodangie", "dodangie", 400, 14194, 30, 30, 30, 300},
     {"frdmrzr", "frdmrzr", 400, 14195, 30, 30, 30, 300},
-    {"airship", "airship", 400, 14338, 30, 30, 30, 300},
-    {"rcmavic", "rcmavic", 400, 14355, 30, 30, 30, 300},
-    {"bveyron", "bveyron", 400, 6673, 30, 30, 30, 300},
-    {"cente", "cente", 400, 6674, 30, 30, 30, 300},
-    {"rbronco", "rbronco", 400, 6675, 30, 30, 30, 300},
-    {"srubicon", "srubicon", 400, 6676, 30, 30, 30, 300},
-    {"mitsupaj3", "mitsupaj3", 400, 6677, 30, 30, 30, 300},
-    {"bmwm3g80", "bmwm3g80", 400, 6678, 30, 30, 30, 300},
-    {"bmwx3e83", "bmwx3e83", 400, 6679, 30, 30, 30, 300},
-    {"ghostrll", "ghostrll", 400, 6680, 30, 30, 30, 300},
-    {"shaman", "shaman", 400, 6681, 30, 30, 30, 300},
-    {"lambtouch", "lambtouch", 400, 6682, 30, 30, 30, 300},
-    {"amggtr", "amggtr", 400, 6683, 30, 30, 30, 300},
-    {"hummerh2", "hummerh2", 400, 6684, 30, 30, 30, 300},
-    {"mitsuevo8", "mitsuevo8", 400, 6685, 30, 30, 30, 300},
-    {"amggtbs", "amggtbs", 400, 6686, 30, 30, 30, 300},
-    {"cls55", "cls55", 400, 6687, 30, 30, 30, 300},
-    {"jmcholiday", "jmcholiday", 400, 6693, 30, 30, 30, 300},
     {"madcar", "madcar", 400, 15605, 30, 30, 30, 300},
     {"peterbilt", "peterbilt", 400, 15618, 30, 30, 30, 300},
     {"pturbos", "pturbos", 400, 15619, 30, 30, 30, 300},
@@ -4104,8 +4163,116 @@ static const InfoConfigVehicle[][infonew] = {
 	{"honda", "honda", 400, 15733, 30, 30, 30, 300},
 	{"nissan", "nissan", 400, 15732, 30, 30, 30, 300},
 	{"bikeapoc", "bikeapoc", 400, 15743, 30, 30, 30, 300},
-	{"nissanfair", "nissanfair", 400, 15742, 30, 30, 30, 300}
+	{"nissanfair", "nissanfair", 400, 15742, 30, 30, 30, 300},
 
+    {"an_mackanthempa", "Mack Anthem Packer", 411, 6830, 30, 40, 25, 230}, // Arizona Night
+    {"an_apollointens", "Apollo Intensa Emozione", 411, 6835, 30, 40, 25, 230}, // Arizona Night
+    {"an_bmwxmoffroad", "BMW XM Off-road", 411, 6842, 30, 40, 25, 230}, // Arizona Night
+    {"an_bmwxm", "BMW XM", 411, 6848, 30, 40, 25, 230}, // Arizona Night
+    {"an_porsche992of", "Porsche 992 Off-Road", 411, 6860, 30, 40, 25, 230}, // Arizona Night
+    {"an_tanarg912", "Tanarg 912", 411, 7408, 30, 40, 25, 230}, // Arizona Night
+    {"an_aerostar700", "Aerostar 700", 411, 7976, 30, 40, 25, 230}, // Arizona Night
+    {"an_minicooperco", "Mini Cooper Countryman", 411, 11860, 30, 40, 25, 230}, // Arizona Night
+    {"an_dodgecharger", "Dodge Charger Daytona", 411, 11866, 30, 40, 25, 230}, // Arizona Night
+    {"an_nissan240zs3", "Nissan 240Z S30", 411, 14244, 30, 40, 25, 230}, // Arizona Night
+    {"an_bugatticento", "Bugatti Centodieci", 411, 14245, 30, 40, 25, 230}, // Arizona Night
+    {"an_cadillacesca", "Cadillac Escalade", 411, 14246, 30, 40, 25, 230}, // Arizona Night
+    {"an_ferraripuros", "Ferrari Purosangue", 411, 14247, 30, 40, 25, 230}, // Arizona Night
+    {"an_lamborghinih", "Lamborghini Huracan", 411, 14248, 30, 40, 25, 230}, // Arizona Night
+    {"an_lamborghinih2", "Lamborghini Huracan Sterrato ", 411, 14249, 30, 40, 25, 230}, // Arizona Night
+    {"an_lamborghiniu", "Lamborghini Urus Off-Road", 411, 14250, 30, 40, 25, 230}, // Arizona Night
+    {"an_ferrarisf90o", "Ferrari SF90 Off-Road", 411, 14251, 30, 40, 25, 230}, // Arizona Night
+    {"an_plymouthgtxc", "Plymouth GTX Custom", 411, 14252, 30, 40, 25, 230}, // Arizona Night
+    {"an_shelbycobra4", "Shelby Cobra 427 Custom", 411, 14253, 30, 40, 25, 230}, // Arizona Night
+    {"an_mitsubishiec", "Mitsubishi Eclipse 1995", 411, 14254, 30, 40, 25, 230}, // Arizona Night
+    {"an_cadillacesca2", "Cadillac Escalade Larte Desig", 411, 14255, 30, 40, 25, 230}, // Arizona Night
+    {"an_skatetranspa", "Skate Transparent", 510, 14281, 30, 40, 25, 230}, // Arizona Night
+    {"an_kwin", "Kwin", 411, 16861, 30, 40, 25, 230}, // Arizona Night
+    {"an_lada2107", "Lada 2107", 411, 16862, 30, 40, 25, 230}, // Arizona Night
+    {"an_cloverbomjga", "Clover BomjGang", 411, 16863, 30, 40, 25, 230}, // Arizona Night
+    {"an_newpolicecar", "New Police car", 411, 16864, 30, 40, 25, 230}, // Arizona Night
+    {"an_dsxtn", "DsxTn", 411, 16865, 30, 40, 25, 230}, // Arizona Night
+    {"an_mercedese63a", "Mercedes E63 AMG 25", 411, 16866, 30, 40, 25, 230}, // Arizona Night
+    {"an_nissanr3510y", "Nissan R35 10 Years", 411, 16867, 30, 40, 25, 230}, // Arizona Night
+    {"an_mitsubishiev", "Mitsubishi Evo 6 10 Years", 411, 16868, 30, 40, 25, 230}, // Arizona Night
+    {"an_f1bolide23", "F1 Bolide 23", 411, 16869, 30, 40, 25, 230}, // Arizona Night
+    {"an_kawasakir10", "Kawasaki R10", 522, 16870, 30, 40, 25, 230}, // Arizona Night
+    {"an_nissansilvia", "Nissan Silvia s15 HB edition", 411, 16872, 30, 40, 25, 230}, // Arizona Night
+    {"an_hondansx10ye", "Honda NSX 10 Years", 411, 16873, 30, 40, 25, 230}, // Arizona Night
+    {"an_lc200fbi", "LC 200 FBI", 411, 16874, 30, 40, 25, 230}, // Arizona Night
+    {"monster4", "Monster Grave Digger", 411, 6620, 30, 40, 25, 230}, // Arizona Night
+    {"rav4krsh", "Toyota RAV4 (delimobil)", 411, 14123, 30, 40, 25, 230}, // Arizona Night
+    {"gtr2017", "Nissan GTR 2017", 411, 14124, 30, 40, 25, 230}, // Arizona Night
+    {"humhx", "Hummer HX", 411, 14907, 30, 40, 25, 230}, // Arizona Night
+    {"laferr", "Ferrari F70", 411, 14908, 30, 40, 25, 230}, // Arizona Night
+    {"m5cs", "BMW M5 CS", 411, 14909, 30, 40, 25, 230}, // Arizona Night
+    {"quadra", "Quadra Turbo-R V-Tech", 411, 14911, 30, 40, 25, 230}, // Arizona Night
+    {"gle", "Mercedes-Benz GLE", 411, 14912, 30, 40, 25, 230}, // Arizona Night
+    {"mntnbike", "Specialized Stumpjumper", 411, 14914, 30, 40, 25, 230}, // Arizona Night
+    {"mntnbike2", "Santa Cruz Tallboy", 411, 14915, 30, 40, 25, 230}, // Arizona Night
+    {"scrcher", "Turner Burner", 411, 14917, 30, 40, 25, 230}, // Arizona Night
+    {"vccopcar", "VC - Police", 411, 15422, 30, 40, 25, 230}, // Arizona Night
+    {"vcdeluxo", "VC - Deluxo", 411, 15423, 30, 40, 25, 230}, // Arizona Night
+    {"polestar", "Polestar 2", 411, 15502, 30, 40, 25, 230}, // Arizona Night
+    {"an_veyron", "Bugatti Veyron", 411, 6673, 17, 25, 35, 418}, // Arizona Night
+    {"an_centenario", "Lamborghini Centenario", 411, 6674, 17, 25, 35, 418}, // Arizona Night
+    {"an_bonco", "Ford Bonco", 411, 6675, 30, 40, 25, 230}, // Arizona Night
+    {"an_rubicon", "Jeep Rubicon", 411, 6676, 30, 40, 25, 230}, // Arizona Night
+    {"an_pajero3", "Mitsubishi Pajero 3", 411, 6677, 30, 40, 25, 230}, // Arizona Night
+    {"an_bmwm3g80", "BMW M3 G80", 411, 6678, 17, 25, 35, 418}, // Arizona Night
+    {"an_bmwx3e83", "BMW X3 E83", 411, 6679, 30, 40, 25, 230}, // Arizona Night
+    {"rr_ghost", "Rolls-Royce Ghost", 411, 6680, 17, 25, 35, 418}, // Arizona Night
+    {"an_shaman", "Avtoros Shaman", 411, 6681, 30, 40, 25, 230}, // Arizona Night
+    {"lambo_countach", "Lamborghini Countach", 411, 6682, 17, 25, 35, 418}, // Arizona Night
+    {"mercedes_gtr", "Mercedes-AMG GT R", 411, 6683, 17, 25, 35, 418}, // Arizona Night
+    {"an_hummerh2", "Hummer H2", 411, 6684, 30, 40, 25, 230}, // Arizona Night
+    {"mitsubishievo", "Mitsubishi Evo 8", 411, 6685, 30, 40, 25, 230}, // Arizona Night
+    {"mercedesblack", "Mercedes-AMG GT Black", 411, 6686, 17, 25, 35, 418}, // Arizona Night
+    {"an_cls55", "Mercedes-Benz CLS55", 411, 6687, 17, 25, 35, 418}, // Arizona Night
+    {"an_jmc", "JMC", 411, 6693, 20, 25, 35, 210}, // Arizona Night
+    {"bmwm30g80", "BMW M30 G80", 411, 16932, 17, 25, 35, 418}, // Arizona Night
+    {"an_kamaz", "Kamaz", 411, 15934, 17, 25, 35, 418}, // Arizona Night
+    {"Primetrack", "Optimus Prime Track", 411, 15935, 17, 25, 35, 418}, // Arizona Night
+    {"twistedmetal", "Twisted Metal", 411, 15937, 17, 25, 35, 418}, // Arizona Night
+    {"hellhotrod", "Hell Hot Rod", 411, 15942, 17, 25, 35, 418}, // Arizona Night
+    {"hulkhotrod", "Hulk Hot Rod", 411, 15943, 17, 25, 35, 418}, // Arizona Night
+    {"explorer20", "Ford Explorer 20", 411, 16909, 17, 25, 35, 418}, // Arizona Night
+    {"anstonmartindbs", "Aston Martin DBS", 411, 12622, 17, 25, 35, 418}, // Arizona Night
+    {"bentleyflying", "Bentley Flying Spur", 411, 12623, 17, 25, 35, 418}, // Arizona Night
+    {"an_buran", "Snowmobile Buran", 411, 12624, 17, 25, 35, 418}, // Arizona Night
+    {"golfgti", "Volkswagen Golf GTI", 411, 12625, 17, 25, 35, 418}, // Arizona Night
+    {"alfaromeogulia", "Alfa Romeo Gulia", 411, 12626, 17, 25, 35, 418}, // Arizona Night
+    {"hyndaiioniq", "Hyndai Ioniq", 411, 12627, 17, 25, 35, 418}, // Arizona Night
+    {"bmwm2", "BMW M2", 411, 12628, 17, 25, 35, 418}, // Arizona Night
+    {"snowmizu", "Snowmobile Mizu", 411, 12630, 17, 25, 35, 418}, // Arizona Night
+    {"snowmobileretro", "Snowmobile Retro", 411, 12631, 17, 25, 35, 418}, // Arizona Night
+    {"wrangler24", "Jeep Wrangler 24", 411, 12633, 17, 25, 35, 418}, // Arizona Night
+    {"silverado", "Chevrolet Silverado", 411, 12598, 17, 25, 35, 418}, // Arizona Night
+    {"venenoroadster", "Lamborghini Veneno Roadster", 411, 12599, 17, 25, 35, 418}, // Arizona Night
+    {"navigator", "Lincoln Navigator", 411, 12600, 17, 25, 35, 418}, // Arizona Night
+    {"paganihuayra", "Pagani Huayra", 411, 12602, 17, 25, 35, 418}, // Arizona Night
+    {"rr_boattail", "Rolls-Royce Boat Tail", 411, 12603, 17, 25, 35, 418}, // Arizona Night
+    {"volkswagenarteon", "Volkswagen Arteon", 411, 12604, 17, 25, 35, 418}, // Arizona Night
+    {"dronekiller", "Drone-Killer", 411, 12605, 17, 25, 35, 418}, // Arizona Night
+    {"grinchsleigh", "Grinch Sleigh", 411, 12606, 17, 25, 35, 418}, // Arizona Night
+    {"santassleigh", "Santa Sleigh", 411, 12607, 17, 25, 35, 418}, // Arizona Night
+    {"ferrarif250", "Ferrari F250 GTO", 411, 12611, 17, 25, 35, 418}, // Arizona Night
+    {"skodakodiaq", "Skoda Kodiaq", 411, 12616, 17, 25, 35, 418}, // Arizona Night
+    {"priusphv", "Prius PHV", 411, 12614, 17, 25, 35, 418}, // Arizona Night
+    {"spacecruiser", "Space Cruiser", 411, 12615, 17, 25, 35, 418}, // Arizona Night
+    {"rcmavic", "RC Mavic", 411, 14355, 17, 25, 35, 418}, // Arizona Night
+    {"mercedeseqs53", "Mercedes-Benz EQS 53", 411, 12601, 17, 25, 35, 418}, // Arizona Night
+    {"maserati2018", "Maserati 2018", 411, 12613, 17, 25, 35, 418}, // Arizona Night
+    {"skodaoctavia", "Skoda Octavia", 411, 12632, 17, 25, 35, 418}, // Arizona Night
+    {"rezvanivengeance", "Rezvani Vengeance", 411, 14221, 17, 25, 35, 418}, // Arizona Night
+    {"uralasponchik", "Uralas Ponchik", 411, 6709, 17, 25, 35, 418}, // Arizona Night
+    {"uralasskoobi", "Uralas Skoobi-Do", 411, 6720, 17, 25, 35, 418}, // Arizona Night
+    {"uralasslender", "Uralas Slenderman", 411, 6733, 17, 25, 35, 418}, // Arizona Night
+    {"uralaswednesday", "Uralas Wednesday", 411, 6824, 17, 25, 35, 418}, // Arizona Night
+    {"mercedeswednesday", "Mercedes Wednesday", 411, 7396, 17, 25, 35, 418}, // Arizona Night
+    {"laidojimowednesday", "Laidojimo Wednesday", 411, 9199, 17, 25, 35, 418}, // Arizona Night
+    {"hunterauto", "Hunter Auto", 411, 9268, 17, 25, 35, 418}, // Arizona Night
+    {"cadillac2023taxi", "Cadillac Escalade 2023 Taxi", 411, 15888, 17, 25, 35, 418} // Arizona Night
 };
 
 new
@@ -15320,7 +15487,101 @@ new const VehicleName[][30] =
 	"Honda NSX 1990",
 	"Nissan 240z Apocalypse",
 	"Bike Apocalypse",
-	"Nissan Fairlady Z"
+	"Nissan Fairlady Z",
+	"Mack Anthem Packer",
+	"Apollo Intensa Emozione",
+	"BMW XM Off-road",
+	"BMW XM",
+	"Porsche 992 Off-Road",
+	"Tanarg 912",
+	"Aerostar 700",
+	"Mini Cooper Countryman",
+	"Dodge Charger Daytona",
+	"Nissan 240Z S30",
+	"Bugatti Centodieci",
+	"Cadillac Escalade",
+	"Ferrari Purosangue",
+	"Lamborghini Huracan",
+	"Lamborghini Huracan Sterrato ",
+	"Lamborghini Urus Off-Road",
+	"Ferrari SF90 Off-Road",
+	"Plymouth GTX Custom",
+	"Shelby Cobra 427 Custom",
+	"Mitsubishi Eclipse 1995",
+	"Cadillac Escalade Larte Desig",
+	"Skate Transparent",
+	"Kwin",
+	"Lada 2107",
+	"Clover BomjGang",
+	"New Police car",
+	"DsxTn",
+	"Mercedes E63 AMG 25",
+	"Nissan R35 10 Years",
+	"Mitsubishi Evo 6 10 Years",
+	"F1 Bolide 23",
+	"Kawasaki R10",
+	"Nissan Silvia s15 HB edition",
+	"Honda NSX 10 Years",
+	"LC 200 FBI",
+	"Bugatti Veyron",
+	"Lamborghini Centenario",
+	"Ford Bonco",
+	"Jeep Rubicon",
+	"Mitsubishi Pajero 3",
+	"BMW M3 G80",
+	"BMW X3 E83",
+	"Rolls-Royce Ghost",
+	"Avtoros Shaman",
+	"Lamborghini Countach",
+	"Mercedes-AMG GT R",
+	"Hummer H2",
+	"Mitsubishi Evo 8",
+	"Mercedes-AMG GT Black",
+	"Mercedes-Benz CLS55",
+	"JMC",
+	"BMW M30 G80",
+	"Kamaz",
+	"Optimus Prime Track",
+	"Twisted Metal",
+	"Hell Hot Rod",
+	"Hulk Hot Rod",
+	"Ford Explorer 20",
+	"Aston Martin DBS",
+	"Bentley Flying Spur",
+	"Snowmobile Buran",
+	"Volkswagen Golf GTI",
+	"Alfa Romeo Gulia",
+	"Hyndai Ioniq",
+	"BMW M2",
+    "Snowmobile Mizu",
+	"Snowmobile Retro",
+	"Jeep Wrangler 24",
+	"Chevrolet Silverado",
+	"Lamborghini Veneno Roadster",
+	"Lincoln Navigator",
+	"Pagani Huayra",
+	"Rolls-Royce Boat Tail",
+	"Volkswagen Arteon",
+	"Drone-Killer",
+	"Grinch Sleigh",
+	"Santa Sleigh",
+	"Ferrari F250 GTO",
+	"Skoda Kodiaq",
+	"Prius PHV",
+	"Space Cruiser",
+	"RC Mavic",
+	"Mercedes-Benz EQS 53",
+	"Maserati 2018",
+	"Skoda Octavia",
+	"Rezvani Vengeance",
+	"Uralas Ponchik",
+	"Uralas Skoobi-Do",
+	"Uralas Slenderman",
+	"Uralas Wednesday",
+	"Mercedes Wednesday",
+	"Laidojimo Wednesday",
+	"Hunter Auto",
+	"Cadillac Escalade 2023 Taxi"
 };
 
 stock SendVK(playerid, arguments_str[], usecallback = 1)
@@ -40396,12 +40657,18 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
    					BizData[OWNABLEBIZES][bInt] = 62;
 					BizData[OWNABLEBIZES][bCost] = 10000000;
 					BizData[OWNABLEBIZES][bState] = 38;
-
 					BizData[OWNABLEBIZES][bExit_X] = 719.0891;
 					BizData[OWNABLEBIZES][bExit_Y] = -673.5091;
 					BizData[OWNABLEBIZES][bExit_Z] = 3047.3120;
-
 					SetString(BizData[OWNABLEBIZES][bName], "Aksesuaru gaudymas");
+				}
+				case 32:
+				{
+		            BizData[OWNABLEBIZES][bInt] = 0;
+		            BizData[OWNABLEBIZES][bCost] = 50000000;
+		            BizData[OWNABLEBIZES][bState] = 22;
+		            BizData[OWNABLEBIZES][bPickup] = 1;
+		            SetString(BizData[OWNABLEBIZES][bName],"Automobiliu salonas LUXE");
 				}
 			}
 			BizData[OWNABLEBIZES][bID] = OWNABLEBIZES;
@@ -78988,8 +79255,8 @@ stock J_AddStaticVehicleEx(model, Float:x,Float:y,Float:z,Float:a,color_1 = 0,co
 	{
 	    case 430, 446, 452, 453, 454, 472, 473, 484, 493: VehicleState[carid] = VEHICLE_STATE_BOAT;
 		case 417, 425, 447, 460, 469, 476, 487, 488, 497, 511, 512, 513, 519, 520, 548, 553,563, 577, 592, 593, 4800:  VehicleState[carid] = VEHICLE_STATE_PLANE;
-		case 581, 522, 461, 521, 523, 463, 468, 471, 586: VehicleState[carid] = VEHICLE_STATE_BIKE;
-		case 509, 481, 510, 14914..14917: VehicleState[carid] = VEHICLE_STATE_VELIK;
+		case 581, 522, 461, 521, 523, 463, 468, 471, 586, 16870: VehicleState[carid] = VEHICLE_STATE_BIKE;
+		case 509, 481, 510, 14914..14917, 14281: VehicleState[carid] = VEHICLE_STATE_VELIK;
 		case 462,448: VehicleState[carid] = VEHICLE_STATE_MOPED;
 		case 538, 537: VehicleState[carid] = VEHICLE_STATE_TRAIN;
 		case 564, 441, 464, 465, 501: VehicleState[carid] = 7;
@@ -87617,7 +87884,8 @@ stock GetCarPrice(model)
 		case 598,597,596: cost = 200000;
 		case 514: cost = 200000;
 		case 612..614,662,663,665,666,667,668,699,793,794,909,965,1194,1195,1196,1197,1198,1199,1200,1201,1202,1203,1204,1205,3155,3156,3157,3158,3194,3195,3196,3197,3198,3199,3200..3213,3215..3220, 3222,3223,3224,3232..3240,3245,3247,3248,3251,3254,3266,3348,3974,4542..4548, 4774..4803, 6604..6625,
-		12713..12743, 14119..14124, 14767..14769, 14857, 14884, 14899, 14904..14919, 15085,15098..15119, 15295, 15326..15335, 15416..15436, 15485..15491, 15492..15502, 15720..15725, 15626..15631, 15746..15752, 15858..15863, 15882..15883, 15902..15910, 15960..15965, 16793..16798, 16892..16900,16903,16904,16920,16951..16959,16994..16996,15877,15876,15875,15874,15873,15872,15878,15879,15880,15881,15742,15553,15554,15555,15556,15558,15559,15560,15561,15562,15563,15564,15565,15566,15568,15569,15572,15871,15457, 15456,15455, 15454,15453,15452,15451,15449,15605,15618,15619,15620,15621,15635,15653,15669,15708,15711,15713,15730,15731,15733,15743: cost = 500000;
+		12713..12743, 14119..14124, 14767..14769, 14857, 14884, 14899, 14904..14919, 15085,15098..15119, 15295, 15326..15335, 15416..15436, 15485..15491, 15492..15502, 15720..15725, 15626..15631, 15746..15752, 15858..15863, 15882..15883, 15902..15910, 15960..15965, 16793..16798, 16892..16900,16903,16904,16920,16951..16959,16994..16996,15877,15876,15875,15874,15873,15872,15878,15879,15880,15881,15742,15553,15554,15555,15556,15558,15559,15560,15561,15562,15563,15564,15565,15566,15568,15569,15572,15871,15457, 15456,15455, 15454,15453,15452,15451,15449,15605,15618,15619,15620,15621,15635,15653,15669,15708,15711,15713,15730,15731,15733,15743,
+		6673..6687,6693,6830,6835,6842,6848,6860,7408,7976,11860,11866,14244,14245,14246,14247,14248,14249,14250,14251,14252,14253,14254,14255,14281,15934,15935,15937,15942,15943,16861,16862,16863,16864,16865,16866,16867,16868,16869,16870,16872,16873,16874,16932,16909,12622..12628,12630,12631,12633,12598..12600,12602..12607,12611,12614,12615,12616,14355,12601,12613,12632,14221,6709,6720,6733,6824,7396,9199,9268,15888: cost = 500000;
   		default: cost = 200000;
 	}
 	return cost;
@@ -97179,10 +97447,11 @@ stock ValidVehicleModel(model)
 	{
 		case 400..614,662,663,665,666,667,668,699,793,794,909,965,1194,1195,1196,1197,1198,1199,1200,
 		1201,1202,1203,1204,1205,3155,3156,3157,3158,3194,3195,3196,3197,3198,3199,3200..3213,3215..3220,
-		3222,3223,3224,3232..3240,3245,3247,3248,3251,3254,3266,3348,3974,4542..4548, 4774..4803, 6604..6625,
+		3222,3223,3224,3232..3240,3245,3247,3248,3251,3254,3266,3348,3974,4542..4548, 4774..4803, 6604..6625,6673..6687,6693,
 		12713..12743, 14119..14124, 14767..14769, 14857, 14884, 14899, 14904..14919, 15085,15098..15119, 15295..15883,
 		15902..15910, 15960..15965, 16793..16798, 16892..16904, 16920, 16951..16959, 16994..16996, 18164..18167, 18152..18161, 16800, 16879, 16964, 16969, 16970..16972,
-	 	6710..6718, 6741..6746, 14131..14133, 6650, 14134,14135,14137..14139,14140..14143, 14145, 14193..14195: return true;
+	 	6710..6718, 6741..6746, 14131..14133, 6650, 14134,14135,14137..14139,14140..14143, 14145, 14193..14195,
+		6830,6835,6842,6848,6860,7408,7976,11860,11866,14244,14245,14246,14247,14248,14249,14250,14251,14252,14253,14254,14255,14281,16861,16862,16863,16864,16865,16866,16867,16868,16869,16870,16872,16873,16874,16932,16909,12622..12628,12630,12631,12633,12598..12600,12602..12607,12611,12614,12615,12616,15934,15935,15937,15942,15943,14355,12601,12613,12632,14221,6709,6720,6733,6824,7396,9199,9268,15888: return true;
 	}
 	return false;
 }
@@ -97383,7 +97652,102 @@ stock GetVehicleName(vehicleid, bool:ItIsModel = false)
 		case 15732: id = 1063;
 		case 15743: id = 1064;
 		case 15742: id = 1065;
-
+		/* Arizona Night modeliai */
+		case 6830: id = 1066;
+		case 6835: id = 1067;
+		case 6842: id = 1068;
+		case 6848: id = 1069;
+		case 6860: id = 1070;
+		case 7408: id = 1071;
+		case 7976: id = 1072;
+		case 11860: id = 1073;
+		case 11866: id = 1074;
+		case 14244: id = 1075;
+		case 14245: id = 1076;
+		case 14246: id = 1077;
+		case 14247: id = 1078;
+		case 14248: id = 1079;
+		case 14249: id = 1080;
+		case 14250: id = 1081;
+		case 14251: id = 1082;
+		case 14252: id = 1083;
+		case 14253: id = 1084;
+		case 14254: id = 1085;
+		case 14255: id = 1086;
+		case 14281: id = 1087;
+		case 16861: id = 1088;
+		case 16862: id = 1089;
+		case 16863: id = 1090;
+		case 16864: id = 1091;
+		case 16865: id = 1092;
+		case 16866: id = 1093;
+		case 16867: id = 1094;
+		case 16868: id = 1095;
+		case 16869: id = 1096;
+		case 16870: id = 1097;
+		case 16872: id = 1098;
+		case 16873: id = 1099;
+		case 16874: id = 1100;
+		case 6673: id = 1101;
+		case 6674: id = 1102;
+		case 6675: id = 1103;
+		case 6676: id = 1104;
+		case 6677: id = 1105;
+		case 6678: id = 1106;
+		case 6679: id = 1107;
+		case 6680: id = 1108;
+		case 6681: id = 1109;
+		case 6682: id = 1110;
+		case 6683: id = 1111;
+		case 6684: id = 1112;
+		case 6685: id = 1113;
+		case 6686: id = 1114;
+		case 6687: id = 1115;
+		case 6693: id = 1116;
+		case 16932: id = 1117;
+		case 15934: id = 1118;
+		case 15935: id = 1119;
+		case 15937: id = 1120;
+		case 15942: id = 1121;
+		case 15943: id = 1122;
+		case 16909: id = 1123;
+		case 12622: id = 1124;
+		case 12623: id = 1125;
+		case 12624: id = 1126;
+		case 12625: id = 1127;
+		case 12626: id = 1128;
+		case 12627: id = 1129;
+		case 12628: id = 1130;
+		case 12630: id = 1131;
+		case 12631: id = 1132;
+		case 12633: id = 1133;
+		case 12598: id = 1134;
+		case 12599: id = 1135;
+		case 12600: id = 1136;
+		case 12602: id = 1137;
+		case 12603: id = 1138;
+		case 12604: id = 1139;
+		case 12605: id = 1140;
+		case 12606: id = 1141;
+		case 12607: id = 1142;
+		case 12611: id = 1143;
+		case 12616: id = 1144;
+		case 12614: id = 1145;
+		case 12615: id = 1146;
+		case 14355: id = 1147;
+		case 12601: id = 1148;
+		case 12613: id = 1149;
+		case 12632: id = 1150;
+		case 14221: id = 1151;
+		case 6709: id = 1152;
+		case 6720: id = 1153;
+		case 6733: id = 1154;
+		case 6824: id = 1155;
+		case 7396: id = 1156;
+		case 9199: id = 1157;
+		case 9268: id = 1158;
+		case 15888: id = 1159;
+		
 		default: id = model;
 	}
 
@@ -106229,7 +106593,8 @@ CMD:addbiz(playerid)
 		Streptizo klubas\n\
 		Naftos grezinys (SAG-Coins)\n\
 		Zveju parduotuve\n\
-		Parduotuve 'Aksesuaru gaudymas'", !"Isrinkti", !"Atsaukti");
+		Parduotuve 'Aksesuaru gaudymas'\n\
+		LUXE klases automobiliu salonas", !"Isrinkti", !"Atsaukti");
 }
 CMD:addcar(playerid, data[])
 {
