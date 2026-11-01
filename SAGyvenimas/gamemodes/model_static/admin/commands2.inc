@@ -210,4 +210,5 @@
 {"crash", 8, "Isskrasinti zaideja."},
 {"pgetip", 8, "Patikrinti IP adresu atitikima."},
 {"atlyginimai", 8, "Isduoti algas organizacijai (testas, bet kuria diena)."},
-{"duotiminutes", 8, "Prideti/atimti zaidejui darbo minutes (algos)."}
+{"duotiminutes", 8, "Prideti/atimti zaidejui darbo minutes (algos)."},
+{"hudlogo", 8, "Pakeisti HUD logotipa prie serverio pavadinimo."}

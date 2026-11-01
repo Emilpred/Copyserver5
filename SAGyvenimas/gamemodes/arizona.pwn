@@ -61,6 +61,8 @@ stock LT_getdate(&year = 0, &month = 0, &day = 0)
 #include LauncherAddon.inc
 #include mxINI.inc
 #include mailer.inc
+#define FCNPC_DISABLE_VERSION_CHECK
+#include FCNPC.inc // apsaugininkai (NPC)
 #include zvehcomp.inc
 #include TOTP.inc
 #include md5.inc
@@ -83,6 +85,7 @@ stock LT_getdate(&year = 0, &month = 0, &day = 0)
 #define Server_VKontakte 		"None"
 #define Mode_Mail				"None"
 #define Mode_City 				"San Andreas"
+new HudLogo = 11; // HUD logotipo numeris (keiciamas /hudlogo, saugomas scriptfiles/hudlogo.txt)
 
 //======================= [ Duomenu baze ] =======================
 
@@ -1233,7 +1236,7 @@ new const InfoCar[][infocars] = {
 	{6675, "an_bonco", "Ford Bonco", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
 	{6676, "an_rubicon", "Jeep Rubicon", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
 	{6677, "an_pajero3", "Mitsubishi Pajero 3", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
-	{6678, "an_bmwm3g80", "BMW M3 G80", {6660, 6694, 6695, 6696, 6697}, {6660, 6694, 6695, 6696, 6697}, {6660, 6694, 6695, 6696, 6697}}, // Arizona Night
+	{6678, "bmwm3g80", "BMW M3 G80", {6660, 6694, 6695, 6696, 6697}, {6660, 6694, 6695, 6696, 6697}, {6660, 6694, 6695, 6696, 6697}}, // Arizona Night
 	{6679, "an_bmwx3e83", "BMW X3 E83", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
 	{6680, "rr_ghost", "Rolls-Royce Ghost", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
 	{6681, "an_shaman", "Avtoros Shaman", {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}, {-1, -1, -1, -1, -1}}, // Arizona Night
@@ -1350,8 +1353,8 @@ new tuningData[][tuning_load] =
 	{65, "{\"id\":65,\"categoryId\":1,\"header\":\"\",\"color\":-1,\"name\":\"Diskai-16\",\"text\":\"\",\"icon\":\"7186.png\",\"price\":70000,\"installed\":false,\"inCart\":false,\"available\":true,\"statusText\":\"70000\",\"statusColor\":-1,\"hidePriceButton\":false,\"scale\":1.0}", 70000, 0, 6767},
 	{66, "{\"id\":66,\"categoryId\":1,\"header\":\"\",\"color\":-1,\"name\":\"Diskai-17\",\"text\":\"\",\"icon\":\"7187.png\",\"price\":70000,\"installed\":false,\"inCart\":false,\"available\":true,\"statusText\":\"70000\",\"statusColor\":-1,\"hidePriceButton\":false,\"scale\":1.0}", 70000, 0, 6768},
    	{67, "{\"id\":67,\"categoryId\":6,\"header\":\"\",\"color\":-1,\"name\":\"Priekinis stiklas\",\"text\":\"\",\"icon\":\"windshield.png\",\"price\":15000,\"installed\":false,\"inCart\":false,\"available\":true,\"statusText\":\"15000\",\"statusColor\":-1,\"hidePriceButton\":false,\"scale\":1.0}", 15000, 0, 33},
-	{68, "{\"id\":68,\"categoryId\":6,\"header\":\"\",\"color\":-1,\"name\":\"Soniniai stiklai\",\"text\":\"\",\"icon\":\"front-right-window.png\",\"price\":15000,\"installed\":false,\"inCart\":false,\"available\":true,\"statusText\":\"15000\",\"statusColor\":-1,\"hidePriceButton\":false,\"scale\":1.0}", 15000, 0, 33},
-	{69, "{\"id\":69,\"categoryId\":6,\"header\":\"\",\"color\":-1,\"name\":\"Soniniai stiklai\",\"text\":\"\",\"icon\":\"front-left-window.png\",\"price\":15000,\"installed\":false,\"inCart\":false,\"available\":true,\"statusText\":\"15000\",\"statusColor\":-1,\"hidePriceButton\":false,\"scale\":1.0}", 15000, 0, 33},
+	{68, "{\"id\":68,\"categoryId\":6,\"header\":\"\",\"color\":-1,\"name\":\"Priekiniai soniniai\",\"text\":\"\",\"icon\":\"front-right-window.png\",\"price\":15000,\"installed\":false,\"inCart\":false,\"available\":true,\"statusText\":\"15000\",\"statusColor\":-1,\"hidePriceButton\":false,\"scale\":1.0}", 15000, 0, 33},
+	{69, "{\"id\":69,\"categoryId\":6,\"header\":\"\",\"color\":-1,\"name\":\"Galiniai soniniai\",\"text\":\"\",\"icon\":\"front-left-window.png\",\"price\":15000,\"installed\":false,\"inCart\":false,\"available\":true,\"statusText\":\"15000\",\"statusColor\":-1,\"hidePriceButton\":false,\"scale\":1.0}", 15000, 0, 33},
 	{70, "{\"id\":70,\"categoryId\":6,\"header\":\"\",\"color\":-1,\"name\":\"Galinis stiklas\",\"text\":\"\",\"icon\":\"windscreen.png\",\"price\":15000,\"installed\":false,\"inCart\":false,\"available\":true,\"statusText\":\"15000\",\"statusColor\":-1,\"hidePriceButton\":false,\"scale\":1.0}", 15000, 0, 33},
  	{71, "{\"id\":71,\"categoryId\":6,\"header\":\"\",\"color\":-1,\"name\":\"Priekiniai zibintai\",\"text\":\"\",\"icon\":\"front-right-light.png\",\"price\":15000,\"installed\":false,\"inCart\":false,\"available\":true,\"statusText\":\"15000\",\"statusColor\":-1,\"hidePriceButton\":false,\"scale\":1.0}", 15000, 0, 33},
  	{72, "{\"id\":72,\"categoryId\":6,\"header\":\"\",\"color\":-1,\"name\":\"Galiniai zibintai\",\"text\":\"\",\"icon\":\"rear-right-light.png\",\"price\":15000,\"installed\":false,\"inCart\":false,\"available\":true,\"statusText\":\"15000\",\"statusColor\":-1,\"hidePriceButton\":false,\"scale\":1.0}", 15000, 0, 33},
@@ -3432,16 +3435,16 @@ static const global_TuningData[][global_tunInfo] = {
     {15866,"bnt_b_jmc_b"},
     //{#16821,"tuning_freewayh_b_1"},
     //{#16822,"tuning_freewayh_b_2"},
-    {6660,"bnt_bmwm3g80_a"},
-    {6694,"bnt_bmwm3g80_b"},
-    {6695,"bnt_bmwm3g80_c"},
-    {6696,"bnt_bmwm3g80_d"},
-    {6697,"bnt_bmwm3g80_e"},
-    {6747,"spl_bmwm3g80_a"},
-    {6748,"spl_bmwm3g80_b"},
-    {6749,"spl_bmwm3g80_c"},
-    {6750,"spl_bmwm3g80_d"},
-    {6751,"spl_bmwm3g80_e"},
+    {6660,"bnt_b_bmwm3g80_a"},
+    {6694,"bnt_b_bmwm3g80_b"},
+    {6695,"bnt_b_bmwm3g80_c"},
+    {6696,"bnt_b_bmwm3g80_d"},
+    {6697,"bnt_b_bmwm3g80_e"},
+    {6747,"spl_b_bmwm3g80_a"},
+    {6748,"spl_b_bmwm3g80_b"},
+    {6749,"spl_b_bmwm3g80_c"},
+    {6750,"spl_b_bmwm3g80_d"},
+    {6751,"spl_b_bmwm3g80_e"},
     {6774,"rbmp_bmwm3g80_a"},
     {6780,"rbmp_bmwm3g80_b"},
     {6787,"rbmp_bmwm3g80_c"},
@@ -4219,7 +4222,7 @@ static const InfoConfigVehicle[][infonew] = {
     {"an_bonco", "Ford Bonco", 411, 6675, 30, 40, 25, 230}, // Arizona Night
     {"an_rubicon", "Jeep Rubicon", 411, 6676, 30, 40, 25, 230}, // Arizona Night
     {"an_pajero3", "Mitsubishi Pajero 3", 411, 6677, 30, 40, 25, 230}, // Arizona Night
-    {"an_bmwm3g80", "BMW M3 G80", 411, 6678, 17, 25, 35, 418}, // Arizona Night
+    {"bmwm3g80", "BMW M3 G80", 411, 6678, 17, 25, 35, 418}, // Arizona Night
     {"an_bmwx3e83", "BMW X3 E83", 411, 6679, 30, 40, 25, 230}, // Arizona Night
     {"rr_ghost", "Rolls-Royce Ghost", 411, 6680, 17, 25, 35, 418}, // Arizona Night
     {"an_shaman", "Avtoros Shaman", 411, 6681, 30, 40, 25, 230}, // Arizona Night
@@ -22258,6 +22261,7 @@ public OnGameModeInit()
 {
     Losimu_Init(); // losimu biuras
     Algos_Init(); // algos (atlyginimai)
+    HudLogo_Load(); // HUD logotipas
     viktorinas = viktorinav = 0;
 	for(new i; i < sizeof(tunDataEnter_Position); i++) CreateDynamicMapIcon(tunDataEnter_Position[i][0],tunDataEnter_Position[i][1],tunDataEnter_Position[i][2], 27, 0, 0, 0);
     for(new i; i < sizeof(PosTOP); i++)
@@ -22709,6 +22713,7 @@ public OnPlayerRequestSpawn(playerid)
 
 public OnPlayerRequestClass(playerid, classid)
 {
+	if(FCNPC_IsValid(playerid)) return 1; // apsaugininkai (NPC)
     SetSpawnInfo(playerid, 255, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0);
 	if(IsPlayerLogged{playerid})
 	{
@@ -23247,6 +23252,7 @@ stock GetNumberOfPlayersOnThisIP(test_ip[])
 
 public OnPlayerConnect(playerid)
 {
+	if(FCNPC_IsValid(playerid)) return 1; // apsaugininkai (NPC) - be zaideju logikos
 //    SetPlayerInterior(playerid, 211);
 	SetPlayerCameraPos(playerid, 1400.425659, -36.066555, 1001.414184);
 	SetPlayerCameraLookAt(playerid, 1395.869873, -34.015586, 1001.608764);
@@ -23757,6 +23763,7 @@ stock GetVehicleSeat(vehicleid, seatid)
 }
 public OnPlayerDisconnect(playerid, reason)
 {
+	if(FCNPC_IsValid(playerid)) return 1; // apsaugininkai (NPC)
 	if IsPlayerLogged{playerid} *then
 	{
 		if Iter_Contains(Admin, playerid) *then Iter_Remove(Admin, playerid);
@@ -24217,14 +24224,14 @@ public OnPlayerDisconnect(playerid, reason)
 			QuestShow[playerid][i] =
 			QuestProgress[playerid][i] = 0;
 		}
-/*		new npcid = Bodyguard[playerid][bodyguardNpcId];
+		new npcid = Bodyguard[playerid][bodyguardNpcId];
 		if(npcid != INVALID_PLAYER_ID)
 		{
 		    for(new i; i < safebodyguardCount[playerid]; i++)
 				if(FCNPC_IsValid(npcid))
 					safeguardType[playerid] = i,
 						BodyguardMain(playerid, 1, safeguardType[playerid]);
-		}		*/
+		}		
 		IsPlayerLogged{playerid} = false;
 	}
 
@@ -24721,6 +24728,7 @@ stock NullSpawned(playerid)
 
 public OnPlayerSpawn(playerid)
 {
+	if(FCNPC_IsValid(playerid)) return 1; // apsaugininkai (NPC)
     if !IsPlayerLogged{playerid} *then
 		return Kick(playerid);
 
@@ -26085,9 +26093,9 @@ public OnPlayerExitVehicle(playerid, vehicleid)
 		RemovePlayerAttachedObject(playerid, 5);
 		SetPlayerAttachedObjectEx(playerid, 6, 19878, 6, -0.055999, 0.013000, 0.000000, -84.099983, 0.000000, -106.099998, 1.000000, 1.000000, 1.000000);
 	}
-/*	new npcid = Bodyguard[playerid][bodyguardNpcId];
+	new npcid = Bodyguard[playerid][bodyguardNpcId];
 	if(npcid != INVALID_PLAYER_ID)
-		FCNPC_RemoveFromVehicle(npcid);*/
+		FCNPC_RemoveFromVehicle(npcid);
 
 	return 1;
 }
@@ -26242,6 +26250,7 @@ stock SetPlayerMoney(playerid, money)
 
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
+	if(newstate == PLAYER_STATE_DRIVER && GetPlayerLauncher(playerid)) AN_SendHandling(GetPlayerVehicleID(playerid), playerid); // Arizona Night automobiliu galia
 	if(newstate == PLAYER_STATE_DRIVER)
 	{
 		if(InNZone{playerid} && !IsARC(GetPlayerVehicleID(playerid)) && !GetPlayerLauncher(playerid))
@@ -26872,10 +26881,10 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 			}
 		}
 	}
-/*	new npcid = Bodyguard[playerid][bodyguardNpcId];
+	new npcid = Bodyguard[playerid][bodyguardNpcId];
 	if(newstate == PLAYER_STATE_DRIVER || newstate == PLAYER_STATE_PASSENGER)
 		if(npcid != INVALID_PLAYER_ID)
-			FCNPC_PutInVehicle(npcid, carid, 1);*/
+			FCNPC_PutInVehicle(npcid, carid, 1);
 
 	return 1;
 }
@@ -31164,9 +31173,9 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 			case 12: ApplyAnimation(playerid,"PED","Walk_Wuzi",4.1,1,1,1,1,1); // su istiesta ranka
 		}
 	}
-/*	if safeguardSpawned[playerid][Bodyguard[playerid][bodyguardslotUse]] && RELEASED(KEY_WALK) *then
+	if safeguardSpawned[playerid][Bodyguard[playerid][bodyguardslotUse]] && RELEASED(KEY_WALK) *then
 	    if safeguardAnim[playerid] *then
-	        FCNPC_ClearAnimations(Bodyguard[playerid][bodyguardNpcId]), safeguardAnim[playerid] = false;*/
+	        FCNPC_ClearAnimations(Bodyguard[playerid][bodyguardNpcId]), safeguardAnim[playerid] = false;
 
 	if(RELEASED(KEY_WALK) && !AnimPlayed{playerid} && PI[playerid][pStyleXod]) ClearAnimationsEx(playerid);
 	//
@@ -34425,11 +34434,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		case 25759:
 		{
 			new
-				slot = safeguardType[playerid];
-//				npcid = Bodyguard[playerid][bodyguardNpcId];
+				slot = safeguardType[playerid],
+				npcid = Bodyguard[playerid][bodyguardNpcId];
 
-//			if(npcid != INVALID_PLAYER_ID)
-//				return SCM(playerid, COLOR_RED, "[Klaida] {ffffff}Pirmiausia reikia pasalinti apsaugininka is serverio.");
+			if(npcid != INVALID_PLAYER_ID)
+				return SCM(playerid, COLOR_RED, "[Klaida] {ffffff}Pirmiausia reikia pasalinti apsaugininka is serverio.");
 
 			GetPVarString(playerid, "safeguardNickName", safeguardNickName[playerid][slot], 24);
 
@@ -34523,8 +34532,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	       	new
 				id,
 				price,
-				type = safeguardType[playerid];
-//				npcid = Bodyguard[playerid][bodyguardNpcId];
+				type = safeguardType[playerid],
+				npcid = Bodyguard[playerid][bodyguardNpcId];
 
 	        sscanf(inputtextsave, "p<,>dd", id, price);
 
@@ -34551,7 +34560,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 			static const BodyguardTypeNum[][] = {"{AAAAAA}Iprastas", "{68FE40}Neiprastas", "{25CAFF}Retas", "{D239CC}Unikalus"};
 
-/*			SPDF(id, 25764, 0, !"Apsaugininko pirkimas", "{ffffff}\
+			SPDF(id, 25764, 0, !"Apsaugininko pirkimas", "{ffffff}\
 				%s nori parduoti jums savo apsaugininka\nKaina: $%d\n{ff8000}Informacija apie apsaugininka:{ffffff}\n\n\
 				Apsaugininko vardas: {b83434}[%s]\n{ffffff}Tipas: {b83434}%s{ffffff}\n\n\
 				Lygis: {b83434}[%d]\n{ffffff}EXP: {b83434}[%d/%d]{ffffff}\n\
@@ -34559,14 +34568,14 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				Sotumas: {b83434}[100/100.0]{ffffff}\n\nApsauga: {b83434}[-%d% zalos]{ffffff}\n\
 				Zala: {b83434}[+%d zalos]{ffffff}\nMaks. HP: {b83434}[+%d maks. HP]", !"Nusipirkti", !"Atsaukti", PN(playerid), price, safeguardNickName[playerid][type], BodyguardTypeNum[safeguardTall[playerid][type][0]],\
 				safeguardData[playerid][type][0], safeguardData[playerid][type][1], (safeguardData[playerid][type][0]+1)*4,\
-				FCNPC_GetHealth(npcid), FCNPC_GetArmour(npcid), safeguardFeature[playerid][type][1], safeguardFeature[playerid][type][2], safeguardFeature[playerid][type][0]);*/
+				FCNPC_GetHealth(npcid), FCNPC_GetArmour(npcid), safeguardFeature[playerid][type][1], safeguardFeature[playerid][type][2], safeguardFeature[playerid][type][0]);
 		}
 		case 25764:
 		{
 		    new
 				id = bodyguardOffer[playerid][bodygyardType[playerid]],
-				slot = safeguardType[id];
-      //			npcid = Bodyguard[id][bodyguardNpcId];
+				slot = safeguardType[id],
+      			npcid = Bodyguard[id][bodyguardNpcId];
 
 			if !response *then
 			{
@@ -34588,13 +34597,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			SCMF(playerid, COLOR_LIGHTBLUE, "[Informacija] {ffffff}Jus nupirkote apsaugininka is zaidejo %s uz $%d is ju $%d komisija.", PN(id), bodyguardSell[playerid][slot], 0);
 			SCMF(id, COLOR_LIGHTBLUE, "[Informacija] {ffffff}Zaidejas %s nupirko is jusu apsaugininka uz $%d", PN(playerid), bodyguardSell[playerid][slot]);
 
-/*			if(npcid != INVALID_PLAYER_ID)
+			if(npcid != INVALID_PLAYER_ID)
 			{
 				for(new i; i < safebodyguardCount[id]; i++)
 					if(FCNPC_IsValid(npcid))
 						safeguardType[id] = i,
 							BodyguardMain(id, 1, safeguardType[playerid]);
-			}*/
+			}
 
 			PI[playerid][pSafeGuardCount] ++;
 			SQL("UPDATE `accounts` SET `SafeGuardCount` = '%d' WHERE `ID` = '%d'", PI[playerid][pSafeGuardCount], PI[playerid][pID]);
@@ -34623,8 +34632,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				return false;
 
             new
-				slot = safeguardType[playerid];
-//				npcid = Bodyguard[playerid][bodyguardNpcId];
+				slot = safeguardType[playerid],
+				npcid = Bodyguard[playerid][bodyguardNpcId];
 
 			switch(listitem)
 			{
@@ -34646,7 +34655,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 							return SPD(playerid, 0, DIALOG_STYLE_MSGBOX, !"Apsaugininko iskvietimas", !"{FFFFFF}Apsaugininko iskvietimas vyksta!\n\n{FF5733}Nebandykite nutraukti animacijos ir nepalikti iskvietimo vietos,\napsaugininkas gali nepasirodyti!", !"Iseiti", !"");
 						}
-//						else return BodyguardMain(playerid, 1, safeguardType[playerid]);
+						else return BodyguardMain(playerid, 1, safeguardType[playerid]);
 					}
 				}
 				case 1:
@@ -34680,14 +34689,14 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				}
 				case 6:
 				{
-			/*	if(npcid != INVALID_PLAYER_ID)
+				if(npcid != INVALID_PLAYER_ID)
 					{
 					    for(new i; i < safebodyguardCount[playerid]; i++)
 							if(FCNPC_IsValid(npcid))
 								safeguardType[playerid] = i,
 									BodyguardMain(playerid, 1, safeguardType[playerid]);
 					}
-*/
+
 					SQL("DELETE FROM `Bodyguard` WHERE `safeguardSearch` = '%s[%d]' AND `safeguardNickName` = '%s'", PN(playerid), slot, safeguardNickName[playerid][slot]);
 					safebodyguardCount[playerid]--;
 
@@ -34854,9 +34863,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				AnimPlayComFirst[][] = {!"GANGS", !"GANGS", !"DEALER", !"CAMERA", !"KISSING", !"ON_LOOKERS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"GANGS", !"MISC", !"CASINO", !"GANGS", !"GANGS", !"GANGS", !"KISSING", !"PED", !"PED"},
             	AnimPlayComSecond[][] = {!"INVITE_YES", !"INVITE_NO", !"DEALER_IDLE_02", !"CAMSTND_CMON", !"GFWAVE2", !"WAVE_LOOP", !"HNDSHKCB", !"HNDSHKFA", !"HNDSHKFA_SWT", !"HNDSHKDA", !"HNDSHKEA", !"HNDSHKAA", !"HNDSHKBA", !"HNDSHKCA", !"PRTIAL_GNGTLKC", !"PRTIAL_GNGTLKD", !"PRTIAL_GNGTLKE", !"PRTIAL_GNGTLKF", !"PRTIAL_GNGTLKA", !"PRTIAL_GNGTLKB", !"PRTIAL_GNGTLKH", !"IDLE_CHAT_02", !"CARDS_PICK_02", !"PRTIAL_GNGTLKA", !"PRTIAL_GNGTLKB", !"PRTIAL_GNGTLKG", !"GF_STREETARGUE_01", !"ENDCHAT_01", !"ENDCHAT_03"};
 
-//            new npcid = Bodyguard[playerid][bodyguardNpcId];
+            new npcid = Bodyguard[playerid][bodyguardNpcId];
 
-//            FCNPC_ApplyAnimation(npcid, AnimPlayComFirst[listitem], AnimPlayComSecond[listitem], 4.1, 1, 0, 0, 0, 0);
+            FCNPC_ApplyAnimation(npcid, AnimPlayComFirst[listitem], AnimPlayComSecond[listitem], 4.1, 1, 0, 0, 0, 0);
 
             safeguardAnim[playerid] = true;
 
@@ -34870,9 +34879,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		        AnimPlayAcFirst[][] = {!"KISSING", !"GANGS", !"PED", !"CAR", !"INT_HOUSE", !"GANGS", !"DEALER", !"SHOP", !"SHOP", !"DEALER", !"CASINO", !"CLOTHES", !"DEALER", !"PED", !"DEALER", !"PAULNMAC", !"PAULNMAC", !"MISC", !"LOWRIDER", !"GANGS", !"POLICE", !"PLAYIDLES", !"BENCHPRESS", !"BOMBER", !"CARRY", !"CARRY", !"CASINO", !"CASINO", !"BAR", !"BSKTBALL", !"COP_AMBIENT", !"COP_AMBIENT"},
 		        AnimPlayAcSecond[][] = {!"GIFT_GIVE", !"SHAKE_CARSH", !"IDLE_TAXI", !"FLAG_DROP", !"WASH_UP", !"SMKCIG_PRTL", !"SHOP_PAY", !"ROB_LOOP_THREAT", !"SHP_ROB_HANDSUP", !"DEALER_DEAL", !"CARDS_LOOP", !"CLO_POSE_LOOP", !"DEALER_IDLE", !"ROADCROSS", !"DEALER_IDLE_01", !"PISS_OUT", !"PISS_IN", !"SCRATCHBALLS_01", !"PRTIAL_GNGTLKE", !"SHAKE_CARK", !"DOOR_KICK", !"STRETCH", !"GYM_BP_CELEBRATE", !"BOM_PLANT", !"PUTDWN", !"LIFTUP", !"CARDS_RAISE", !"CARDS_WIN", !"BARSERVE_BOTTLE", !"BBALL_JUMP_SHOT", !"COPBROWSE_NOD", !"COPBROWSE_SHAKE"};
 
-//		    new npcid = Bodyguard[playerid][bodyguardNpcId];
+		    new npcid = Bodyguard[playerid][bodyguardNpcId];
 
-//           	FCNPC_ApplyAnimation(npcid, AnimPlayAcFirst[listitem], AnimPlayAcSecond[listitem], 4.1, 1, 0, 0, 0, 0);
+           	FCNPC_ApplyAnimation(npcid, AnimPlayAcFirst[listitem], AnimPlayAcSecond[listitem], 4.1, 1, 0, 0, 0, 0);
 
             safeguardAnim[playerid] = true;
 
@@ -34886,9 +34895,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		        AnimPlayGesFirst[][] = {!"PED", !"GHANDS", !"GHANDS", !"GHANDS", !"GHANDS", !"GHANDS", !"GHANDS", !"GHANDS", !"GHANDS", !"GHANDS", !"GHANDS"},
 		        AnimPlayGesSecond[][] = {!"FUCKU", !"GSIGN2LH", !"GSIGN3", !"GSIGN5", !"GSIGN3LH", !"GSIGN1", !"GSIGN4LH", !"GSIGN1LH", !"GSIGN2", !"GSIGN5LH", !"GSIGN4"};
 
-//		    new npcid = Bodyguard[playerid][bodyguardNpcId];
+		    new npcid = Bodyguard[playerid][bodyguardNpcId];
 
-//            FCNPC_ApplyAnimation(npcid, AnimPlayGesFirst[listitem], AnimPlayGesSecond[listitem], 4.1, 1, 0, 0, 0, 0);
+            FCNPC_ApplyAnimation(npcid, AnimPlayGesFirst[listitem], AnimPlayGesSecond[listitem], 4.1, 1, 0, 0, 0, 0);
 
             safeguardAnim[playerid] = true;
 
@@ -34902,9 +34911,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				AnimPlayRackFirst[][] = {!"COP_AMBIENT", !"COP_AMBIENT", !"PLAYIDLES", !"GANGS", !"MISC", !"COP_AMBIENT", !"CAMERA", !"BD_FIRE", !"LOWRIDER", !"CRACK", !"CRACK", !"GRAVEYARD", !"GRAVEYARD", !"OTB", !"PLAYIDLES", !"BAR", !"HEIST9", !"HEIST9"},
 				AnimPlayRackSecond[][] = {!"COPLOOK_LOOP", !"COPLOOK_SHAKE", !"TIME", !"LEANIDLE", !"PLYRLEAN_LOOP", !"COPLOOK_THINK", !"CAMSTND_IDLELOOP", !"M_SMKLEAN_LOOP", !"M_SMKLEAN_LOOP", !"BBALBAT_IDLE_01", !"BBALBAT_IDLE_02", !"MRNM_LOOP", !"PRST_LOOPA", !"WTCHRACE_LOOP", !"SHIFT", !"BARMAN_IDLE", !"SWT_WLLPK_L", !"SWT_WLLPK_R"};
 
-//		    new npcid = Bodyguard[playerid][bodyguardNpcId];
+		    new npcid = Bodyguard[playerid][bodyguardNpcId];
 
-//            FCNPC_ApplyAnimation(npcid, AnimPlayRackFirst[listitem], AnimPlayRackSecond[listitem], 4.1, 1, 0, 0, 0, 0);
+            FCNPC_ApplyAnimation(npcid, AnimPlayRackFirst[listitem], AnimPlayRackSecond[listitem], 4.1, 1, 0, 0, 0, 0);
 
             safeguardAnim[playerid] = true;
 
@@ -34918,9 +34927,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		    	AnimPlayReacFirst[][] = {!"CRIB", !"CASINO", !"OTB", !"FOOD", !"FOOD", !"ON_LOOKERS", !"MISC", !"ON_LOOKERS"},
 		    	AnimPlayReacSecond[][] = {!"PED_CONSOLE_WIN", !"MANWIND", !"WTCHRACE_CMON", !"EAT_VOMIT_P", !"EAT_VOMIT_SK", !"PANIC_POINT", !"PLYR_SHKHEAD", !"PANIC_HIDE"};
 
-//		    new npcid = Bodyguard[playerid][bodyguardNpcId];
+		    new npcid = Bodyguard[playerid][bodyguardNpcId];
 
-//            FCNPC_ApplyAnimation(npcid, AnimPlayReacFirst[listitem], AnimPlayReacSecond[listitem], 4.1, 1, 0, 0, 0, 0);
+            FCNPC_ApplyAnimation(npcid, AnimPlayReacFirst[listitem], AnimPlayReacSecond[listitem], 4.1, 1, 0, 0, 0, 0);
 
             safeguardAnim[playerid] = true;
 
@@ -34934,9 +34943,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			    AnimPlayRestFirst[][] = {!"PED", !"JST_BUISNESS", !"INT_HOUSE", !"ATTRACTORS", !"CAMERA", !"PED", !"BEACH", !"INT_OFFICE", !"BEACH", !"BEACH", !"CRACK", !"CRACK", !"CRACK"},
 			    AnimPlayRestSecond[][] = {!"SEAT_IDLE", !"GIRL_02", !"LOU_LOOP", !"STEPSIT_LOOP", !"CAMCRCH_IDLELOOP", !"SEAT_down", !"PARKSIT_M_LOOP", !"OFF_SIT_BORED_LOOP", !"LAY_BAC_LOOP", !"PARKSIT_W_LOOP", !"CRCKIDLE1", !"CRCKIDLE2", !"CRCKIDLE4"};
 
-//		    new npcid = Bodyguard[playerid][bodyguardNpcId];
+		    new npcid = Bodyguard[playerid][bodyguardNpcId];
 
-//            FCNPC_ApplyAnimation(npcid, AnimPlayRestFirst[listitem], AnimPlayRestSecond[listitem], 4.1, 1, 0, 0, 0, 0);
+            FCNPC_ApplyAnimation(npcid, AnimPlayRestFirst[listitem], AnimPlayRestSecond[listitem], 4.1, 1, 0, 0, 0, 0);
 
             safeguardAnim[playerid] = true;
    		}
@@ -34948,9 +34957,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			    AnimPlayEntFirst[][] = {!"DANCING", !"DANCING", !"DANCING", !"DANCING", !"DANCING", !"DANCING", !"DANCING", !"DANCING", !"DANCING", !"DANCING", !"DANCING"},
 			    AnimPlayEntSecond[][] = {!"DANCE_LOOP", !"DAN_DOWN_A", !"DAN_LEFT_A", !"DAN_LOOP_A", !"DAN_RIGHT_A", !"DAN_UP_A", !"DNCE_M_A", !"DNCE_M_B", !"DNCE_M_C", !"DNCE_M_D", !"DNCE_M_E"};
 
-//		    new npcid = Bodyguard[playerid][bodyguardNpcId];
+		    new npcid = Bodyguard[playerid][bodyguardNpcId];
 
-//            FCNPC_ApplyAnimation(npcid, AnimPlayEntFirst[listitem], AnimPlayEntSecond[listitem], 4.1, 1, 0, 0, 0, 0);
+            FCNPC_ApplyAnimation(npcid, AnimPlayEntFirst[listitem], AnimPlayEntSecond[listitem], 4.1, 1, 0, 0, 0, 0);
 
             safeguardAnim[playerid] = true;
 
@@ -34964,15 +34973,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				AnimPlayBeiFirst[][] = {!"SWEET", !"CRACK", !"CRACK", !"MEDIC"},
 				AniomPlayBeiSecond[][] = {!"SWEET_INJUREDLOOP", !"CRCKDETH2", !"CRCKDETH1", !"CPR"};
 
-//		    new npcid = Bodyguard[playerid][bodyguardNpcId];
+		    new npcid = Bodyguard[playerid][bodyguardNpcId];
 
-//            FCNPC_ApplyAnimation(npcid, AnimPlayBeiFirst[listitem], AniomPlayBeiSecond[listitem], 4.1, 1, 0, 0, 0, 0);
+            FCNPC_ApplyAnimation(npcid, AnimPlayBeiFirst[listitem], AniomPlayBeiSecond[listitem], 4.1, 1, 0, 0, 0, 0);
 
             safeguardAnim[playerid] = true;
 
             SCM(playerid, COLOR_VALIK, "[Informacija]{ffffff} Noredami uzbaigti animacija, paspauskite 'ALT' !");
 		}
-/*	case 25792:
+	case 25792:
 		{
 		    if !response *then return false;
 
@@ -35087,7 +35096,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
             safeguardAnim[playerid] = true;
 
             SCM(playerid, COLOR_VALIK, "[Informacija]{ffffff} Noredami uzbaigti animacija, paspauskite'ALT' !");
-		}*/
+		}
 		case 18371:
 		{
 			if(response)
@@ -62952,10 +62961,9 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 			else if(playertextid == BodyguardSkinsTextDraws[playerid][i][1])
 			{
 			    static const BodyguardTypeName[][] = {"{AAAAAA}Paprastas", "{68FE40}Nepaprastas", "{25CAFF}Retas", "{D239CC}Unikalus"};
-//			    new npcid = Bodyguard[playerid][bodyguardNpcId];
+			    new npcid = Bodyguard[playerid][bodyguardNpcId];
 
-				return 1;
-/*				SPDF(playerid, 0, 0, !"Informacija apie palydova", \
+				return SPDF(playerid, 0, 0, !"Informacija apie palydova", \
 				"{ffffff}\
 				Palydovo vardas: {b83434}[%s]\n{ffffff}Tipas: {b83434}%s{ffffff}\n\n\
 				Lygis: {b83434}[%d]\n{ffffff}EXP: {b83434}[%d/%d]{ffffff}\n\
@@ -62969,16 +62977,16 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				FCNPC_GetArmour(npcid),\
 				safeguardFeature[playerid][i][1],\
 				safeguardFeature[playerid][i][2],\
-				safeguardFeature[playerid][i][0]);*/
+				safeguardFeature[playerid][i][0]);
 			}
 			else if playertextid == BodyguardWeaponTextDraws[playerid][i][0] *then
 			{
-//			    new npcid = Bodyguard[playerid][bodyguardNpcId];
+			    new npcid = Bodyguard[playerid][bodyguardNpcId];
 			    if safeguardGun[playerid][i] != 0 *then
 			    {
 					AddItem(playerid, safeguardGun[playerid][i], safeguardGunAmmo[playerid][i]);
 					safeguardGun[playerid][i] = safeguardGunAmmo[playerid][i] = 0;
-//					FCNPC_SetWeapon(npcid, 0);
+					FCNPC_SetWeapon(npcid, 0);
 
 					new item = safeguardGunAmmo[playerid][i];
 
@@ -65897,10 +65905,12 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 									new Float:X,Float:Y,Float:Z, model = CarInfo[vehId][InvCar][slot];
 
 									EditObjectPlayer[playerid] = CreateDynamicObject(18698, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1,-1,-1, 300.0, 300.0);//2); //Kuriame objekta
+									new Float:vA;
 									GetVehiclePos(veh, X,Y,Z);
+									GetVehicleZAngle(veh, vA);
 									SetDynamicObjectPos(EditObjectPlayer[playerid], X,Y,Z);
-									GetVehicleRot(veh, X,Y,Z);
-									SetDynamicObjectRot(EditObjectPlayer[playerid], X,Y,Z);
+									SetDynamicObjectRot(EditObjectPlayer[playerid], 0.0, 0.0, vA);
+									AVEditPos[playerid][0] = AVEditPos[playerid][1] = AVEditPos[playerid][2] = 0.0;
 									EditDynamicObject(playerid, EditObjectPlayer[playerid]);
 
 									SetPVarInt(playerid, "InstallVehTun", slot + 1);
@@ -65919,7 +65929,8 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 									}
 									//
 
-									return AttachObjectToVehicle(TunInvCar[veh][slot], veh, AVEditPos[playerid][0], AVEditPos[playerid][1], AVEditPos[playerid][2], X,Y,Z);
+									AttachDynamicObjectToVehicle(TunInvCar[veh][slot], veh, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+									return Streamer_Update(playerid, STREAMER_TYPE_OBJECT);
 								}
 							}
 						}
@@ -67346,7 +67357,7 @@ public: OnPlayerLoadData(playerid)
 
 	if PI[playerid][pSafeGuardCount] != -1 *then
     	BodyguardType[playerid] = PI[playerid][pSafeGuardCount]+1,
-//			BodyguardMain(playerid, 2, BodyguardType[playerid]);
+			BodyguardMain(playerid, 2, BodyguardType[playerid]);
 
 	SetPlayerScore(playerid, PI[playerid][pLevel]);
 	GivePlayerMoney(playerid, PI[playerid][pMoney]);
@@ -67911,14 +67922,15 @@ public OnPlayerEditDynamicObject(playerid, objectid, response, Float:x, Float:y,
 			if(!IsPlayerInHisVehicle(playerid)) return DeletePVar(playerid, "InstallVehTun");
 			if !IsPlayerInRangeOfPoint(playerid, 5.0, x,y,z) *then return DeletePVar(playerid, "InstallVehTun");
 
-			new Float:rotC[3], vehId = GetVehicleID(GetPlayerVehicleID(playerid));
-			GetVehicleRot(GetPlayerVehicleID(playerid), rotC[0],rotC[1],rotC[2]);
-			CarInfo[vehId][TunPosX][Int_GetPlayerData(playerid, "InstallVehTun")-1] = AVEditPos[playerid][0];
-			CarInfo[vehId][TunPosY][Int_GetPlayerData(playerid, "InstallVehTun")-1] = AVEditPos[playerid][1];
-			CarInfo[vehId][TunPosZ][Int_GetPlayerData(playerid, "InstallVehTun")-1] = AVEditPos[playerid][2];
-			CarInfo[vehId][TunRotX][Int_GetPlayerData(playerid, "InstallVehTun")-1] = rx;//-rotC[0];
-			CarInfo[vehId][TunRotY][Int_GetPlayerData(playerid, "InstallVehTun")-1] = ry-rotC[1];
-			CarInfo[vehId][TunRotZ][Int_GetPlayerData(playerid, "InstallVehTun")-1] = rz-rotC[2];
+			new vehId = GetVehicleID(GetPlayerVehicleID(playerid)), tslot = Int_GetPlayerData(playerid, "InstallVehTun")-1;
+			new Float:lo[6];
+			VehTun_WorldToLocal(GetPlayerVehicleID(playerid), x, y, z, rx, ry, rz, lo[0], lo[1], lo[2], lo[3], lo[4], lo[5]);
+			CarInfo[vehId][TunPosX][tslot] = lo[0];
+			CarInfo[vehId][TunPosY][tslot] = lo[1];
+			CarInfo[vehId][TunPosZ][tslot] = lo[2];
+			CarInfo[vehId][TunRotX][tslot] = lo[3];
+			CarInfo[vehId][TunRotY][tslot] = lo[4];
+			CarInfo[vehId][TunRotZ][tslot] = lo[5];
 			InstallTun(GetPlayerVehicleID(playerid), Int_GetPlayerData(playerid, "InstallVehTun")-1, 0);
 			SaveTunInv(GetPlayerVehicleID(playerid));
 			Streamer_Update(playerid);
@@ -67971,6 +67983,14 @@ public OnPlayerEditDynamicObject(playerid, objectid, response, Float:x, Float:y,
 	}
 	else if response == EDIT_RESPONSE_CANCEL *then
     {
+		if Int_GetPlayerData(playerid, "InstallVehTun") *then
+		{
+			// atsaukus - grazinam detale i issaugota vieta
+			DestroyDynamicObjectModel(-1, EditObjectPlayer[playerid], 18698);
+			if IsPlayerInAnyVehicle(playerid) *then InstallTun(GetPlayerVehicleID(playerid), Int_GetPlayerData(playerid, "InstallVehTun")-1, 0);
+			DeletePVar(playerid, "InstallVehTun");
+			Streamer_Update(playerid);
+		}
     	if Int_GetPlayerData(playerid, "install_house_obj") *then
 			DeletePVar(playerid, "install_house_obj"),
 			DestroyObject(EditObjectPlayer[playerid]);
@@ -67999,34 +68019,12 @@ public OnPlayerEditDynamicObject(playerid, objectid, response, Float:x, Float:y,
 		if Int_GetPlayerData(playerid, "InstallVehTun") *then
 		{
 			if !IsValidDynamicObject(EditObjectPlayer[playerid]) *then return 0;
-			new Float:A,Float:X,Float:Y,Float:Z,vehicleid = GetPlayerVehicleID(playerid);
-			GetVehicleZAngle(vehicleid, A);
-			GetVehiclePos(vehicleid, X,Y,Z);
-			if(A > 225.0000 && A < 350.0000){
-				AVEditPos[playerid][0] = -(y-Y);
-				AVEditPos[playerid][1] = (x-X);
-			}
-			else if(A > 90.0000 && A < 135.0000)
-			{
-				AVEditPos[playerid][0] = (y-Y);
-				AVEditPos[playerid][1] = (X-x);
-			}
-			else if(A > 135.0000 && A < 225.0000){
-				AVEditPos[playerid][0] = (x-X);
-				AVEditPos[playerid][1] = (y-Y);
-			}
-			else if(A > 0.0000 && A < 90.0000){
-				AVEditPos[playerid][0] = (y-Y);
-				AVEditPos[playerid][1] = -(x-X);
-			}
-			else{
-				AVEditPos[playerid][0] = (x-X);
-				AVEditPos[playerid][1] = (y-Y);
-			}
-			AVEditPos[playerid][2] = (z-Z);
-			new Float:rotC[3];
-			GetVehicleRot(vehicleid, rotC[0],rotC[1],rotC[2]);
-			UpdateAttachedVehicleObject(TunInvCar[vehicleid][Int_GetPlayerData(playerid, "InstallVehTun")-1], AVEditPos[playerid][0], AVEditPos[playerid][1], AVEditPos[playerid][2], rx,ry-rotC[1],rz-rotC[2]);
+			new vehicleid = GetPlayerVehicleID(playerid), tslot = Int_GetPlayerData(playerid, "InstallVehTun")-1;
+			new Float:lo[6];
+			VehTun_WorldToLocal(vehicleid, x, y, z, rx, ry, rz, lo[0], lo[1], lo[2], lo[3], lo[4], lo[5]);
+			AVEditPos[playerid][0] = lo[0], AVEditPos[playerid][1] = lo[1], AVEditPos[playerid][2] = lo[2];
+			// pervaziuojam prikabinima, kad zaidejas iskart matytu tikra vieta ant masinos
+			AttachDynamicObjectToVehicle(TunInvCar[vehicleid][tslot], vehicleid, lo[0], lo[1], lo[2], lo[3], lo[4], lo[5]);
 		}
 	}
 	else if Int_GetPlayerData(playerid, "InstallVehTun") *then
@@ -69514,7 +69512,7 @@ stock UpdatePlayers()
 					UpdateDynamic3DTextLabelText(globalTun_Label3D, -1, "Noredami ivaziuoti i garaza\n{70CFFA}Naudokite: {ffffff}ALT\n\nSiuo metu custom tuning veikia tik per PC Launcher (atsisiusti Launcher: "Mode_Site")\nNoredami rodyti tuning meniu Launcherio nustatymuose, patikrinkite, ar ijungta funkcija - \"Nauja autorizacija\"!\n\n{ff0000}Po ivaziavimo butinai palaukite, kol isikraus Interface!");
 			    }
 			}
-			if !IsPlayerInRangeOfPoint(playerid, 30.0, 2172.2666,-1044.0470,93.7558) && IsPlayerNPC(playerid) && !IsPlayerLogged{playerid} *then
+			if !IsPlayerInRangeOfPoint(playerid, 30.0, 2172.2666,-1044.0470,93.7558) && IsPlayerNPC(playerid) && !FCNPC_IsValid(playerid) && !IsPlayerLogged{playerid} *then
 				SCM(playerid, -1, "Ivyko klaida, jus buvote ismestas || csac #777"), Kick(playerid);
 
 			if(server_fix_one[playerid] > 0)
@@ -69628,7 +69626,7 @@ stock UpdatePlayers()
 				{
 					SetPlayerSpecialAction(playerid, SPECIAL_ACTION_STOPUSECELLPHONE);
 					RemovePlayerAttachedObject(playerid, 6);
-//					BodyguardMain(playerid, 0, safeguardNickName[playerid][safeguardType[playerid]], safeguardType[playerid]);
+					BodyguardMain(playerid, 0, safeguardNickName[playerid][safeguardType[playerid]], safeguardType[playerid]);
 				}
 			}
 			for new i; i < OWNABLESKLADS; i ++ do
@@ -74561,7 +74559,7 @@ stock IsKonflictItem(itemid)
 	}
 	return false;
 }
-/*public FCNPC_OnUpdate(npcid)
+public FCNPC_OnUpdate(npcid)
 {
     new
 		Float:X, Float:Y, Float:Z,
@@ -74705,9 +74703,9 @@ public FCNPC_OnDeath(npcid, killerid, reason)
 {
 
 	return 1;
-}*/
+}
 
-/*stock BodyguardMain(playerid, mainId, data[] = "undefined", num = -1, numrep = -1)
+stock BodyguardMain(playerid, mainId, data[] = "undefined", num = -1, numrep = -1)
 {
     new type = data[0];
 	switch(mainId)
@@ -74719,19 +74717,31 @@ public FCNPC_OnDeath(npcid, killerid, reason)
 	        if(sscanf(data, "s[24]", data[0]))
 				return SCM(playerid, COLOR_RED, "[Klaida] {ffffff}Kuriant apsaugininka ivyko nezinoma klaida!");
 
-			f(global_str, 24, "%s(%d)", data[0], playerid);
-			new npcid = 0;
-//			FCNPC_Create(global_str);
+			// NPC vardas: max 24 simboliai, tik leistini simboliai
+			new bgname[MAX_PLAYER_NAME], bgn = 0;
+			for(new c = 0; data[c] != EOS && bgn < 16; c++)
+			{
+				switch(data[c])
+				{
+					case 'A'..'Z', 'a'..'z', '0'..'9', '_': bgname[bgn++] = data[c];
+				}
+			}
+			bgname[bgn] = EOS;
+			if(!bgn) bgname = "Guard";
+			f(global_str, 24, "%s_%d", bgname, playerid);
+			new npcid = FCNPC_Create(global_str);
+			if(npcid == INVALID_PLAYER_ID || !FCNPC_IsValid(npcid))
+				return SCM(playerid, COLOR_RED, "[Klaida] {ffffff}Nepavyko iskviesti apsaugininko (serveryje nera laisvu NPC vietu - padidinkite maxnpc server.cfg).");
 
             new Float:X, Float:Y, Float:Z, Float:A;
 			GetPlayerPos(playerid, X, Y, Z);
 			GetPlayerFacingAngle(playerid, A);
 
-//			FCNPC_Spawn(npcid, 163 + random(4), 0.0, 0.0, Z);
-//			FCNPC_SetAngleToPlayer(npcid, playerid);
+			FCNPC_Spawn(npcid, safeguardTall[playerid][num][1] > 0 ? safeguardTall[playerid][num][1] : 163 + random(4), X + 1.0 * floatsin(-(A + 90.0), degrees), Y + 1.0 * floatcos(-(A + 90.0), degrees), Z);
+			FCNPC_SetAngleToPlayer(npcid, playerid);
 
-//			FCNPC_SetVirtualWorld(npcid, GetPlayerVirtualWorld(playerid));
-//			FCNPC_SetInterior(npcid, GetPlayerInterior(playerid));
+			FCNPC_SetVirtualWorld(npcid, GetPlayerVirtualWorld(playerid));
+			FCNPC_SetInterior(npcid, GetPlayerInterior(playerid));
 
 			SetPlayerColor(npcid, 0xffffff00);
 
@@ -74750,7 +74760,7 @@ public FCNPC_OnDeath(npcid, killerid, reason)
 
 			for new i; i < 53; i++ do EnableAntiCheatForPlayer(npcid, i, 0);
 
-//			FCNPC_SetHealth(npcid, float( safeguardFeature[playerid][num][0] ));
+			FCNPC_SetHealth(npcid, float( safeguardFeature[playerid][num][0] ));
 
 			if(BodyguardOpen{playerid})
 				for(new i; i < 3; i++)
@@ -74770,9 +74780,9 @@ public FCNPC_OnDeath(npcid, killerid, reason)
 
 			safeguardSpawned[playerid][type] = false;
 
-//			FCNPC_Destroy(npcid);
+			FCNPC_Destroy(npcid);
 
-			//Bodyguard[playerid][bodyguardNpcId] = Bodyguard[npcid][bodyguardPlayerId] = Bodyguard[npcid][bodyguardAttackId] = INVALID_PLAYER_ID;
+			Bodyguard[playerid][bodyguardNpcId] = Bodyguard[npcid][bodyguardPlayerId] = Bodyguard[npcid][bodyguardAttackId] = INVALID_PLAYER_ID;
 			Bodyguard[npcid][bodyguardType] = safeguardAnim[playerid] = false;
 
 			if(BodyguardOpen{playerid})
@@ -74861,7 +74871,7 @@ public FCNPC_OnDeath(npcid, killerid, reason)
 	}
 
 	return 1;
-}*/
+}
 
 public: SpawnReplic(playerid, num) SetPlayerChatBubble(Bodyguard[playerid][bodyguardNpcId], ReplicBodyguard[playerid][num][5], COLOR_WHITE, 10.0, 5000);
 
@@ -75253,21 +75263,21 @@ stock UpdateBodyguardTextDraw(playerid, textdrawId)
 			{
 				if safeguardSpawned[playerid][i] *then
 				{
-//     				npcid = Bodyguard[playerid][bodyguardNpcId];
+     				npcid = Bodyguard[playerid][bodyguardNpcId];
 
 					for new id; id < 3; id++ do
 					{
-/*						switch id do
+						switch id do
 						{
 							case 0:
-//								PlayerTextDrawSetString(playerid, BodyguardSpawnedTextDraws[playerid][i][id], (str_f("hp. %.0f", FCNPC_GetHealth(npcid))));
+								PlayerTextDrawSetString(playerid, BodyguardSpawnedTextDraws[playerid][i][id], (str_f("hp. %.0f", FCNPC_GetHealth(npcid))));
 
 							case 1:
 								PlayerTextDrawSetString(playerid, BodyguardSpawnedTextDraws[playerid][i][id], (str_f("%d", safeguardFood[playerid][i])));
 
 							case 2:
-//								PlayerTextDrawSetString(playerid, BodyguardSpawnedTextDraws[playerid][i][id], (str_f("%.0f", FCNPC_GetArmour(npcid))));
-						}*/
+								PlayerTextDrawSetString(playerid, BodyguardSpawnedTextDraws[playerid][i][id], (str_f("%.0f", FCNPC_GetArmour(npcid))));
+						}
 
 						PlayerTextDrawShow(playerid, BodyguardSpawnedTextDraws[playerid][i][id]);
 					}
@@ -75353,7 +75363,7 @@ stock CreateBodyguardBackGround(playerid, Float:Pos[], type)
 public: @LoadPlayerBodyguards(playerid)
 {
     BodyguardType[playerid] = PI[playerid][pSafeGuardCount]+1;
-//	BodyguardMain(playerid, 2, BodyguardType[playerid]);
+	BodyguardMain(playerid, 2, BodyguardType[playerid]);
 
 	if(BodyguardOpen{playerid})
 		for(new i; i < 4; i++)
@@ -75368,8 +75378,8 @@ stock GiveWeaponBodyguard(playerid, item, count = 1, slot, type = 0)
 
 	static const GuardWeap[] = {24, 25, 29, 30, 31, 33};
 
-//	FCNPC_SetWeapon(npcid, GuardWeap[item-531]);
-//	FCNPC_GiveAmmo(npcid, count);
+	FCNPC_SetWeapon(npcid, GuardWeap[item-531]);
+	FCNPC_GiveAmmo(npcid, count);
 
 	if type *then
 	{
@@ -75380,7 +75390,7 @@ stock GiveWeaponBodyguard(playerid, item, count = 1, slot, type = 0)
 		PlayerTextDrawSetPreviewRot(playerid, BodyguardWeaponTextDraws[playerid][slot][0], ItemsInfo[item][POSTDx], ItemsInfo[item][POSTDy], ItemsInfo[item][POSTDz], ItemsInfo[item][POSTDc]);
 		ShowPlayerTD(playerid, BodyguardWeaponTextDraws[playerid][slot][0]);
 		ApplyAnimationEx(npcid, "RIFLE", "RIFLE_load", 4.0, 0, 0, 0, 0, 0, 1);
-//		BodyguardMain(playerid, 4, Bodyguard[playerid][bodyguardslotUse], -1, 7);
+		BodyguardMain(playerid, 4, Bodyguard[playerid][bodyguardslotUse], -1, 7);
 		DeleteItem(playerid, item, count);
 		timeaks[playerid] = 0;
 		SCMF(playerid, COLOR_VALIK, "[Informacija] {FFFFFF}Jus perdavete ginkla %s (%i sov) jusu apsauginiui %s!", ItemsInfo[item][ItemNameLavka], count, safeguardNickName[playerid][slot]);
@@ -75401,7 +75411,7 @@ stock AddBodyguardItem(playerid, item, npcid, slot, say)
 	{
 		case 314:
 	    {
-/*			if FCNPC_GetHealth(npcid) >= safeguardFeature[playerid][slot][0] *then
+			if FCNPC_GetHealth(npcid) >= safeguardFeature[playerid][slot][0] *then
 		    {
 				if safeguardInventory[playerid][i][slot] *then return false;
 
@@ -75411,15 +75421,15 @@ stock AddBodyguardItem(playerid, item, npcid, slot, say)
 			else
 			{
 				new safeguardHealth;
-//				FCNPC_GetHealth(npcid);
+				FCNPC_GetHealth(npcid);
 				safeguardHealth += 100;
-//				FCNPC_GiveHealth(npcid, safeguardHealth);
+				FCNPC_GiveHealth(npcid, safeguardHealth);
 				ApplyAnimationEx(npcid, "FOOD", "EAT_Burger", 4.1, 0, 0, 0, 0, 0, 1);
-			}*/
+			}
 		}
 		case 330:
 		{
-/*			if FCNPC_GetArmour(npcid) >= 100 *then
+			if FCNPC_GetArmour(npcid) >= 100 *then
    			{
 			    SetPlayerAttachedObject(npcid, 4, 19142, 1, 0.0540, 0.0410, 0.0050, 1.8000, -1.5000, 4.0000, 1.1190, 1.2540, -1, -1);
 			    safeguardInventory[playerid][i][slot] = item;
@@ -75432,11 +75442,11 @@ stock AddBodyguardItem(playerid, item, npcid, slot, say)
 				safeguardArmour += 100;
                 FCNPC_GiveArmour(npcid, safeguardArmour);
 				SetPlayerAttachedObject(npcid, 4, 19142, 1, 0.0540, 0.0410, 0.0050, 1.8000, -1.5000, 4.0000, 1.1190, 1.2540, -1, -1);
-			}*/
+			}
 		}
 		case 525:
 		{
-/*			if FCNPC_GetHealth(npcid) >= safeguardFeature[playerid][slot][0] *then
+			if FCNPC_GetHealth(npcid) >= safeguardFeature[playerid][slot][0] *then
 		    {
 		        safeguardInventory[playerid][i][slot] = item;
 		        ApplyAnimationEx(npcid, "FOOD", "EAT_Burger", 4.1, 0, 0, 0, 0, 0, 1);
@@ -75444,11 +75454,11 @@ stock AddBodyguardItem(playerid, item, npcid, slot, say)
 			else
 			{
 				new safeguardHealth;
-//				FCNPC_GetHealth(npcid);
+				FCNPC_GetHealth(npcid);
 				safeguardHealth += 30;
-//				FCNPC_GiveHealth(npcid, safeguardHealth);
+				FCNPC_GiveHealth(npcid, safeguardHealth);
 				ApplyAnimationEx(npcid, "FOOD", "EAT_Burger", 4.1, 0, 0, 0, 0, 0, 1);
-			}*/
+			}
 		}
 		case 715..721:
 		{
@@ -75463,10 +75473,10 @@ stock AddBodyguardItem(playerid, item, npcid, slot, say)
 		        safeguardFood[playerid][slot] += FullnessAdd[item-715];
 			}
 		}
-//		case 326,722,723: FCNPC_ApplyAnimation(npcid, !"BAR", !"dnk_stndF_loop", 4.1, 0, 0, 0, 0, 0), safeguardFood[playerid][slot] += 15;
+		case 326,722,723: FCNPC_ApplyAnimation(npcid, !"BAR", !"dnk_stndF_loop", 4.1, 0, 0, 0, 0, 0), safeguardFood[playerid][slot] += 15;
 	}
 
-//	BodyguardMain(playerid, 4, Bodyguard[playerid][bodyguardslotUse], -1, say);
+	BodyguardMain(playerid, 4, Bodyguard[playerid][bodyguardslotUse], -1, say);
 	DeleteItem(playerid, item, 1);
 	timeaks[playerid] = 0;
 	SQL("UPDATE `Bodyguard` SET `safeguardInventory` = '%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d' WHERE safeguardSearch = '%s[%d]'",\
@@ -75488,9 +75498,9 @@ stock CheckBodyguardNeed(playerid, npcid)
 			if safeguardInventory[playerid][s][slot] == 314 *then
 		    {
 				new safeguardHealth;
-//		   		FCNPC_GetHealth(npcid);
+		   		FCNPC_GetHealth(npcid);
 				safeguardHealth += 100;
-//				FCNPC_GiveHealth(npcid, safeguardHealth);
+				FCNPC_GiveHealth(npcid, safeguardHealth);
 				ApplyAnimationEx(npcid, "FOOD", "EAT_Burger", 4.1, 0, 0, 0, 0, 0, 1);
 				safeguardInventory[playerid][s][slot] = 0;
 				SQL("UPDATE `Bodyguard` SET `safeguardInventory` = '%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d' WHERE safeguardSearch = '%s[%d]'",\
@@ -75501,9 +75511,9 @@ stock CheckBodyguardNeed(playerid, npcid)
 			else if safeguardInventory[playerid][s][slot] == 525 *then
 			{
 				new safeguardHealth;
-//		   		FCNPC_GetHealth(npcid);
+		   		FCNPC_GetHealth(npcid);
 				safeguardHealth += 30;
-//				FCNPC_GiveHealth(npcid, safeguardHealth);
+				FCNPC_GiveHealth(npcid, safeguardHealth);
 				ApplyAnimationEx(npcid, "FOOD", "EAT_Burger", 4.1, 0, 0, 0, 0, 0, 1);
 				safeguardInventory[playerid][s][slot] = 0;
 				SQL("UPDATE `Bodyguard` SET `safeguardInventory` = '%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d' WHERE safeguardSearch = '%s[%d]'",\
@@ -75517,10 +75527,10 @@ stock CheckBodyguardNeed(playerid, npcid)
 	if safeguardInventory[playerid][i][slot] == 330 *then
 	{
 		new safeguardArmour;
-//		FCNPC_GetArmour(npcid);
-//		if safeguardArmour > 100 *then FCNPC_GiveArmour(npcid, 100);
+		FCNPC_GetArmour(npcid);
+		if safeguardArmour > 100 *then FCNPC_GiveArmour(npcid, 100);
 		safeguardArmour += 100;
-//		FCNPC_GiveArmour(npcid, safeguardArmour);
+		FCNPC_GiveArmour(npcid, safeguardArmour);
 		SetPlayerAttachedObject(npcid, 4, 19142, 1, 0.0540, 0.0410, 0.0050, 1.8000, -1.5000, 4.0000, 1.1190, 1.2540, -1, -1);
 		safeguardInventory[playerid][i][slot] = 0;
 		SQL("UPDATE `Bodyguard` SET `safeguardInventory` = '%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d' WHERE safeguardSearch = '%s[%d]'",\
@@ -75848,6 +75858,7 @@ public OnVehicleStreamIn(vehicleid, forplayerid)
 		{
 			Streamer_RemoveArrayData(STREAMER_TYPE_3D_TEXT_LABEL, VehicleText[vehicleid], E_STREAMER_PLAYER_ID, forplayerid);
 			UpdateVehicleTuning(vehicleid, forplayerid);
+			AN_SendHandling(vehicleid, forplayerid); // Arizona Night automobiliu galia
 		}
 	}
 	return true;
@@ -76140,11 +76151,16 @@ public: BarrierClose(id)
 stock LoadBusiness()
 {
     new ID, Cache:result = mysql_query(mysql, "SELECT * FROM `businesses`");
-	OWNABLEBIZES = cache_get_row_count(mysql);
+	// Pataisyta: nebepraleidziama pirma eilute, ID 0 ir per dideli ID ignoruojami,
+	// OWNABLEBIZES = didziausias ID + 1 (kad nauji verslai gautu laisva ID)
+	new bizrows = cache_get_row_count(mysql);
+	OWNABLEBIZES = 1;
 
-	for new i = 1; i < OWNABLEBIZES; i++ do
+	for new i = 0; i < bizrows; i++ do
 	{
 		ID = cache_get_row_int(i, 0, mysql);
+		if(ID <= 0 || ID >= MAX_BIZ) continue;
+		if(ID + 1 > OWNABLEBIZES) OWNABLEBIZES = ID + 1;
 		BizData[ID][bID] = ID;
 		BizData[ID][bState] = cache_get_row_int(i, 1, mysql);
 		cache_get_row(i, 2, BizData[ID][bName], mysql, 64);
@@ -76951,11 +76967,16 @@ stock LoadHouses()
 	Cache:result = mysql_query(mysql, "SELECT * FROM `houses` ORDER BY `houses`.`ID` ASC");
 //	Cache:result = mysql_query(mysql, "SELECT * FROM `houses`");
 
-	OWNABLEHOUSES = cache_get_row_count(mysql);
+	// Pataisyta: nebepraleidziama pirma eilute, ID 0 ir per dideli ID ignoruojami,
+	// OWNABLEHOUSES = didziausias ID + 1 (kad nauji namai gautu laisva ID)
+	new houserows = cache_get_row_count(mysql);
+	OWNABLEHOUSES = 1;
 
-	for new i = 1; i < OWNABLEHOUSES; i++ do
+	for new i = 0; i < houserows; i++ do
 	{
 		ID = cache_get_row_int(i, 0, mysql);
+		if(ID <= 0 || ID >= MAX_HOUSES) continue;
+		if(ID + 1 > OWNABLEHOUSES) OWNABLEHOUSES = ID + 1;
 		HouseInfo[ID][hID] = ID;
 		HouseInfo[ID][hEnter_X] = cache_get_row_float(i, 1, mysql);
 		HouseInfo[ID][hEnter_Y] = cache_get_row_float(i, 2, mysql);
@@ -82796,10 +82817,11 @@ stock LoadOther()
 		INVALID_PLAYER_ID,INVALID_VEHICLE_ID,0,-1,StoInfo[i][boxInterior],-1,100.0);
 		UpdateSTO(i);
 	}
-	for new i; i < MAX_HOUSES; i++ do
+	for new i = 1; i < MAX_HOUSES; i++ do
 	{
-		if i < MAX_BIZ *then CreateBiz(i);
-		CreateHouse(i);
+		// kuriami tik egzistuojantys verslai/namai (ne ID 0 ir ne tusti slotai 0 0 0 koordinatese)
+		if i < MAX_BIZ && i < OWNABLEBIZES && !(BizData[i][bEnter_X] == 0.0 && BizData[i][bEnter_Y] == 0.0) *then CreateBiz(i);
+		if i < OWNABLEHOUSES && !(HouseInfo[i][hEnter_X] == 0.0 && HouseInfo[i][hEnter_Y] == 0.0) *then CreateHouse(i);
 	}
 	new objectHAND[8];
 	objectHAND[0] = CreateDynamicObject(11319, 2280.611328, -2347.159424, 15.006873, 0.000042, -0.000050, 135.000000, -1, -1, -1, STREAMER_OBJECT_SD, 300.0); // 1
@@ -94258,6 +94280,23 @@ stock GetCarCount(vehicleid, id)
 	return 0;
 }
 
+// pasaulio koordinates -> koordinates masinos atzvilgiu (tiksli rotacija pagal masinos posuki)
+stock VehTun_WorldToLocal(vehicleid, Float:x, Float:y, Float:z, Float:rx, Float:ry, Float:rz, &Float:ox, &Float:oy, &Float:oz, &Float:orx, &Float:ory, &Float:orz)
+{
+	new Float:X, Float:Y, Float:Z, Float:A;
+	GetVehiclePos(vehicleid, X, Y, Z);
+	GetVehicleZAngle(vehicleid, A);
+	new Float:dx = x - X, Float:dy = y - Y;
+	ox = dx * floatcos(A, degrees) + dy * floatsin(A, degrees);
+	oy = -dx * floatsin(A, degrees) + dy * floatcos(A, degrees);
+	oz = z - Z;
+	orx = rx;
+	ory = ry;
+	orz = rz - A;
+	while(orz > 180.0) orz -= 360.0;
+	while(orz < -180.0) orz += 360.0;
+	return 1;
+}
 stock UpdateAttachedVehicleObject(objectid, Float:X,Float:Y,Float:Z,Float:rX,Float:rY,Float:rZ)
 {
 	if !IsValidDynamicObject(objectid) || !Streamer_GetIntData(STREAMER_TYPE_OBJECT, objectid, E_STREAMER_ATTACHED_VEHICLE) *then return 0;
@@ -99917,7 +99956,7 @@ stock ShowPlayerHud(playerid)
 
 		ExecuteEvent(playerid, 0, ( str_f("window.executeEvent('event.hudViceCity.updateViceCityHudVisible', '[%s]');", PI[playerid][LauncherData][1] == 4 ? "true" : "false")));
 		ExecuteEvent(playerid, 0, ( str_f("window.executeEvent('event.hudSA.updateSanAndreasHudVisible', '[%s]');", PI[playerid][LauncherData][1] == 5 ? "true" : "false")));
-		ExecuteEvent(playerid, 0, ( str_f("window.executeEvent('event.arizonahud.serverInfo', '[{\"id\":1,\"title\":\""Mode_City"\",\"project\":\"San Andreas\",\"type\":\"Gyvenimas\",\"onLine\":%d,\"flag\":0,\"logo\":11,\"multiplier\":%d}]');", Iter_Count(Player), XDonate)));
+		ExecuteEvent(playerid, 0, ( str_f("window.executeEvent('event.arizonahud.serverInfo', '[{\"id\":1,\"title\":\""Mode_City"\",\"project\":\"San Andreas\",\"type\":\"Gyvenimas\",\"onLine\":%d,\"flag\":0,\"logo\":%d,\"multiplier\":%d}]');", Iter_Count(Player), HudLogo, XDonate)));
 
 		ExecuteEvent(playerid, 0, ( str_f("window.executeEvent('event.%s', '[%d]');", PI[playerid][LauncherData][1] == 4 ? "hudViceCity.updateSatiety" : "arizonahud.playerSatiety", Fullness[playerid])));
 
@@ -100064,12 +100103,20 @@ public OnIncomingPacket(playerid, packetid, BitStream:bs)
 		BS_IgnoreBits(bs, 8);
 		BS_ReadUint8(bs, custom);
 
+		if(KeyDebug{playerid} && custom != 0 && custom != 18 && custom != 17)
+		{
+			new pkbits;
+			BS_GetNumberOfBitsUsed(bs, pkbits);
+			SCMF(playerid, 0xAFAFAFFF, "[CEF-PKT] tipas %d, dydis %d bitu", custom, pkbits);
+		}
+
 		switch custom do
 		{
 			case 18:
 			{
 				static query[300];
 				BS_ReadString32(bs, query);
+				if(KeyDebug{playerid}) { new cefdbg[128]; strmid(cefdbg, query, 0, 120); SCMF(playerid, 0xAFAFAFFF, "[CEF] %s", cefdbg); }
 				ClickedBrowser(playerid, query, custom, "NoData");
 			}
 			case 0:
@@ -100126,6 +100173,7 @@ public OnIncomingPacket(playerid, packetid, BitStream:bs)
 
 stock HideFullCef(playerid, tuning = 0)
 {
+	if(tuning) TP_Reset(playerid); // tuning perziuros atstatymas (masina perkraunama is DB)
     ExecuteEvent(playerid, 0, "window.executeEvent('event.setActiveView', '[\"null\"]');");
     UpdateBrowser(playerid, 52, 2);
 	UpdateBrowser(playerid, 86, 0);
@@ -100421,6 +100469,7 @@ stock ClickedBrowser(playerid, request[], custom, inputtext[])
                     if(tuningCenter_playerData[playerid][cartCount] < 0) tuningCenter_playerData[playerid][cartCount] = 0;
 
                     tuningCenter_playerData[playerid][cartCheck][GetCartCategory(id_var[0])] = 0;
+					TP_Revert(playerid, GetCartCategory(id_var[0])); // grazinam buvusia detale
 
                     updateTuningEvent(playerid, id_var[0], 2);
 				    ExecuteEvent(playerid, 0, (str_f("window.executeEvent('event.tuning.setClientVisualData', `[{\"carName\":\"%s\",\"carNameScale\":1.0,\"playerMoney\":%d,\"cartCount\":%d,\"cartColor\":\"#FFFFFF\"}]`);", InfoConfigVehicle[SearchVehicleName(CarInfo[GetVehicleID(GetPlayerVehicleID(playerid))][cModel])][Model_Name], PI[playerid][pMoney], tuningCenter_playerData[playerid][cartCount])));
@@ -100435,10 +100484,18 @@ stock ClickedBrowser(playerid, request[], custom, inputtext[])
 
 					sscanf(salon, "p<,>dd", id_var[0], id_var[1]);
 
+					new tp_cat = GetCartCategory(id_var[0]), tp_comp = GetCartComponent(playerid, id_var[0]);
+					if(!TP_IsCompatible(tp_cat, tp_comp))
+					{
+						updateTuningEvent(playerid, id_var[0], 2);
+						return SCM(playerid, COLOR_OLDRED, !"[Tuningas] {FFFFFF}Si detale siam automobiliui netinka (tokios detales sis modelis neturi).");
+					}
+
                     strcat(tuningCenter_playerData[playerid][cartString], (str_f("%s%d", tuningCenter_playerData[playerid][cartCount] == 0 ? "" : ",", id_var[0])));
                     tuningCenter_playerData[playerid][cartCount] += GetCartCost(id_var[0]);
 
-                    tuningCenter_playerData[playerid][cartCheck][GetCartCategory(id_var[0])] = GetCartComponent(playerid, id_var[0]);
+                    tuningCenter_playerData[playerid][cartCheck][tp_cat] = tp_comp;
+					TP_Preview(playerid, tp_cat, tp_comp); // detale iskart matoma ant masinos
 
 				    updateTuningEvent(playerid, id_var[0], 1);
 				    ExecuteEvent(playerid, 0, (str_f("window.executeEvent('event.tuning.setClientVisualData', `[{\"carName\":\"%s\",\"carNameScale\":1.0,\"playerMoney\":%d,\"cartCount\":%d,\"cartColor\":\"#FFFFFF\"}]`);", InfoConfigVehicle[SearchVehicleName(CarInfo[GetVehicleID(GetPlayerVehicleID(playerid))][cModel])][Model_Name], PI[playerid][pMoney], tuningCenter_playerData[playerid][cartCount])));
@@ -100821,6 +100878,8 @@ stock SetVehicleRazval(vehicleid, Float:vipad, Float:razval, wheel, type)
 
 stock SetVehicleWheelSize(vehicleid, Float:wheelSize)
 {
+	// 0.0 = ratu dydis nenustatytas (numatytasis) - nesiunciam, kitaip launcheris rodo milziniskus ratus
+	if(wheelSize < 0.5 || wheelSize > 2.0) return false;
 	for new i; i < sizeof SixCars; i ++ do
 	if(GetVehicleModelEx(vehicleid) == SixCars[i]) return false;
 
@@ -100844,12 +100903,12 @@ stock SetVehicleBlackout(vehicleid, type, playerid = INVALID_PLAYER_ID)
     new BitStream:bs = BS_New();
 
     static const place_blackout[][] = {
-        {"wnd"}, //priekine
-        {"wnd_rr"}, //galine
-        {"wdor_f"}, //sonine priekiniai
-        {"wdor_r"}, //sonine galine
-		{"wnd_rr"}, //galine
-		{"wndrrl"} //galiniai zibintai
+        {"wnd"},    //67 priekinis stiklas
+        {"wdor_f"}, //68 priekiniai soniniai stiklai
+        {"wdor_r"}, //69 galiniai soniniai stiklai
+        {"wnd_rr"}, //70 galinis stiklas
+		{"wndfrl"}, //71 priekiniai zibintai
+		{"wndrrl"}  //72 galiniai zibintai
     };
 
     BS_WriteValue(bs,
@@ -101230,6 +101289,8 @@ stock reset_CustomComponent(vehicleid)//loll
 	return 1;
 }
 
+stock TP_WheelCount() return sizeof(wheelData);
+stock TP_WheelUID(idx) return (0 <= idx < sizeof(wheelData)) ? wheelData[idx][wUID] : 0;
 stock getWheelModel(wheel)
 {
 	for new i; i < sizeof wheelData; i ++ do
@@ -104870,8 +104931,8 @@ CMD:gotobiz(playerid, params[])
 {
 	extract params -> new bizid; else
 		return SCM(playerid, COLOR_OLDRED, !"Naudokite: /gotobiz [id]");
-	if bizid > OWNABLEBIZES *then
-	    return 0;
+	if bizid <= 0 || bizid >= OWNABLEBIZES || (BizData[bizid][bEnter_X] == 0.0 && BizData[bizid][bEnter_Y] == 0.0) *then
+	    return SCM(playerid, COLOR_OLDRED, !"[Klaida] {FFFFFF}Verslas su tokiu ID neegzistuoja!");
 	SetPlayerVirtualWorld(playerid, 0), SetPlayerInterior(playerid, 0);
 	UpdatePlayerPos(playerid, BizData[bizid][bEnter_X], BizData[bizid][bEnter_Y], BizData[bizid][bEnter_Z]);
 	return SCMF(playerid, -1, "Jus teleportavotes prie verslo ID:%d", bizid);
@@ -104880,8 +104941,8 @@ CMD:gotohouse(playerid, params[])
 {
 	extract params -> new houseid; else
 		return SCM(playerid, COLOR_OLDRED, !"Naudokite: /gotohouse [id]");
-	if houseid > OWNABLEHOUSES *then
-	    return 0;
+	if houseid <= 0 || houseid >= OWNABLEHOUSES || (HouseInfo[houseid][hEnter_X] == 0.0 && HouseInfo[houseid][hEnter_Y] == 0.0) *then
+	    return SCM(playerid, COLOR_OLDRED, !"[Klaida] {FFFFFF}Namas su tokiu ID neegzistuoja!");
 	SetPlayerVirtualWorld(playerid, 0), SetPlayerInterior(playerid, 0);
 	UpdatePlayerPos(playerid, HouseInfo[houseid][hEnter_X], HouseInfo[houseid][hEnter_Y], HouseInfo[houseid][hEnter_Z]);
 	return SCMF(playerid, -1, "Jus teleportavotes prie namo ID:%d", houseid);
@@ -105397,7 +105458,7 @@ CMD:setstat(playerid, data[])
 		SCM(playerid, -1, !"[0] Lygis | [1] EXP | [2] Lytis | [3] VIP | [4] Telefono numeris | [5] Darbas");
 		SCM(playerid, -1, !"[6] Banko saskaita ($) | [7] SAG-Coins saskaita | [8] Ukininko taskai | [9] Spawn[0/3] | [10] SAG-Eurai");
 		SCM(playerid, -1, !"[11] VIP-Papildymas | [12] Pinigu suma | [13] Bilietai | [14] Asmenine saskaita Banke ($) | [15] Member Bonus | [16] Teisetvarka");
-		SCM(playerid, -1, !"[17] Vairavimo igudis (CarSkill 0-100)");
+		SCM(playerid, -1, !"[17] Vairavimo igudis (CarSkill 0-100) | [18] Amzinas CarSkill 100 (0 - isjungti / 1 - ijungti)");
 		return 1;
 	}
 	switch data[1] do
@@ -105480,6 +105541,20 @@ CMD:setstat(playerid, data[])
 			SCMF(playerid, -1, "Jus pakeitete vairavimo iguduji (CarSkill) zaidejui %s(%d) i %d/100", PN(data[0]), data[0], data[2]);
 			SCMF(data[0], -1, "Administratorius pakeite jusu vairavimo iguduji i {DFCFCF}%d/100", data[2]);
 			name_params = "CarSkill";
+		}
+		case 18:
+		{
+			if data[2] < 0 || data[2] > 1 *then
+				return SCM(playerid, COLOR_OLDRED, !"[Klaida] {FFFFFF}Naudokite 0 (isjungti) arba 1 (ijungti)");
+			SetImprovementsData(data[0], idCarSkill, data[2]);
+			if data[2] *then
+			{
+				PI[data[0]][pCarSkill] = 100;
+				UpdatePlayerDataInt(data[0], "CarSkill", 100);
+			}
+			SCMF(playerid, -1, "Jus %s amzina vairavimo iguduji (CarSkill 100) zaidejui %s(%d)", data[2] ? ("ijungete") : ("isjungete"), PN(data[0]), data[0]);
+			SCMF(data[0], -1, "Administratorius %s jums amzina vairavimo iguduji {DFCFCF}(CarSkill %s)", data[2] ? ("ijunge") : ("isjunge"), data[2] ? ("100, nebemazes") : ("vel gali mazeti"));
+			name_params = "Amzinas CarSkill";
 		}
 	}
 	return SaveAccount(data[0]);
@@ -108849,3 +108924,6 @@ stock Phone_FindByNumber(number)
 
 #include losimu_biuras.inc
 #include algos.inc
+#include an_handling.inc
+#include tuning_preview.inc
+#include hudlogo.inc
