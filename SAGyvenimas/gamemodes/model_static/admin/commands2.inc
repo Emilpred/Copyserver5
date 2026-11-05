@@ -211,4 +211,11 @@
 {"pgetip", 8, "Patikrinti IP adresu atitikima."},
 {"atlyginimai", 8, "Isduoti algas organizacijai (testas, bet kuria diena)."},
 {"duotiminutes", 8, "Prideti/atimti zaidejui darbo minutes (algos)."},
-{"hudlogo", 8, "Pakeisti HUD logotipa prie serverio pavadinimo."}
+{"hudlogo", 8, "Pakeisti HUD logotipa prie serverio pavadinimo."},
+{"asoft", 3, "Admin-soft meniu (fly, flycar, vandeniu, GM)."},
+{"afly", 3, "Skraidyti pesciomis (AirBreak)."},
+{"aflycar", 3, "Skraidantis automobilis."},
+{"awater", 3, "Vaziavimas/vaiksciojimas vandeniu."},
+{"agm", 3, "Admin nemirtingumas (sau)."},
+{"acargm", 3, "Nesudauzomas automobilis."},
+{"casinogames", 8, "Casino zaidimai: ijungti/isjungti Black Jack ir rulete."}

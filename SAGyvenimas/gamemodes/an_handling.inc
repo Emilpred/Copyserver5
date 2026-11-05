@@ -121,23 +121,50 @@ stock AN_FindHandling(model)
 	return -1;
 }
 
-stock AN_SendHandling(vehicleid, forplayerid = INVALID_PLAYER_ID)
+stock Float:AN_GetValue(idx, p)
 {
-	new idx = AN_FindHandling(GetVehicleModelEx(vehicleid));
-	if(idx == -1) return 0;
-	new cnt = 0;
-	for(new p; p < 24; p++) if(AN_HandlingData[idx][anh_val][p] != 0.0) cnt++;
+	if(idx < 0 || idx >= sizeof(AN_HandlingData) || p < 0 || p > 23) return 0.0;
+	return AN_HandlingData[idx][anh_val][p];
+}
+
+// force = true: siusti net jei nera detaliu (kad atstatytu po detales isemimo / TT isjungimo)
+stock AN_SendHandling(vehicleid, forplayerid = INVALID_PLAYER_ID, bool:force = false)
+{
+	if(vehicleid < 1 || vehicleid >= MAX_VEHICLES) return 0;
+	new model = GetVehicleModelEx(vehicleid);
+	new idx = AN_FindHandling(model), bi = VM_FindBase(model);
+	new Float:off[24], bool:hasoff = VM_GetOffsets(vehicleid, off);
+	new Float:val[24], bool:use[24], cnt = 0;
+
+	if(idx != -1)
+	{
+		for(new p; p < 24; p++)
+		{
+			new Float:v = AN_HandlingData[idx][anh_val][p];
+			if(v == 0.0)
+			{
+				if(off[p] == 0.0 || bi == -1) continue;
+				v = VM_BaseValue(bi, p);
+				if(v == 0.0) continue;
+			}
+			else if(p == 10) v *= AN_ACCEL_MULT;
+			else if(p == 9) v *= AN_SPEED_MULT;
+			val[p] = v + off[p], use[p] = true, cnt++;
+		}
+	}
+	else
+	{
+		if(bi == -1 || (!hasoff && !force)) return 0;
+		cnt = VM_FillParts(bi, off, val, use);
+	}
 	if(!cnt) return 0;
 
 	new BitStream:bs = BS_New();
 	BS_WriteValue(bs, PR_UINT16, vehicleid, PR_UINT16, 0, PR_UINT8, 0, PR_UINT8, cnt);
 	for(new p; p < 24; p++)
 	{
-		new Float:v = AN_HandlingData[idx][anh_val][p];
-		if(v == 0.0) continue;
-		if(p == 10) v *= AN_ACCEL_MULT;
-		else if(p == 9) v *= AN_SPEED_MULT;
-		BS_WriteValue(bs, PR_UINT8, p + 1, PR_FLOAT, v);
+		if(!use[p]) continue;
+		BS_WriteValue(bs, PR_UINT8, p + 1, PR_FLOAT, val[p]);
 	}
 	if(forplayerid == INVALID_PLAYER_ID) PR_SendRPCToVehicleStream(bs, vehicleid, 161);
 	else PR_SendRPC(bs, forplayerid, 161);

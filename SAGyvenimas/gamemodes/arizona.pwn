@@ -72,6 +72,7 @@ stock LT_getdate(&year = 0, &month = 0, &day = 0)
 // poker filterscript dialog IDs - must match filterscripts/poker.pwn
 #define POKER_DIALOG_BUYIN 32701
 #define POKER_DIALOG_RAISE 32702
+#define BJ_DIALOG_BET 32711 // filterscripts/blackjack.amx
 #include nex-uf.inc
 #include mapandreas.inc
 #include UnixConvertor.inc
@@ -5478,7 +5479,163 @@ new Attach[][attach] =
 	/*3092*/{14268, 1, {0.1060, -0.0790, -0.0020}, {-3.2000, 358.4000, 4.7000}, {0.9060, 1.0530, 0.8810}, -1, -1},
 	/*3093*/{14276, 2, {0.1530, 0.0010, 0.0000}, {0.1000, 2.9000, -0.9000}, {0.8330, 0.9460, 1.1030}, -1, -1},
 	/*3094*/{14277, 2, {0.1060, -0.0760, 0.0010}, {270.1000, 2.9000, 179.1000}, {1.0736, 1.2264, 1.0850}, -1, -1},
-	/*3095*/{6702, 2, {0.2960, -0.0260, 0.0010}, {0.1000, 92.9000, -0.9000}, {0.9760, 1.0220, 1.0850}, 0, 0}
+	/*3095*/{6702, 2, {0.2960, -0.0260, 0.0010}, {0.1000, 92.9000, -0.9000}, {0.9760, 1.0220, 1.0850}, 0, 0},
+	{12672, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Gelezinio zmogaus sarvai (Launcher) - numatytoji pozicija [vest]
+	{12673, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Rusu kovinis kirvis (Launcher) - numatytoji pozicija [hand]
+	{12674, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kuprine Gucci (Launcher) - numatytoji pozicija [back]
+	{12676, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Ranka begalybes (Launcher) - numatytoji pozicija [hand]
+	{12677, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Halko kumstis (Launcher) - numatytoji pozicija [hand]
+	{12678, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Toro kujis (Launcher) - numatytoji pozicija [hand]
+	{12679, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Gelezinio zmogaus salmas (Launcher) - numatytoji pozicija [head]
+	{12680, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Magiskas Oro Balionas (Launcher) - numatytoji pozicija [back]
+	{12681, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Pudzo kablys (Launcher) - numatytoji pozicija [hand]
+	{12682, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kardas Star Wars (Launcher) - numatytoji pozicija [hand]
+	{12683, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Halko kauke (Launcher) - numatytoji pozicija [head]
+	{12684, 1, {0.000000, -0.113000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kapitonas Amerikos skydas (Launcher) - numatytoji pozicija [shield]
+	{12685, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Burbulines gumos riedlente (Launcher) - numatytoji pozicija [back]
+	{12686, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Trezubas (Launcher) - numatytoji pozicija [hand]
+	{12688, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kardas (Launcher) - numatytoji pozicija [hand]
+	{12689, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Vezlio kiautas is Ninja vezliukai (Launcher) - numatytoji pozicija [back]
+	{12690, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Lego galva (Launcher) - numatytoji pozicija [head]
+	{12691, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Galva Tyliau vaziuosi – toliau busi (Launcher) - numatytoji pozicija [head]
+	{12692, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Galva Robokopo (Launcher) - numatytoji pozicija [head]
+	{12693, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Zmogaus-voro kauke (Launcher) - numatytoji pozicija [head]
+	{12694, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sreko kauke (Launcher) - numatytoji pozicija [head]
+	{12695, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kauke is Bumazinio namo (Launcher) - numatytoji pozicija [head]
+	{12696, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kaukoles kauke (Launcher) - numatytoji pozicija [head]
+	{12649, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sparnai #3 (Launcher) - numatytoji pozicija [back]
+	{12647, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sparnai #1 (Launcher) - numatytoji pozicija [back]
+	{12648, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sparnai #2 (Launcher) - numatytoji pozicija [back]
+	{12650, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sparnai #4 (Launcher) - numatytoji pozicija [back]
+	{12651, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sparnai #5 (Launcher) - numatytoji pozicija [back]
+	{12652, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Super kirtiklis ant nugaros (Launcher) - numatytoji pozicija [back]
+	{12653, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Super greblys ant nugaros (Launcher) - numatytoji pozicija [back]
+	{5381, 14, {0.274998, 0.004999, 0.000000}, {-90.299934, 93.199951, 12.399984}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Laikrodis Rolex Submariner (Launcher) - numatytoji pozicija [watch]
+	{5382, 14, {0.274998, 0.004999, 0.000000}, {-90.299934, 93.199951, 12.399984}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Laikrodis Gucci (Launcher) - numatytoji pozicija [watch]
+	{5383, 14, {0.274998, 0.004999, 0.000000}, {-90.299934, 93.199951, 12.399984}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Laikrodis Panthere de Cartier (Launcher) - numatytoji pozicija [watch]
+	{5384, 14, {0.274998, 0.004999, 0.000000}, {-90.299934, 93.199951, 12.399984}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Laikrodis Relogios Casio (Launcher) - numatytoji pozicija [watch]
+	{5385, 14, {0.274998, 0.004999, 0.000000}, {-90.299934, 93.199951, 12.399984}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Laikrodis Casio G-SHOCK (Launcher) - numatytoji pozicija [watch]
+	{5386, 14, {0.274998, 0.004999, 0.000000}, {-90.299934, 93.199951, 12.399984}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Laikrodis Patek Philippe Nautilus (Launcher) - numatytoji pozicija [watch]
+	{5387, 14, {0.274998, 0.004999, 0.000000}, {-90.299934, 93.199951, 12.399984}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Laikrodis Apple Watch (Launcher) - numatytoji pozicija [watch]
+	{5388, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Ausines beats by Dre (Launcher) - numatytoji pozicija [head]
+	{5389, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Ausines Harman/Kardon (Launcher) - numatytoji pozicija [head]
+	{5683, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Ausines Razer (Launcher) - numatytoji pozicija [head]
+	{5684, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Ausines AirPods Max (Launcher) - numatytoji pozicija [head]
+	{5685, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kepure Tommy Hilfiger (Launcher) - numatytoji pozicija [head]
+	{5686, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kepure Ralph Lauren (Launcher) - numatytoji pozicija [head]
+	{5687, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kepure LA (Launcher) - numatytoji pozicija [head]
+	{5688, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kepure Gucci (Launcher) - numatytoji pozicija [head]
+	{5689, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kepure Supreme (Launcher) - numatytoji pozicija [head]
+	{5690, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Neonine kauke (Launcher) - numatytoji pozicija [head]
+	{5691, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kauke Scary (Launcher) - numatytoji pozicija [head]
+	{5692, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kauke Wrench (Launcher) - numatytoji pozicija [head]
+	{5693, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Loki kauke (Launcher) - numatytoji pozicija [head]
+	{5694, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kauke Rust (Launcher) - numatytoji pozicija [head]
+	{5695, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Motociklininko salmas Kitty (Launcher) - numatytoji pozicija [head]
+	{5696, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Motociklininko salmas Pink (Launcher) - numatytoji pozicija [head]
+	{5697, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Motociklininko salmas (Launcher) - numatytoji pozicija [head]
+	{5698, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Motociklininko salmas Alien (Launcher) - numatytoji pozicija [head]
+	{5699, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Isskirtine skrybele 1 (Launcher) - numatytoji pozicija [head]
+	{5700, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Isskirtine skrybele 2 (Launcher) - numatytoji pozicija [head]
+	{5701, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Isskirtine skrybele 3 (Launcher) - numatytoji pozicija [head]
+	{5702, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Isskirtine skrybele 4 (Launcher) - numatytoji pozicija [head]
+	{6011, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Isskirtine skrybele 5 (Launcher) - numatytoji pozicija [head]
+	{6012, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kuprine 1 (Launcher) - numatytoji pozicija [back]
+	{6013, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kuprine 2 (Launcher) - numatytoji pozicija [back]
+	{12634, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kuprine Kryperis (Launcher) - numatytoji pozicija [back]
+	{12635, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Alpinisto kuprine (Launcher) - numatytoji pozicija [back]
+	{12636, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Toro salmas (Launcher) - numatytoji pozicija [head]
+	{12637, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Futbolo salmas (Launcher) - numatytoji pozicija [head]
+	{12638, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Salmas Daft Punk (Launcher) - numatytoji pozicija [head]
+	{12639, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Salmas Steve (Launcher) - numatytoji pozicija [head]
+	{12640, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Salmas Homeras (Launcher) - numatytoji pozicija [head]
+	{12641, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Organizatoriaus kauke (Launcher) - numatytoji pozicija [head]
+	{12642, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Apsaugos kauke 1 (Launcher) - numatytoji pozicija [head]
+	{12643, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Apsaugos kauke 3 (Launcher) - numatytoji pozicija [head]
+	{12644, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Apsaugos kauke 2 (Launcher) - numatytoji pozicija [head]
+	{12645, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) VIP kauke Bulis (Launcher) - numatytoji pozicija [head]
+	{12646, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Deimantinis kirtiklis (Launcher) - numatytoji pozicija [hand]
+	{12657, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Grinco kauke (Launcher) - numatytoji pozicija [head]
+	{12659, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sparnai #6 (Launcher) - numatytoji pozicija [back]
+	{12661, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Dovanu kaspinas ant nugaros (Launcher) - numatytoji pozicija [back]
+	{12662, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Pyrago galva (Launcher) - numatytoji pozicija [head]
+	{12663, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Tigro galva (Launcher) - numatytoji pozicija [head]
+	{12664, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sarvine liemene #6 (Launcher) - numatytoji pozicija [vest]
+	{12665, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sparnai #7 (Launcher) - numatytoji pozicija [back]
+	{12666, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sparnai #8 (Launcher) - numatytoji pozicija [back]
+	{12668, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sarvine liemene #7 (Launcher) - numatytoji pozicija [vest]
+	{12669, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sarvine liemene #8 (Launcher) - numatytoji pozicija [vest]
+	{6270, 1, {0.000000, -0.113000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Legiono skydas (Launcher) - numatytoji pozicija [shield]
+	{6573, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Auksinio angelo sparnai (Launcher) - numatytoji pozicija [back]
+	{6552, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Rytietiskas nesiojamas prekystalys 1 (Launcher) - numatytoji pozicija [back]
+	{6541, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Rytietiskas nesiojamas prekystalys 2 (Launcher) - numatytoji pozicija [back]
+	{6542, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Rytietiskas nesiojamas prekystalys 3 (Launcher) - numatytoji pozicija [back]
+	{6544, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Magijos akies kuprine (Launcher) - numatytoji pozicija [back]
+	{6545, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sventojo Jurgio kuprine (Launcher) - numatytoji pozicija [back]
+	{6547, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Magijos lankas (Launcher) - numatytoji pozicija [hand]
+	{6548, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Maju genties kauke (Launcher) - numatytoji pozicija [head]
+	{6549, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Karnavaline kauke (Launcher) - numatytoji pozicija [head]
+	{6550, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Drakono kauke (Launcher) - numatytoji pozicija [head]
+	{6551, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Auksinis petnesas (Launcher) - numatytoji pozicija [back]
+	{6033, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(rudas) (Launcher) - numatytoji pozicija [back]
+	{6034, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(tamsiai-zalias) (Launcher) - numatytoji pozicija [back]
+	{6540, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(violetinis) (Launcher) - numatytoji pozicija [back]
+	{6576, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(zydras) (Launcher) - numatytoji pozicija [back]
+	{6577, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(geltonas) (Launcher) - numatytoji pozicija [back]
+	{6578, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(raudonas) (Launcher) - numatytoji pozicija [back]
+	{6579, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(sviesiai-zalias) (Launcher) - numatytoji pozicija [back]
+	{6580, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(juodas) (Launcher) - numatytoji pozicija [back]
+	{6581, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(baltas) (Launcher) - numatytoji pozicija [back]
+	{6582, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(rozinis) (Launcher) - numatytoji pozicija [back]
+	{6583, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(melynas) (Launcher) - numatytoji pozicija [back]
+	{6584, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Among US(oranzinis) (Launcher) - numatytoji pozicija [back]
+	{15389, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Pikachu kuprine (Launcher) - numatytoji pozicija [back]
+	{15391, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Baltikos kuprine (Launcher) - numatytoji pozicija [back]
+	{15388, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Reaktyvinis kuprine(2) (Launcher) - numatytoji pozicija [back]
+	{12699, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Hagi Vagi (Launcher) - numatytoji pozicija [back]
+	{14555, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kisi Misi (Launcher) - numatytoji pozicija [back]
+	{6277, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Prototipas (Launcher) - numatytoji pozicija [back]
+	{15397, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kuprine(1) (Launcher) - numatytoji pozicija [back]
+	{15398, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kuprine(2) (Launcher) - numatytoji pozicija [back]
+	{15399, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kuprine(3) (Launcher) - numatytoji pozicija [back]
+	{15400, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kuprine(4) (Launcher) - numatytoji pozicija [back]
+	{15401, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kuprine(5) (Launcher) - numatytoji pozicija [back]
+	{6739, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Zydras ryklys (Launcher) - numatytoji pozicija [back]
+	{6740, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Rozinis ryklys (Launcher) - numatytoji pozicija [back]
+	{15617, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Riedlente(1) (Launcher) - numatytoji pozicija [back]
+	{15402, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Banditine sarvine liemene(1) (Launcher) - numatytoji pozicija [vest]
+	{15403, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Banditine sarvine liemene(2) (Launcher) - numatytoji pozicija [vest]
+	{15404, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Banditine sarvine liemene(3) (Launcher) - numatytoji pozicija [vest]
+	{15405, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Banditine sarvine liemene(4) (Launcher) - numatytoji pozicija [vest]
+	{15406, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Banditine sarvine liemene(5) (Launcher) - numatytoji pozicija [vest]
+	{15407, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sarvine liemene(1) (Launcher) - numatytoji pozicija [vest]
+	{15408, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sarvine liemene(2) (Launcher) - numatytoji pozicija [vest]
+	{15409, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sarvine liemene(3) (Launcher) - numatytoji pozicija [vest]
+	{15410, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sarvine liemene(4) (Launcher) - numatytoji pozicija [vest]
+	{15611, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sarvine liemene(5) (Launcher) - numatytoji pozicija [vest]
+	{15729, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sarvine liemene 'Sakuru saka' (Launcher) - numatytoji pozicija [vest]
+	{15714, 1, {0.000000, 0.050000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sarvine liemene Supreme (Launcher) - numatytoji pozicija [vest]
+	{15952, 1, {0.000000, -0.113000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Dygliuotas skydas (Launcher) - numatytoji pozicija [shield]
+	{15956, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Mechanine ryklys ant nugaros (Launcher) - numatytoji pozicija [back]
+	{15959, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Azzinoto skustuvai (Launcher) - numatytoji pozicija [hand]
+	{15951, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Siksnosparnis (Launcher) - numatytoji pozicija [back]
+	{15946, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Balroges ranka (desine) (Launcher) - numatytoji pozicija [hand]
+	{15955, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Magine sfera (Launcher) - numatytoji pozicija [back]
+	{15954, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sfera virs galvos (Launcher) - numatytoji pozicija [head]
+	{15939, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kaukole su juodu apsiaustu (Launcher) - numatytoji pozicija [back]
+	{15953, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Moliugo galva (Launcher) - numatytoji pozicija [head]
+	{15941, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Juodas apsiaustas (Launcher) - numatytoji pozicija [back]
+	{15944, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Balroges galva (Launcher) - numatytoji pozicija [head]
+	{15354, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Katanos ant nugaros (Launcher) - numatytoji pozicija [back]
+	{15622, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kagune (Launcher) - numatytoji pozicija [back]
+	{6543, 6, {0.070000, 0.030000, 0.000000}, {0.000000, -90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Super-kastuvas (Launcher) - numatytoji pozicija [hand]
+	{15957, 1, {0.078000, -0.040000, 0.000000}, {0.000000, 90.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Sukubo sparnai (Launcher) - numatytoji pozicija [back]
+	{15592, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Kauke Kaneki (Launcher) - numatytoji pozicija [head]
+	{15881, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Neonine maniako kauke (Launcher) - numatytoji pozicija [head]
+	{15596, 2, {0.083900, 0.000000, 0.000000}, {0.000000, 0.000000, 0.000000}, {1.000000, 1.000000, 1.000000}, 0, 0}, // (Launcher) Maras gydytojo kauke (Launcher) - numatytoji pozicija [head]
+	{373, 2, {0.061000, 0.000000, -0.003000}, {-2.199898, 86.699897, 92.199897}, {1.251899, 0.962000, 1.701900}, 0, 0}, // Arizona New (Salmas viespatyste (Launcher))
+	{558, 2, {0.061000, 0.000000, -0.003000}, {-2.199898, 86.699897, 92.199897}, {1.251899, 0.962000, 1.701900}, 0, 0}, // Arizona New (Zmogaus-skruzdeles salmas)
+	{15607, 1, {0.000000, -0.150000, -0.040998}, {-174.000137, 28.299999, -91.700027}, {1.000000, 1.000000, 1.000000}, 0, 0}  // Arizona Night (Rusu kovinis kirvis ant nugaros)
 
 };
 
@@ -13750,7 +13907,7 @@ new ItemsInfo[][ItemInfo] =
 	{555, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "Haganezuka mask", "Haganezuki kauke (Launcher)", "Aksesuaras: {FDCF28}Haganezuki kauke", 0.000000, 0.000000, 90.000000, 1.000000, -1},
 	{556, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "Onimask", "Oni kauke (Launcher)", "Aksesuaras: {FDCF28}Oni kauke", 0.000000, 0.000000, 90.000000, 1.000000, -1},
 	{557, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "Samurai helmet", "Samurajaus salmas (Launcher)", "Aksesuaras: {FDCF28}Samurajaus salmas", 90.000000, 250.000000, 90.000000, 1.000000, -1},
-	{558, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "Zmogaus-skruzdeles salmas (Launcher)", "Zmogaus-skruzdeles salmas", "Aksesuaras: {FDCF28}Zmogaus-skruzdeles salmas", 90.000000, 250.000000, 90.000000, 1.000000, -1},
+	{558, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "Zmogaus-skruzdeles salmas (Launcher)", "Zmogaus-skruzdeles salmas (Launcher)", "Aksesuaras: {FDCF28}Zmogaus-skruzdeles salmas", 90.000000, 250.000000, 90.000000, 1.000000, -1}, // Arizona New (launcher aksesuaras)
 	{559, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "BoJack Head", "BoDzek galva (Launcher)", "Aksesuaras: {FDCF28}BoDzek galva", 90.000000, 250.000000, 90.000000, 1.000000, -1},
 	{560, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "Grunkle Stan mask", "Kauke «Stenli Pains» (Launcher)", "Aksesuaras: {FDCF28}Kauke «Stenli Pains»", 90.000000, 250.000000, 90.000000, 1.000000, -1},
 	{562, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "Kashira", "Kashira (Launcher)", "Aksesuaras: {FDCF28}Kashira", 90.000000, 250.000000, 90.000000, 1.000000, -1},
@@ -13954,8 +14111,9 @@ new ItemsInfo[][ItemInfo] =
 	{18106, true, 1, "", "USE", "NAUDOTI", -1535560961, "Object: Demonas Vaiduoklis", "Objektas: Demonas Vaiduoklis", "Objektas: {FDCF28}Demonas Vaiduoklis [Objektas]", 0.000000, 0.000000, 200.000000, 0.899999, -1},
 	{18107, true, 1, "", "USE", "NAUDOTI", -1535560961, "Object: Halloween vazonas", "Objektas: Halloween vazonas", "Objektas: {FDCF28}Halloween vazonas [Objektas]", 0.000000, 0.000000, 200.000000, 0.899999, -1},
 	{18108, true, 1, "", "USE", "NAUDOTI", -1535560961, "Object: LEGO Skeletas", "Objektas: LEGO Skeletas", "Objektas: {FDCF28}LEGO Skeletas [Objektas]", 0.000000, 0.000000, 200.000000, 0.899999, -1},
-	{15607, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "Rusiskas Kirvys", "Rusiskas Kirvys", "Aksesuaras: {FDCF28}Rusiskas Kirvys", 90.000000, 0.000000, 90.000000, 1.000000, -1},
-	{15607, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "EURO Zetonai", "EURO Zetonai", "Daiktas: {FDCF28}EURO Zetonai", 90.000000, 0.000000, 90.000000, 1.000000, -1}
+	{15607, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "Rusiskas Kirvys", "Rusiskas Kirvys", "Aksesuaras: {FDCF28}Rusiskas Kirvys", 90.000000, 0.000000, 90.000000, 1.000000, -1}, // Arizona Night (daikto ID 3041, modelis 15607, pozicija - Attach lenteleje)
+	{15607, true, 1, "", "PUT", "UZSIDETI", 0x333333FF, "EURO Zetonai", "EURO Zetonai", "Daiktas: {FDCF28}EURO Zetonai", 90.000000, 0.000000, 90.000000, 1.000000, -1},
+	{-1, true, 1, "~p~Twin~n~Turbo2", "PUT", "UZSIDETI", 0x333333FF, "Twin-turbo 2", "Twin-Turbo (2 lygis)", "Daiktas: {FDCF28}Twin-Turbo (2 lygis)", 352.000000, 345.000000, 20.000000, 0.832325, -1} // 3044 - Twin Turbo (2 lygis)
 
 };
 
@@ -22262,6 +22420,7 @@ public OnGameModeInit()
     Losimu_Init(); // losimu biuras
     Algos_Init(); // algos (atlyginimai)
     HudLogo_Load(); // HUD logotipas
+    VM_Init(); AS_Init(); // transporto meniu (2) + admin-soft
     viktorinas = viktorinav = 0;
 	for(new i; i < sizeof(tunDataEnter_Position); i++) CreateDynamicMapIcon(tunDataEnter_Position[i][0],tunDataEnter_Position[i][1],tunDataEnter_Position[i][2], 27, 0, 0, 0);
     for(new i; i < sizeof(PosTOP); i++)
@@ -23764,6 +23923,7 @@ stock GetVehicleSeat(vehicleid, seatid)
 public OnPlayerDisconnect(playerid, reason)
 {
 	if(FCNPC_IsValid(playerid)) return 1; // apsaugininkai (NPC)
+	VM_OnDisconnect(playerid); AS_OnDisconnect(playerid); // transporto meniu / admin-soft
 	if IsPlayerLogged{playerid} *then
 	{
 		if Iter_Contains(Admin, playerid) *then Iter_Remove(Admin, playerid);
@@ -25760,6 +25920,7 @@ stock DestroyVehicleEx(vehicleid, bool:spawn = false)
 	VehicleInfo[vehicleid][vModel] =
 	VehicleInfo[vehicleid][vStyle] =
 	VehicleInfo[vehicleid][vModification] = 0;
+	VM_ResetVehicle(vehicleid);
 
 	if IsAOwnableCar(vehicleid) *then {
 
@@ -26251,6 +26412,7 @@ stock SetPlayerMoney(playerid, money)
 public OnPlayerStateChange(playerid, newstate, oldstate)
 {
 	if(newstate == PLAYER_STATE_DRIVER && GetPlayerLauncher(playerid)) AN_SendHandling(GetPlayerVehicleID(playerid), playerid); // Arizona Night automobiliu galia
+	VM_OnStateChange(playerid, newstate, oldstate); // transporto meniu (2) / drift
 	if(newstate == PLAYER_STATE_DRIVER)
 	{
 		if(InNZone{playerid} && !IsARC(GetPlayerVehicleID(playerid)) && !GetPlayerLauncher(playerid))
@@ -29831,8 +29993,8 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 		ShowSheltMiningForPlayer(playerid, HouseEntered[playerid]);
 	}
 
-	if newkeys & 512 && IsPlayerInAnyVehicle(playerid) *then
-		callcmd::style(playerid);
+	if((newkeys & 512) && !(oldkeys & 512) && IsPlayerInAnyVehicle(playerid))
+		VM_OnKey2(playerid); // transporto meniu (Twin Turbo, Drift-mode, stilius)
     if(newkeys == 1024)
     {
 	    for(new i; i < sizeof(PosTOP); i++)
@@ -31034,8 +31196,8 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 	        {
 	        	new carownable = GetVehicleID(GetPlayerVehicleID(playerid));
 
-		    	if(CarInfo[carownable][cMaxSpeed] != 0 && CarInfo[carownable][cVelosity] != 0)
-					SetVehicleSpeed(GetPlayerVehicleID(playerid),GetPlayerVehicleSpeedZ(playerid) - 80);
+		    	// (pasalinta: detales nebestabdo automobilio -80 km/h, ju poveikis dabar per handling)
+		    	#pragma unused carownable
 			}
 		}
 	}
@@ -31623,7 +31785,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 		 	new
 			 	carid = GetPlayerVehicleID(playerid), skorost = GetPlayerVehicleSpeed(playerid), GetVehSpeed = GetPlayerVehicleSpeedZ(playerid);
 
-			if(VehicleInfo[carid][vModification] == 578 || VehicleInfo[carid][vModification] == 587) {
+			if(VM_TTActive(carid)) {
 		    	if(skorost > 21.0 && skorost < 50.0) SetVehicleSpeed(carid, GetVehSpeed + 30);
      			else if(skorost > 90.0 && skorost < 120.0) SetVehicleSpeed(carid, GetVehSpeed + 20);
      			else if(skorost > 150) SetVehicleSpeed(carid, GetVehSpeed + 30);
@@ -33806,6 +33968,7 @@ stock IsNoEnterBiz(bizid)
 public OnPlayerUpdate(playerid)
 {
 	if(GetPlayerPing(playerid) > 1000) return SCM(playerid, COLOR_LIGHTRED, "Buvote ismestas is serverio del auksto pingo!"), Kick(playerid);
+	AS_OnUpdate(playerid); // admin-soft: sklandus skraidymas (/afly, /aflycar)
 	if !IsPlayerLogged{playerid} *then
 		return false;
 	else if IsPlayerLogged{playerid} && IsPlayerConnected(playerid) *then
@@ -34145,6 +34308,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 {
 	if(Losimu_OnDialog(playerid, dialogid, response, listitem, inputtext)) return 1; // losimu biuras
 	if(Algos_OnDialog(playerid, dialogid, response, listitem)) return 1; // algos
+	if(VM_OnDialog(playerid, dialogid, response, listitem)) return 1; // transporto meniu (2)
+	if(AS_OnDialog(playerid, dialogid, response, listitem)) return 1; // admin-soft
 	// --- poker (filterscripts/poker.amx) ---------------------------------------------
 	// This callback returns 1 for every dialog, so SA-MP never passes dialog answers on to
 	// filterscripts. The two poker input dialogs are handed to the poker filterscript here.
@@ -34154,6 +34319,15 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		strcat(poker_text, inputtext, sizeof poker_text);
 		if(poker_text[0] == EOS) poker_text = " "; // CallRemoteFunction crashes the server on an empty string
 		CallRemoteFunction("PokerDialogResponse", "iiiis", playerid, dialogid, response, listitem, poker_text);
+		return 1;
+	}
+	// --- black jack (filterscripts/blackjack.amx) ---
+	if(dialogid == BJ_DIALOG_BET)
+	{
+		new bj_text[129];
+		strcat(bj_text, inputtext, sizeof bj_text);
+		if(bj_text[0] == EOS) bj_text = " ";
+		CallRemoteFunction("BJDialogResponse", "iiiis", playerid, dialogid, response, listitem, bj_text);
 		return 1;
 	}
 	// ----------------------------------------------------------------------------------
@@ -38032,6 +38206,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 							    case 333: mysql_string = "{EADO63}[Supreme]{FFFFFF}";
 								case 548: mysql_string = "{EAD064}[Launch]{FFFFFF}";
 								case 578: mysql_string = "{EAD064}[Twin Turbo]{FFFFFF}";
+								case 3044: mysql_string = "{FF5D49}[Twin Turbo 2]{FFFFFF}";
 								case 587: mysql_string = "{EAD064}[Halloween]{FFFFFF}";
 								case 951: mysql_string = "{EAD064}[PREMIUM]{FFFFFF}";
 								default: mysql_string = "";
@@ -54948,6 +55123,7 @@ SPD(playerid, 0, DIALOG_STYLE_MSGBOX, !"", global_str, !"Uzdaryti", !"");
 				{
 				    case 0: SettingData[playerid][sdUseFishingRod] = !SettingData[playerid][sdUseFishingRod], ShowMacross(playerid);
 				    case 1,2: ShowMacross(playerid);
+				    case 3: VM_SetHint(playerid, !VM_IsHintHidden(playerid)), ShowMacross(playerid);
 				}
 			}
 		}
@@ -58791,12 +58967,14 @@ SPD(playerid, 0, DIALOG_STYLE_MSGBOX, !"", global_str, !"Uzdaryti", !"");
 		}
 		case 904: {
 		    if(!response) return 1;
+			new tt_price = listitem == 1 ? 1500 : 800;
 
-			if(PI[playerid][pVirMoney] < 800)
+			if(PI[playerid][pVirMoney] < tt_price)
 				return SCM(playerid, COLOR_RED, !"[Klaida] {FFFFFF}Jums nepakanka SAG-Coins!");
 
-			AddItem(playerid, 578, 1);
-		    GiveDonate(playerid, -800);
+			AddItem(playerid, listitem == 1 ? 3044 : 578, 1);
+		    GiveDonate(playerid, -tt_price);
+		    SCM(playerid, 0x9ACD32FF, !"[Twin Turbo] {FFFFFF}Daiktas inventoriuje. Isedus i savo automobili - uzdekite ji per inventoriu (modifikacijos langelis).");
 		    GameTextForPlayer(playerid, !"successful", 0, 1);
 		}
 		case 905: {
@@ -60800,6 +60978,7 @@ SPD(playerid, 0, DIALOG_STYLE_MSGBOX, !"", global_str, !"Uzdaryti", !"");
 				}
 			    case 32: CreateShopTD(playerid, 11);
 			    case 33: SaveServerData(), SCM(playerid, COLOR_GREEN, "Jus sekmingai viska issaugojote!");
+			    case 34: return AS_ShowMenu(playerid);
 			}
 			return true;
 		}
@@ -63643,13 +63822,14 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 											Inventory[playerid][0][j] = CarInfo[vehicle][InvTexnicalCar][t_Slot];
 											Inventory[playerid][1][j] = 1;
 
-											InstallTun(GetPlayerVehicleID(playerid), t_Slot , 1);
+											setVehicleParams(playerid, vehicle, 1, CarInfo[vehicle][InvTexnicalCar][t_Slot], 0);
 
 											UpdateCarSlotTD(playerid, CarInvTechicalSlot[playerid][t_Slot], CarInfo[vehicle][InvTexnicalCar][t_Slot] = 0);
 
 											InvSlotUpdate(playerid, i, j);
 
 											SaveInvCar(GetPlayerVehicleID(playerid));
+											AN_SendHandling(GetPlayerVehicleID(playerid), INVALID_PLAYER_ID, true);
 										}
 									}
 
@@ -64543,7 +64723,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 					case 79: selectdonate[playerid] = 1, donatelist[playerid] = 0, UpdateDonateMenu(playerid, 1236,1172,1173);
 					case 81: SPD(playerid, 906, DIALOG_STYLE_MSGBOX, !"", !"{FFFFFF}Patobulinimas: {6bc02e}Saudymo igudziai\n{FFFFFF}Kaina: {6bc02e}400 {FFFFFF}SAG-Coins\n\nIsigijus visi jusu saudymo igudziai bus patobulinti\niki maksimalaus lygio.\nPaspauskite {6bc02e}Enter {FFFFFF}noredami isigyti.", !"Mainai", !"Atsaukti");
 					case 83: SPD(playerid, 905, DIALOG_STYLE_MSGBOX, !"", !"{FFFFFF}Patobulinimas: {6bc02e}Amzinas vairavimo igudis\n{FFFFFF}Kaina: {6bc02e}400 {FFFFFF}SAG-Coins\n\nIsigijus jusu vairavimo igudis niekada nesumazes.\nNeturi galiojimo termino, perkamas visam laikui.\nPaspauskite {6bc02e}Enter {FFFFFF}noredami isigyti.", !"Mainai", !"Atsaukti");
-					case 87: SPD(playerid, 904, DIALOG_STYLE_MSGBOX, !"", !"{FFFFFF}Daiktas: {6bc02e}TWIN-TURBO\n{FFFFFF}Kaina: {6bc02e}800 {FFFFFF}SAG-Coins\n\nJusu automobilio patobulinimu paketas. Naudojant\njusu automobilis gauna specialia\nvariklio bei stabdziu charakteristikas.\nPaspauskite {6bc02e}Enter {FFFFFF}noredami isigyti.", !"Mainai", !"Atsaukti");
+					case 87: SPD(playerid, 904, DIALOG_STYLE_TABLIST_HEADERS, !"{BFBBBA}Twin Turbo", !"Daiktas\tKaina\n{FFFFFF}Twin-Turbo {AFAFAF}(+19 km/h, greitesnis isibegejimas)\t{6bc02e}800 {FFFFFF}SAG-Coins\n{FFFFFF}Twin-Turbo {FF5D49}2 lygis {AFAFAF}(+42 km/h, labai greitas isibegejimas)\t{6bc02e}1500 {FFFFFF}SAG-Coins", !"Pirkti", !"Atsaukti");
 					case 90: CloseDonateMenu(playerid);
 				}
 			}
@@ -65684,7 +65864,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				}
 				if(playertextid == CarInvTechicalSlot[playerid][i]) {
 				    if CarInfo[vehicle][InvTexnicalCar][i] *then {
-				    	pTemp[playerid][tItemId] = CarInfo[vehicle][InvCar][i];
+				    	pTemp[playerid][tItemId] = CarInfo[vehicle][InvTexnicalCar][i];
 				    	pTemp[playerid][tType] = 3;
 				    	pTemp[playerid][tSlot] = i;
 				        return DeletePlayerTexModCar(playerid, GetPlayerVehicleID(playerid), pTemp[playerid][tSlot]);
@@ -67187,6 +67367,7 @@ public: OnPlayerLoadData(playerid)
 	cache_get_row(0, 220, global_str), Int_UnPackMassive(global_str, BonusTake[playerid]);
 
 	cache_get_row(0, 221, global_str), global_str = strlen(global_str) < 2 ? "1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1":global_str, Int_UnPackMassive(global_str, SettingData[playerid]);
+	VM_LoadPlayer(playerid); // transporto meniu uzuomina
 	cache_get_row(0, 222, global_str), global_str = strlen(global_str) < 2 ? "0, 0, 0, 0, 0, 0, 0, 0, 0, 0":global_str, Int_UnPackMassive(global_str, ImprovementsData[playerid]);
 	cache_get_row(0, 223, global_str), global_str = strlen(global_str) < 2 ? "0, 0, 0, 0, 0, 0, 0, 0":global_str, Int_UnPackMassive(global_str, PhoneImprovementsData[playerid]);
 
@@ -68130,7 +68311,7 @@ public: UpdatePlayer()
 					if !IsAVelik(carid) && !IsAPlane(carid) && !IsARC(carid) && !IsATrain(carid) *then
 					{
 						new speed = GetPlayerVehicleSpeed(playerid);
-						if VehicleInfo[carid][vModification] == 578 || VehicleInfo[carid][vModification] == 587 *then
+						if VM_TTActive(carid) *then
 						{
 							if VehicleInfo[carid][vStyle] == 1 && pEngine{playerid} && VehicleInfo[carid][vEngine] *then
 							{
@@ -69581,12 +69762,8 @@ stock UpdatePlayers()
 				 	new
 					 	carid = GetPlayerVehicleID(playerid), skorost = GetPlayerVehicleSpeed(playerid), GetVehSpeed = GetPlayerVehicleSpeedZ(playerid), number = GetVehicleID(carid);
 
-					if(CarInfo[number][cMaxSpeed] != 0 && CarInfo[number][cVelosity] != 0)
-					{
-				    	if(skorost > 21.0 && skorost < 50.0) SetVehicleSpeed(carid, GetVehSpeed + 5);
-		     			else if(skorost > 90.0 && skorost < 120.0) SetVehicleSpeed(carid, GetVehSpeed + 10);
-		     			else if(skorost > 150) SetVehicleSpeed(carid, GetVehSpeed + 15);
-					}
+					// (pasalinta: detaliu "greicio stumimas" - dabar tikras handling per an_handling.inc)
+					#pragma unused carid, skorost, GetVehSpeed, number
 				}
 			}
 	        if(CancelChangeColor{playerid})
@@ -77856,6 +78033,10 @@ public: ModCar(carid)
 			AddVehicleComponent(carid, CarInfo[GetVehicleID(carid)][TuningComp][i]);
 		}
 		for(new i; i < 10; i++) if(CarInfo[GetVehicleID(carid)][InvCar][i]) InstallTun(carid, i, 0);
+		// modifikacija (Twin Turbo ir kt.) atstatoma po masinos atsiradimo / serverio restarto
+		if(CarInfo[GetVehicleID(carid)][cModification] && !VehicleInfo[carid][vModification])
+			OtherInstallTun(carid, CarInfo[GetVehicleID(carid)][cModification], 0);
+		AN_SendHandling(carid, INVALID_PLAYER_ID, true); // detales + Twin Turbo
 	}
 	Streamer_Update(GetVehicleSeat(carid, 0));
 	return 1;
@@ -81224,7 +81405,7 @@ stock UpdatePlayerSyncAks(playerid, forplayerid)
 				    PR_SetPlayerAttachedObject(forplayerid, playerid, i, true, Bone[playerid][i][boneId], Attach[id][attachItem], Bone[playerid][i][attachOffset][0], Bone[playerid][i][attachOffset][1], Bone[playerid][i][attachOffset][2], Bone[playerid][i][attachRotation][0], Bone[playerid][i][attachRotation][1], Bone[playerid][i][attachRotation][2], Bone[playerid][i][attachScale][0], Bone[playerid][i][attachScale][1], Bone[playerid][i][attachScale][2], PI[playerid][pAksColor][i] ? FindAksColor(PI[playerid][pAksColor][i]) : Attach[id][attachColor] != -1 ? Attach[id][attachColor] : color, PI[playerid][pAksColor][i] ? FindAksColor(PI[playerid][pAksColor][i]) : Attach[id][attachColor2] != -1 ? Attach[id][attachColor2] : color2);
 
 				else
-                    PR_SetPlayerAttachedObject(forplayerid, playerid, i, true, Attach[id][attachBone], Attach[id][attachItem], Attach[id][attachOffset][0], Attach[id][attachOffset][1], Attach[id][attachOffset][2], Attach[id][attachRotation][0], Attach[id][attachRotation][1], Attach[id][attachRotation][2], Attach[id][attachScale][0], Attach[id][attachScale][1], Attach[id][attachScale][2], PI[playerid][pAksColor][i] ? FindAksColor(PI[playerid][pAksColor][i]) : Attach[id][attachColor] != -1 ? Attach[playerid][attachColor] : color, PI[playerid][pAksColor][i] ? FindAksColor(PI[playerid][pAksColor][i]) : Attach[id][attachColor2] != -1 ? Attach[id][attachColor2] : color2);
+                    PR_SetPlayerAttachedObject(forplayerid, playerid, i, true, Attach[id][attachBone], Attach[id][attachItem], Attach[id][attachOffset][0], Attach[id][attachOffset][1], Attach[id][attachOffset][2], Attach[id][attachRotation][0], Attach[id][attachRotation][1], Attach[id][attachRotation][2], Attach[id][attachScale][0], Attach[id][attachScale][1], Attach[id][attachScale][2], PI[playerid][pAksColor][i] ? FindAksColor(PI[playerid][pAksColor][i]) : Attach[id][attachColor] != -1 ? Attach[id][attachColor] : color, PI[playerid][pAksColor][i] ? FindAksColor(PI[playerid][pAksColor][i]) : Attach[id][attachColor2] != -1 ? Attach[id][attachColor2] : color2);
 			}
 		}
 	}
@@ -81232,8 +81413,41 @@ stock UpdatePlayerSyncAks(playerid, forplayerid)
 	return 1;
 }
 
+// Launcher aksesuarai (Arizona paketas 220/155, kaip Arizona Night createPlayerAccessory).
+// Anksciau buvo kvieciamas filterscript "@attach" (bitstream_ruslan), kuris serveryje neikeltas - todel (Launcher) aksesuarai nesimate.
 stock PR_SetPlayerAttachedObject(forplayerid = -1, playerid, index = -1, bool:create = false, boneid = -1, modelid = -1, Float:fOffsetX = 0.0, Float:fOffsetY = 0.0, Float:fOffsetZ = 0.0, Float:fRotX = 0.0, Float:fRotY = 0.0, Float:fRotZ = 0.0, Float:fScaleX = 1.0, Float:fScaleY = 1.0, Float:fScaleZ = 1.0, materialcolor1 = 0, materialcolor2 = 0)
-	return CallRemoteFunction("@attach", "iiisiifffffffffii", forplayerid, playerid, index, create ? "true" : "false", boneid, modelid, fOffsetX, fOffsetY, fOffsetZ, fRotX, fRotY, fRotZ, fScaleX, fScaleY, fScaleZ, 0, 0);
+{
+	if(index < 0) return 0;
+	new BitStream:bs = BS_New();
+	BS_WriteValue(bs,
+		PR_UINT8, 220,
+		PR_UINT8, 155,
+		PR_UINT16, playerid,
+		PR_UINT32, index,
+		PR_BOOL, create);
+	if(create)
+		BS_WriteValue(bs,
+			PR_UINT32, boneid,
+			PR_UINT32, modelid,
+			PR_FLOAT, fOffsetX, PR_FLOAT, fOffsetY, PR_FLOAT, fOffsetZ,
+			PR_FLOAT, fRotX, PR_FLOAT, fRotY, PR_FLOAT, fRotZ,
+			PR_FLOAT, fScaleX, PR_FLOAT, fScaleY, PR_FLOAT, fScaleZ,
+			PR_UINT32, materialcolor1,
+			PR_UINT32, materialcolor2);
+
+	if(forplayerid == -1 || forplayerid == INVALID_PLAYER_ID)
+	{
+		PR_SendPacket(bs, playerid);
+		foreach(new i : Player)
+		{
+			if(i == playerid || !IsPlayerStreamedIn(playerid, i) || !IsPlayerCefInit(i)) continue;
+			PR_SendPacket(bs, i);
+		}
+	}
+	else PR_SendPacket(bs, forplayerid);
+	BS_Delete(bs);
+	return 1;
+}
 
 stock SetAttachToSkin(playerid, model, slot, color, color2, item)
 {
@@ -81248,7 +81462,7 @@ stock SetAttachToSkin(playerid, model, slot, color, color2, item)
 			PR_SetPlayerAttachedObject(-1, playerid, slot, true, Bone[playerid][slot][boneId], Attach[id][attachItem], Bone[playerid][slot][attachOffset][0], Bone[playerid][slot][attachOffset][1], Bone[playerid][slot][attachOffset][2], Bone[playerid][slot][attachRotation][0], Bone[playerid][slot][attachRotation][1], Bone[playerid][slot][attachRotation][2], Bone[playerid][slot][attachScale][0], Bone[playerid][slot][attachScale][1], Bone[playerid][slot][attachScale][2], PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor] != -1 ? Attach[id][attachColor] : color, PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor2] != -1 ? Attach[id][attachColor2] : color2);
 
 		else
-			PR_SetPlayerAttachedObject(-1, playerid, slot, true, Attach[id][attachBone], Attach[id][attachItem], Attach[id][attachOffset][0], Attach[id][attachOffset][1], Attach[id][attachOffset][2], Attach[id][attachRotation][0], Attach[id][attachRotation][1], Attach[id][attachRotation][2], Attach[id][attachScale][0], Attach[id][attachScale][1], Attach[id][attachScale][2], PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor] != -1 ? Attach[playerid][attachColor] : color, PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor2] != -1 ? Attach[id][attachColor2] : color2);
+			PR_SetPlayerAttachedObject(-1, playerid, slot, true, Attach[id][attachBone], Attach[id][attachItem], Attach[id][attachOffset][0], Attach[id][attachOffset][1], Attach[id][attachOffset][2], Attach[id][attachRotation][0], Attach[id][attachRotation][1], Attach[id][attachRotation][2], Attach[id][attachScale][0], Attach[id][attachScale][1], Attach[id][attachScale][2], PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor] != -1 ? Attach[id][attachColor] : color, PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor2] != -1 ? Attach[id][attachColor2] : color2);
 
 	    AksDel[playerid][slot] = 1;
 	}
@@ -81259,7 +81473,7 @@ stock SetAttachToSkin(playerid, model, slot, color, color2, item)
 			AksDel[playerid][slot] = SetPlayerAttachedObject(playerid, slot, Attach[id][attachItem], Bone[playerid][slot][boneId], Bone[playerid][slot][attachOffset][0], Bone[playerid][slot][attachOffset][1], Bone[playerid][slot][attachOffset][2], Bone[playerid][slot][attachRotation][0], Bone[playerid][slot][attachRotation][1], Bone[playerid][slot][attachRotation][2], Bone[playerid][slot][attachScale][0], Bone[playerid][slot][attachScale][1], Bone[playerid][slot][attachScale][2], PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor] != -1 ? Attach[id][attachColor] : color, PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor2] != -1 ? Attach[id][attachColor2] : color2);
 
 		else
-			AksDel[playerid][slot] = SetPlayerAttachedObject(playerid, slot, Attach[id][attachItem], Attach[id][attachBone], Attach[id][attachOffset][0], Attach[id][attachOffset][1], Attach[id][attachOffset][2], Attach[id][attachRotation][0], Attach[id][attachRotation][1], Attach[id][attachRotation][2], Attach[id][attachScale][0], Attach[id][attachScale][1], Attach[id][attachScale][2], PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor] != -1 ? Attach[playerid][attachColor] : color, PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor2] != -1 ? Attach[id][attachColor2] : color2);
+			AksDel[playerid][slot] = SetPlayerAttachedObject(playerid, slot, Attach[id][attachItem], Attach[id][attachBone], Attach[id][attachOffset][0], Attach[id][attachOffset][1], Attach[id][attachOffset][2], Attach[id][attachRotation][0], Attach[id][attachRotation][1], Attach[id][attachRotation][2], Attach[id][attachScale][0], Attach[id][attachScale][1], Attach[id][attachScale][2], PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor] != -1 ? Attach[id][attachColor] : color, PI[playerid][pAksColor][slot] ? FindAksColor(PI[playerid][pAksColor][slot]) : Attach[id][attachColor2] != -1 ? Attach[id][attachColor2] : color2);
 
 		if !AksDel[playerid][slot] *then
 		    SCMF(playerid, COLOR_GREY, "Aksesuaras '%s', nebus matomas ant sio skino!", ItemsInfo[item][ItemName2]);
@@ -81668,7 +81882,7 @@ stock InstallTun(vehicleid, id, deleted)
 
 	switch model do
 	{
-		case 333, 548, 578, 587, 951, 978:
+		case 333, 548, 578, 587, 951, 978, 3044:
 			return OtherInstallTun(vehicleid, model, deleted ? 1:0);
 	}
 
@@ -83803,7 +84017,7 @@ stock GiveColorCell(playerid)
 	{
 		switch item do
 		{
-			case 333,578,548:
+			case 333,578,548,3044:
 			{
 				PlayerTextDrawBackgroundColor(playerid, InvTextDraws[playerid][2], 0xd67373FF);
 				PlayerTextDrawSetSelectable(playerid, InvTextDraws[playerid][2], 1);
@@ -86439,7 +86653,7 @@ case 1591:
 
 		case 524: callcmd::usebad(playerid, "");
 
-		case 333, 548, 578:
+		case 333, 548, 578, 3044:
 		{
 			if IsPlayerInHisVehicle(playerid) *then ChangeModificationCar(playerid);
 
@@ -87199,7 +87413,7 @@ stock OtherInstallTun(vehicleid, item, deleted = 0)
 				default: return DeleteTuningCar(vehicleid, 0);
 			}
 		}
-		case 578:
+		case 578, 3044:
 		{
 			if deleted *then return DeleteTuningCar(vehicleid, 1);
 			DeleteTuningCar(vehicleid, 1);
@@ -87208,7 +87422,7 @@ stock OtherInstallTun(vehicleid, item, deleted = 0)
 		    SetDynamicObjectMaterialText(TwinTubroStick[vehicleid][0], 0, "{ff5d49}/{f34f3e}/{f7372b}/", 140, "Ariel", 40, 1, 0, 0, 1);
 
 			TwinTubroStick[vehicleid][1] = CreateDynamicObject(19327, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
-		    SetDynamicObjectMaterialText(TwinTubroStick[vehicleid][1], 0, "{FFFFFF}TWINTURBO{FAAC58} PACKAGE", 130, "Ariel", 20, 1, 0, 0, 1);
+		    SetDynamicObjectMaterialText(TwinTubroStick[vehicleid][1], 0, item == 3044 ? ("{FF3B30}TWINTURBO{FAAC58} STAGE 2") : ("{FFFFFF}TWINTURBO{FAAC58} PACKAGE"), 130, "Ariel", 20, 1, 0, 0, 1);
 
 			switch model do
 			{
@@ -87457,7 +87671,7 @@ stock OtherInstallTun(vehicleid, item, deleted = 0)
 		            AttachDynamicObjectToVehicle(TwinTubroStick[vehicleid][0], vehicleid, -0.210, -2.840, 0.140, 0.000, 0.000, 0.000);
 		            AttachDynamicObjectToVehicle(TwinTubroStick[vehicleid][1], vehicleid, 0.330, -2.831, 0.130, 0.000, 0.000, 0.000);
 				}
-				default: return DeleteTuningCar(vehicleid, 1), VehicleInfo[vehicleid][vModification] = 578;
+				default: return DeleteTuningCar(vehicleid, 1), VehicleInfo[vehicleid][vModification] = item;
 			}
 		}
 		case 587:
@@ -100469,7 +100683,7 @@ stock ClickedBrowser(playerid, request[], custom, inputtext[])
                     if(tuningCenter_playerData[playerid][cartCount] < 0) tuningCenter_playerData[playerid][cartCount] = 0;
 
                     tuningCenter_playerData[playerid][cartCheck][GetCartCategory(id_var[0])] = 0;
-					TP_Revert(playerid, GetCartCategory(id_var[0])); // grazinam buvusia detale
+					TP_CartRemoved(playerid, GetCartCategory(id_var[0])); // grazinam buvusia detale
 
                     updateTuningEvent(playerid, id_var[0], 2);
 				    ExecuteEvent(playerid, 0, (str_f("window.executeEvent('event.tuning.setClientVisualData', `[{\"carName\":\"%s\",\"carNameScale\":1.0,\"playerMoney\":%d,\"cartCount\":%d,\"cartColor\":\"#FFFFFF\"}]`);", InfoConfigVehicle[SearchVehicleName(CarInfo[GetVehicleID(GetPlayerVehicleID(playerid))][cModel])][Model_Name], PI[playerid][pMoney], tuningCenter_playerData[playerid][cartCount])));
@@ -100496,6 +100710,7 @@ stock ClickedBrowser(playerid, request[], custom, inputtext[])
 
                     tuningCenter_playerData[playerid][cartCheck][tp_cat] = tp_comp;
 					TP_Preview(playerid, tp_cat, tp_comp); // detale iskart matoma ant masinos
+					TP_CartAdded(playerid, tp_cat, tp_comp);
 
 				    updateTuningEvent(playerid, id_var[0], 1);
 				    ExecuteEvent(playerid, 0, (str_f("window.executeEvent('event.tuning.setClientVisualData', `[{\"carName\":\"%s\",\"carNameScale\":1.0,\"playerMoney\":%d,\"cartCount\":%d,\"cartColor\":\"#FFFFFF\"}]`);", InfoConfigVehicle[SearchVehicleName(CarInfo[GetVehicleID(GetPlayerVehicleID(playerid))][cModel])][Model_Name], PI[playerid][pMoney], tuningCenter_playerData[playerid][cartCount])));
@@ -100572,26 +100787,15 @@ stock ClickedBrowser(playerid, request[], custom, inputtext[])
 
 					playerTun_GetSelectUID{playerid} = id_var[0];
 
+					// perziura: pasirinkta detale iskart rodoma ant masinos
+					TP_Select(playerid, id_var[0]);
+					if(TP_ComponentCamera(id_var[0]) != -1) TP_Camera(playerid, TP_ComponentCamera(id_var[0]));
+
 					switch id_var[0] do
 					{
-					    case 48:
-					    {
-					        ExecuteEvent(playerid, 0, "window.executeEvent('event.tuning.setDashboardSliders', `[[{\"id\":0,\"title\":\"Priekiniu ratu isvirtimas\",\"min\":-15.000000,\"step\":0.5,\"max\":15.000000,\"value\":0.000000},{\"id\":1,\"title\":\"Priekiniu ratu isvirtimas\",\"min\":-0.100000,\"step\":0.01,\"max\":0.100000,\"value\":0.000000}]]`);");
-					    	InterpolateCameraPos(playerid, 1536.5212, 960.6442, 10.4604, 1536.1262, 960.9007, 10.4604, 1000, CAMERA_MOVE);
-							InterpolateCameraLookAt(playerid, 1531.2312, 953.3630, 10.4604, 1531.6262, 953.1065, 10.4604, 1000, CAMERA_MOVE);
-					    }
-					    case 49:
-						{
-						    ExecuteEvent(playerid, 0, "window.executeEvent('event.tuning.setDashboardSliders', `[[{\"id\":0,\"title\":\"Galiniu ratu kampas\",\"min\":-15.000000,\"step\":0.5,\"max\":15.000000,\"value\":0.000000},{\"id\":1,\"title\":\"Galiniu ratu isvirtimas\",\"min\":-0.100000,\"step\":0.01,\"max\":0.100000,\"value\":0.000000}]]`);");
-							InterpolateCameraPos(playerid, 1536.5212, 953.3630, 10.4604, 1536.1262, 953.1065, 10.4604, 1000, CAMERA_MOVE);
-							InterpolateCameraLookAt(playerid, 1531.2312, 960.6442, 10.4604, 1531.6262, 960.9007, 10.4604, 1000, CAMERA_MOVE);
-						}
-					    case 90:
-					    {
-					        ExecuteEvent(playerid, 0, (str_f("window.executeEvent('event.tuning.setDashboardSliders', `[[{\"id\":0,\"title\":\"Visu ratu skersmuo\",\"min\":0.75,\"step\":0.01,\"max\":1.05,\"value\":%2.f}]]`);", vTuning_WheelSettings[GetPlayerVehicleID(playerid)][2][2][2])));
-							InterpolateCameraPos(playerid, 1536.5212, 953.3630, 10.4604, 1536.1262, 953.1065, 10.4604, 1000, CAMERA_MOVE);
-							InterpolateCameraLookAt(playerid, 1531.2312, 960.6442, 10.4604, 1531.6262, 960.9007, 10.4604, 1000, CAMERA_MOVE);
-					    }
+					    case 48: ExecuteEvent(playerid, 0, "window.executeEvent('event.tuning.setDashboardSliders', `[[{\"id\":0,\"title\":\"Priekiniu ratu kampas\",\"min\":-15.000000,\"step\":0.5,\"max\":15.000000,\"value\":0.000000},{\"id\":1,\"title\":\"Priekiniu ratu isvirtimas\",\"min\":-0.100000,\"step\":0.01,\"max\":0.100000,\"value\":0.000000}]]`);");
+					    case 49: ExecuteEvent(playerid, 0, "window.executeEvent('event.tuning.setDashboardSliders', `[[{\"id\":0,\"title\":\"Galiniu ratu kampas\",\"min\":-15.000000,\"step\":0.5,\"max\":15.000000,\"value\":0.000000},{\"id\":1,\"title\":\"Galiniu ratu isvirtimas\",\"min\":-0.100000,\"step\":0.01,\"max\":0.100000,\"value\":0.000000}]]`);");
+					    case 90: ExecuteEvent(playerid, 0, (str_f("window.executeEvent('event.tuning.setDashboardSliders', `[[{\"id\":0,\"title\":\"Visu ratu skersmuo\",\"min\":0.75,\"step\":0.01,\"max\":1.05,\"value\":%.2f}]]`);", vTuning_WheelSettings[GetPlayerVehicleID(playerid)][2][2][2] < 0.5 ? 1.0 : vTuning_WheelSettings[GetPlayerVehicleID(playerid)][2][2][2])));
 					}
 
 					UpdateVehicleDataLocal(GetPlayerVehicleID(playerid), playerid);
@@ -100660,7 +100864,9 @@ stock ClickedBrowser(playerid, request[], custom, inputtext[])
 						carid = GetPlayerVehicleID(playerid),
 						number = GetVehicleID(carid);
 
+					TP_CategoryChanged(playerid); // neperkuptos perziuros nuimamos
 					UpdateVehicleTuning(carid, playerid);
+					TP_Camera(playerid, TP_CategoryCamera(id_var[0]));
 					if(number == INVALID_PLAYER_ID) return 1;
 
 					UpdateEventTuningData(playerid, SearchVehicleName(CarInfo[number][cModel]));
@@ -100668,59 +100874,10 @@ stock ClickedBrowser(playerid, request[], custom, inputtext[])
 					playerTun_GetSelectColor{playerid} = 1;
 					UpdateVehicleDataLocal(carid, playerid);
 
-					switch(id_var[0])
+					if(id_var[0] == 8 || id_var[0] == 9) // zibintu / dumu spalvai ijungiam variklio sviesas
 					{
-						case 1:
-						{
-							//diski
-							InterpolateCameraPos(playerid, 1537.5338, 959.6665, 11.4604, 1537.4742, 959.5036, 11.4604, 1000, CAMERA_MOVE);
-							InterpolateCameraLookAt(playerid, 1532.0519, 956.1741, 9.4604, 1532.2782, 956.5036, 9.4604, 1000, CAMERA_MOVE);
-						}
-						case 2:
-						{
-							//capot
-							InterpolateCameraPos(playerid, 1535.6056, 960.8486, 11.4604, 1535.3762, 960.9677, 11.4604, 1000, CAMERA_MOVE);
-							InterpolateCameraLookAt(playerid, 1531.3969, 954.2420, 9.4604, 1531.3762, 954.0395, 9.4604, 1000, CAMERA_MOVE);
-						}
-						case 3:
-						{
-							//spoiler
-							InterpolateCameraPos(playerid, 1536.1874, 951.8749, 12.4128, 1535.8762, 951.5395, 12.4604, 1000, CAMERA_MOVE);
-							InterpolateCameraLookAt(playerid, 1531.5175, 958.3704, 8.5080, 1531.8762, 958.4677, 8.4604, 1000, CAMERA_MOVE);
-						}
-						case 4:
-						{
-							//ismetimas
-							InterpolateCameraPos(playerid, 1535.8762, 951.5395, 11.0758, 1535.8762, 951.5395, 10.9604, 1000, CAMERA_MOVE);
-							InterpolateCameraLookAt(playerid, 1531.8762, 958.4677, 9.8450, 1531.8762, 958.4677, 9.9604, 1000, CAMERA_MOVE);
-						}
-						case 5:
-						{
-							//vinil
-							InterpolateCameraPos(playerid, 1537.3441, 961.6768, 11.4354, 1536.8762, 962.1998, 11.4604, 1000, CAMERA_MOVE);
-							InterpolateCameraLookAt(playerid, 1530.4083, 952.1304, 9.4854, 1530.8762, 951.8074, 9.4604, 1000, CAMERA_MOVE);
-						}
-						case 8:
-						{
-							//lightcolor
-							InterpolateCameraPos(playerid, 1536.7825, 962.0374, 11.3354, 1536.8762, 962.1998, 11.4604, 1000, CAMERA_MOVE);
-							InterpolateCameraLookAt(playerid, 1530.9700, 951.9698, 9.5854, 1530.8762, 951.8074, 9.4604, 1000, CAMERA_MOVE);
-							GetVehicleParamsEx(carid,engine,lights,alarm,doors,bonnet,boot,objective);
-    						SetVehicleParamsEx(carid,1,1,alarm,doors,bonnet,boot,objective);
-						}
-						case 9:
-						{
-							//smokecolor
-							InterpolateCameraPos(playerid, 1536.2861, 951.7866, 10.9854, 1535.8762, 951.5395, 10.9604, 1000, CAMERA_MOVE);
-							InterpolateCameraLookAt(playerid, 1531.4663, 958.4205, 9.9354, 1531.8762, 958.4677, 9.9604, 1000, CAMERA_MOVE);
-							GetVehicleParamsEx(carid,engine,lights,alarm,doors,bonnet,boot,objective);
-    						SetVehicleParamsEx(carid,1,1,alarm,doors,bonnet,boot,objective);
-						}
-						default:
-						{
-							SetPlayerCameraPos(playerid, 1536.8762, 962.1998, 11.4604);
-							SetPlayerCameraLookAt(playerid, 1530.8762, 951.8074, 9.4604);
-						}
+						GetVehicleParamsEx(carid,engine,lights,alarm,doors,bonnet,boot,objective);
+						SetVehicleParamsEx(carid,1,1,alarm,doors,bonnet,boot,objective);
 					}
 				}
 			}
@@ -102064,42 +102221,62 @@ stock CheckLauncher(playerid, id)
 }
 stock PutTexnicalModCar(playerid, vehicleid, click) {
 	new id = GetInvID(playerid, click, 0), vehId = GetVehicleID(vehicleid);
+	if(vehId == -1) return 0;
+	new item = Inventory[playerid][0][id];
+	if(item < 1561 || item > 1590) return 0;
+	new type = (item - 1561) / 3;
+	for new i; i < 10; i++ do {
+		new it = CarInfo[vehId][InvTexnicalCar][i];
+		if(1561 <= it <= 1590 && (it - 1561) / 3 == type)
+			return SCM(playerid, COLOR_RED, !"[Klaida] {FFFFFF}Tokio tipo detale jau idiegta! Pirmiausia isimkite sena detale.");
+	}
 	for new i; i < 10; i++ do {
 		if CarInfo[vehId][InvTexnicalCar][i] *then continue;
-		CarInfo[vehId][InvTexnicalCar][i] = Inventory[playerid][0][id];
-		Inventory[playerid][0][id] = Inventory[playerid][0][id] = 0;
-		UpdateCarSlotTD(playerid, CarInvTechicalSlot[playerid][i], CarInfo[vehId][InvTexnicalCar][i]);
+		CarInfo[vehId][InvTexnicalCar][i] = item;
+		Inventory[playerid][0][id] = Inventory[playerid][1][id] = 0;
+		UpdateCarSlotTD(playerid, CarInvTechicalSlot[playerid][i], item);
+		setVehicleParams(playerid, vehId, 1, item, 1);
+		InvSlotUpdate(playerid, click, id);
+		SaveInvCar(vehicleid);
+		AN_SendHandling(vehicleid, INVALID_PLAYER_ID, true); // detales poveikis (handling)
+		PlayerPlaySound(playerid, 1133, 0.0, 0.0, 0.0);
+		f(global_str, 144, "[Tuningas] {FFFFFF}Idiegta detale: {9ACD32}%s{FFFFFF}. Galia - meniu klavisu {F5DEB3}2{FFFFFF}.", ItemsInfo[item][ItemName2]);
+		return SCM(playerid, 0x9ACD32FF, global_str);
 	}
-	setVehicleParams(playerid, vehicleid, 1, Inventory[playerid][0][id], 1);
-	InvSlotUpdate(playerid, click, id);
-	return SaveInvCar(vehicleid);
+	return SCM(playerid, COLOR_RED, !"[Klaida] {FFFFFF}Nera laisvu vietu technines detalems!");
 }
 stock DeletePlayerTexModCar(playerid, vehicleid, Id){
 	new vehId = GetVehicleID(vehicleid);
-	if !CarInfo[vehId][InvTexnicalCar][Id] *then return false;
+	if(vehId == -1) return false;
+	new item = CarInfo[vehId][InvTexnicalCar][Id];
+	if !item *then return false;
 	if GetInvSet(playerid) >= PI[playerid][pInvCell] *then return SCM(playerid, COLOR_RED, !"[Klaida] {FFFFFF}Jus neturite pakankamai vietos inventoriuje!");
 	PlayerPlaySound(playerid, 6801, 0.0, 0.0, 0.0);
-	AddItem(playerid, CarInfo[vehId][InvTexnicalCar][Id], 1);
-	if CarInfo[vehId][InvCar][Id] *then InstallTun(vehicleid, Id, 1);
+	AddItem(playerid, item, 1);
 	CarInfo[vehId][InvTexnicalCar][Id] = 0;
-	setVehicleParams(playerid, vehicleid, 1, Inventory[playerid][0][Id], 0);
+	setVehicleParams(playerid, vehId, 1, item, 0);
 	SaveInvCar(vehicleid);
+	AN_SendHandling(vehicleid, INVALID_PLAYER_ID, true); // detales poveikis nuimamas
 	return UpdateCarSlotTD(playerid, CarInvTechicalSlot[playerid][Id], 0);
 }
+// vehid - CarInfo indeksas (GetVehicleID). Statistika (tik informacijai), tikras poveikis - handling.
 stock setVehicleParams(playerid, vehid, type, item, plus){
+	#pragma unused playerid
+	if(vehid < 0) return 0;
 	new cPowerr = 0, cSustainabittitt = 0, ccVelosity = 0, ccMaxSpeed = 0;
-	if(type == 1){
-		switch(item) {
-			case 1561..1563: cPowerr = 50, cSustainabittitt = 0, ccVelosity = 30, ccMaxSpeed = 50;
-			case 1564..1565: cPowerr = 50, cSustainabittitt = -20, ccVelosity = 30, ccMaxSpeed = 40;
-			case 1566..1568: cPowerr = 5, cSustainabittitt = -30, ccVelosity = 0, ccMaxSpeed = 0;
-			case 1569..1571: cPowerr = 5, cSustainabittitt = -30, ccVelosity = 0, ccMaxSpeed = 0;
-			case 1572..1574: cPowerr = 70, cSustainabittitt = 0, ccVelosity = 50, ccMaxSpeed = 30;
-			case 1575..1577: cPowerr = 0, cSustainabittitt = 100, ccVelosity = 30, ccMaxSpeed = 0;
-			case 1578..1580: cPowerr = 0, cSustainabittitt = 0, ccVelosity = 0, ccMaxSpeed = 70;
-			case 1581..1583: cPowerr = 0, cSustainabittitt = -50, ccVelosity = 50, ccMaxSpeed = 0;
-			case 1584..1586: cPowerr = 0, cSustainabittitt = 200, ccVelosity = 0, ccMaxSpeed = 0;
-			case 1587..1589: cPowerr = 0, cSustainabittitt = 100, ccVelosity = 0, ccMaxSpeed = 0;
+	if(type == 1 && 1561 <= item <= 1590){
+		new lvl = (item - 1561) % 3 + 1;
+		switch((item - 1561) / 3) {
+			case 0: cPowerr = 20 * lvl, ccMaxSpeed = 15 * lvl;                    // alkuninis velenas
+			case 1: cPowerr = 10 * lvl;                                           // skirstymo velenas
+			case 2: cPowerr = 25 * lvl, ccVelosity = 15 * lvl;                    // turbokompresorius
+			case 3: cPowerr = 20 * lvl, ccVelosity = 15 * lvl;                    // kompresorius
+			case 4: cPowerr = 25 * lvl, ccMaxSpeed = 20 * lvl;                    // cip-tuning
+			case 5: ccVelosity = 20 * lvl;                                        // sankaba
+			case 6: ccVelosity = 15 * lvl, ccMaxSpeed = 5 * lvl;                  // pavaru deze
+			case 7: cSustainabittitt = 30 * lvl;                                  // diferencialas
+			case 8: cSustainabittitt = 50 * lvl;                                  // pakaba
+			case 9: cSustainabittitt = 40 * lvl;                                  // stabdziai
 		}
 	}
 	if(plus == 1){
@@ -102114,7 +102291,6 @@ stock setVehicleParams(playerid, vehid, type, item, plus){
 		CarInfo[vehid][cVelosity] -= ccVelosity;
 		CarInfo[vehid][cSUSTAINABILLITY] -= cSustainabittitt;
 	}
-	SaveInvCar(GetPlayerVehicleID(playerid));
 	return 1;
 }
 stock IsGiftUsed(string[])
@@ -102943,11 +103119,13 @@ stock ShowMacross(playerid)
     Parametro tipas\tReiksme\n\
     {ff6666}[1] {FFFFFF} Meskeres aktyvacija ant RMB/CTRL\t%s\n\
     {ff6666}[2] {FFFFFF} Karstuju klavisu nustatymai [PC]\n\
-    {ff6666}[3] {FFFFFF} Pranesimu tipas [MOBILE]\t[ Buttons ]";
+    {ff6666}[3] {FFFFFF} Pranesimu tipas [MOBILE]\t[ Buttons ]\n\
+    {ff6666}[4] {FFFFFF} Transporto meniu (2) tekstas prie automobilio\t%s";
 
    	f(global_str, sizeof global_str, global_str,
 
-	SettingData[playerid][sdUseFishingRod] ? ("{9ACD32}[ ijungta ]") : ("{B83434}[ isjungta ]")
+	SettingData[playerid][sdUseFishingRod] ? ("{9ACD32}[ ijungta ]") : ("{B83434}[ isjungta ]"),
+	VM_IsHintHidden(playerid) ? ("{B83434}[ isjungta ]") : ("{9ACD32}[ ijungta ]")
 
 	);
 
@@ -105622,7 +105800,8 @@ CMD:apanel(playerid)
 		{ffffff}[1] Svarbiausiu vietu apsilankymo statistika\n\
 		[5] Isvalyti visas rekonstrukcijas\n\
 		{9711f6}[1] Admin-parduotuve\n\
-		{ff0000}VISKA ISSAUGOTI!",
+		{ff0000}VISKA ISSAUGOTI!\n\
+		{FAC658}[3]{FFFFFF} Admin-soft {AFAFAF}(fly, flycar, vaziavimas vandeniu, GM)",
 		ACTIVEpanel[0] ? ("{9ACD32}Ijungti{FFFFFF}") : ("{FC5C5C}Atjungti{FFFFFF}"),
 		ACTIVEpanel[2] ? ("{9ACD32}Ijungti{FFFFFF}") : ("{FC5C5C}Atjungti{FFFFFF}"),
 		ACTIVEpanel[3] ? ("{9ACD32}Ijungti{FFFFFF}") : ("{FC5C5C}Atjungti{FFFFFF}"),
@@ -108485,9 +108664,11 @@ stock ShowControlSettings(playerid)
 	Parametro tipas\tReiksme\n\
 	{ff6666}[1] {ffffff}Meskeres aktyvavimas ant RMB/CTRL\t%s\n\
 	{ff6666}[2] {ffffff}Greituju klavisu nustatymai {777777}[PC]\n\
-	{ff6666}[3] {ffffff}Nustatymo tipai {777777}[MOBILE]\t{CCCCCC}[ Buttons ]";
+	{ff6666}[3] {ffffff}Nustatymo tipai {777777}[MOBILE]\t{CCCCCC}[ Buttons ]\n\
+	{ff6666}[4] {ffffff}Transporto meniu (2) tekstas prie automobilio\t%s";
 
-	f(global_str, sizeof global_str, global_str, SettingData[playerid][sdUseFishingRod] ? ("{9acd32}[ Ijungta ]") : ("{b83434}[ Isjungta ]"));
+	f(global_str, sizeof global_str, global_str, SettingData[playerid][sdUseFishingRod] ? ("{9acd32}[ Ijungta ]") : ("{b83434}[ Isjungta ]"),
+		VM_IsHintHidden(playerid) ? ("{b83434}[ Isjungta ]") : ("{9acd32}[ Ijungta ]"));
 
 	return SPD(playerid, 3004, DIALOG_STYLE_TABLIST_HEADERS, !"Valdymo nustatymai", global_str, !"Isrinkti", !"Atgal");
 }
@@ -108927,3 +109108,5 @@ stock Phone_FindByNumber(number)
 #include an_handling.inc
 #include tuning_preview.inc
 #include hudlogo.inc
+#include veh_menu.inc
+#include admin_soft.inc

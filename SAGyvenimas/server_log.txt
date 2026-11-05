@@ -1,0 +1,345 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[23:00:19] 
+[23:00:19] Server Plugins
+[23:00:19] --------------
+[23:00:19]  Loading plugin: crashdetect.so
+[23:00:19]   CrashDetect plugin 4.19
+[23:00:19]   Loaded.
+[23:00:19]  Loading plugin: streamer.so
+[23:00:19] 
+
+*** Streamer Plugin v2.9.4 by Incognito loaded ***
+
+[23:00:19]   Loaded.
+[23:00:19]  Loading plugin: sscanf.so
+[23:00:19] 
+
+[23:00:19]  ===============================
+
+[23:00:19]       sscanf plugin loaded.     
+
+[23:00:19]          Version:  2.8.3        
+
+[23:00:19]   (c) 2018 Alex "Y_Less" Cole  
+
+[23:00:19]  ===============================
+
+[23:00:19]   Loaded.
+[23:00:19]  Loading plugin: mysql_static.so
+[23:00:19]  >> plugin.mysql: R39-6 successfully loaded.
+[23:00:19]   Loaded.
+[23:00:19]  Loading plugin: pawncmd.so
+[23:00:19] Pawn.CMD plugin v3.2.0 by urShadow has been loaded
+[23:00:19]   Loaded.
+[23:00:19]  Loading plugin: TOTP.so
+[23:00:19] TOTP plugin v1.0.1 by Games loaded.
+[23:00:19]   Loaded.
+[23:00:19]  Loading plugin: mapandreas.so
+[23:00:19]   Loaded.
+[23:00:19]  Loading plugin: YSF.so
+[23:00:19] 
+[23:00:19]  ==============================================
+[23:00:19]  YSF 2.1 (compiled Nov 14 2020 15:44:52) loaded
+[23:00:19]   (c) 2008 Alex "Y_Less" Cole
+[23:00:19]   (c) 2010 - 2018 kurta999
+[23:00:19]   (c) 2018 - 2020 IllidanS4
+[23:00:19]  Server version: 0.3.7 R2-1 or R2-2, Linux
+[23:00:19]  ==============================================
+[23:00:19] 
+[23:00:19]   Loaded.
+[23:00:19]  Loading plugin: CLA.so
+[23:00:19]   Loaded.
+[23:00:19]  Loading plugin: LauncherAddon.so
+[23:00:21] 
+[23:00:21]  ========[ LauncherAddon 1.3 ]========
+[23:00:21]    
+[23:00:21]    Версия сервера: 0.3.7 R2
+[23:00:21]    Операционная система: Linux
+[23:00:21]    
+[23:00:21]    (c) - legendabrn -
+[23:00:21]    crack by vk.com/legendabrn
+[23:00:21]    
+[23:00:21]    Проверка активации...
+[23:00:21]    Проверка активации успешно пройдена
+[23:00:21]  ===============================
+[23:00:21]   Loaded.
+[23:00:21]  Loading plugin: pawnraknet.so
+[23:00:21] [Pawn.RakNet] plugin v1.6.0 loading...
+[23:00:21] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | 2016 - 2023
+    |--------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 19:35:06
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[23:00:21]   Loaded.
+[23:00:21]  Loading plugin: FCNPC.so
+[23:00:21] 
+[23:00:21] -------------------------------------------------
+[23:00:21]      FCNPC - Fully Controllable NPC v2.0.8
+[23:00:21]             GNU/Linux SA-MP 0.3.7 R2
+[23:00:21]            Aug 28 2023 at 14:30:18
+[23:00:21] 
+[23:00:21]   Author:       OrMisicL (2013 - 2015)
+[23:00:21]   Continued by: ziggi    (2016 - present)
+[23:00:21] 
+[23:00:21]   See full credits in the README.md file
+[23:00:21] -------------------------------------------------
+[23:00:21] 
+[23:00:21] Loading...
+[23:00:21] 
+[23:00:21] -------------------------------------------------
+[23:00:21]    ColAndreasv1.4.0
+[23:00:21] 
+[23:00:21]    Created By:
+[23:00:21]      [uL]Chris42O
+[23:00:21]      [uL]Slice
+[23:00:21]      [uL]Pottus
+[23:00:21] -------------------------------------------------
+[23:00:21] 
+[23:00:21] Loading...
+[23:00:21] ColAndreas v1.4.0 Loaded.
+[23:00:21]   Loaded.
+[23:00:21]  Loaded 12 plugins.
+
+[23:00:21] 
+[23:00:21] Filterscripts
+[23:00:21] ---------------
+[23:00:21]   Loading filterscript 'Uzrasudelete.amx'...
+[23:00:21] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[23:00:21] No collision data found.
+[23:00:21]   Loading filterscript 'newcmdcars.amx'...
+[23:00:21] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[23:00:21]   Loading filterscript 'halloween.amx'...
+[23:00:21] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[23:00:21] --------------------------------------
+[23:00:21]  Helovyno sistema pajungta!           
+[23:00:21]  Komanda testavimui: /helo            
+[23:00:21] --------------------------------------
+[23:00:21]   Loading filterscript 'poker.amx'...
+[23:00:21] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[23:00:21] 
+--- Texas Hold'em poker (LSG) loaded ---
+
+[23:00:21]   Loading filterscript 'biuras.amx'...
+[23:00:21]   Unable to load filterscript 'biuras.amx'.
+[23:00:21]   Loading filterscript 'blackjack.amx'...
+[23:00:21] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[23:00:21] 
+--- Black Jack (SAGyvenimas) loaded ---
+
+[23:00:21]   Loading filterscript 'roulette.amx'...
+[23:00:21] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[23:00:21] 
+--- Amerikietiska rulete (SAGyvenimas) loaded ---
+
+[23:00:21]   Loaded 6 filterscripts.
+
+[23:00:21] [Pawn.CMD] n_PC_RegAlias: alias 'cl' is occupied
+[23:00:21] [Pawn.CMD] n_PC_RegAlias: alias 'finditem' is occupied
+[23:00:21]  
+[23:00:21] --------------------------------------
+[23:00:21]  Античит Nex-AC загружен!
+[23:00:21]  Версия античита: 1.9.54
+[23:00:21]  Автор: Nexius
+[23:00:21] --------------------------------------
+
+[23:00:21] [ALGOS] Atlyginimu sistema ikelta (Tr/S 17:00-19:00, /algos). Stulpeliai: accounts.AlgosMin/AlgosSum/AlgosOrg
+[23:00:21] [HUD] Logotipas: 12
+[23:00:21]   Filterscript 'cef.amx' unload failed.
+[23:00:21]   Filterscript 'cef.amx' load failed'.
+[23:00:22] [MYSQL]: Klaidu nerasta, ikelimas tesiasi!
+[23:00:22]   Filterscript 'map.amx' unload failed.
+[23:00:22] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[23:00:23]   Filterscript 'map.amx' loaded.
+[23:00:23]   Filterscript 'ilya.amx' unload failed.
+[23:00:23] [Launcher Addon]: Warning - В загружаемом AMX не подключен инклуд LauncherAddon.inc
+[23:00:23] [Filterscript] All Loaded Actors =~ 155/unlimited
+[23:00:23] [Filterscript] All Loaded 3D Texts =~ 341/unlimited
+[23:00:23] [SEMENENKO Base] Is viso buvo ikelta 140/Unlimited Пикапов.
+[23:00:23] [SEMENENKO Base] Is viso buvo ikelta 143/Unlimited MapIcon.
+[23:00:23] [SEMENENKO Base] Is viso buvo ikelta 96/Unlimited (NoDynamic)
+[23:00:23]   Filterscript 'ilya.amx' loaded.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] sscanf warning: String buffer overflow.
+[23:00:23] -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_[Ikeliami duomenu bazes parametrai]-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+[23:00:23] [MYSQL] Is viso buvo ikelta 247/1221 namu.
+[23:00:23] [MYSQL] Is viso buvo ikelta 90/297 verslu
+[23:00:23] [MYSQL] Is viso buvo sukurta 665 transporto priemoniu.
+[23:00:23] [MYSQL] Buvo ikelta 74490 serverio objektu
+[23:00:23] [MYSQL] Buvo ikelta 131/1024 serverio zonu (GangZone)
+[23:00:23] [MYSQL] Buvo ikelta 156 seimos teritoriju
+[23:00:23] [MYSQL] Buvo ikelta 752 ikonu mini zemelapyje
+[23:00:23] [MYSQL] Buvo ikelta 3965 3D Tekstu.
+[23:00:23] [MYSQL] Buvo ikelta/sukurta 2 priekabu.
+[23:00:23] [MYSQL (Administrator)] Buvo ikeltos 206 serverio komandu administracijai.
+[23:00:23] -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_[Duomenu bazes parametru ikelimas baigtas]-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+[23:00:23] Serverio zurnalai sekmingai prijungti per: 0 milisekundziu! Unix_time: (1793649623)
+[23:00:23] Server settings was connect by 0 id
+[23:00:23] Number of vehicle models: 85
+[23:00:29] [Black Jack] stalai: 3 sukurta, 1 jau buvo casino mape; pasalinta svetimu botu: 1
+[23:00:30] [Rulete] stalai: 0 sukurta, 2 rasta casino mape; pasalinta svetimu botu: 2
+[23:04:37] [connection] 78.63.22.16:61431 requests connection cookie.
+[23:04:38] [connection] incoming connection: 78.63.22.16:61431 id: 0
+[23:04:38] [join] Milancholi has joined the server (0:78.63.22.16)
+[23:04:47] sscanf warning: String buffer overflow.
+[23:04:47] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[23:15:25] [warning] client exceeded 'messageslimit' 78.63.22.16:61431 (1160) Limit: 500/sec
+[23:15:36] [part] Milancholi has left the server (0:0)
+[23:27:25] [connection] 78.63.22.16:63155 requests connection cookie.
+[23:27:26] [connection] incoming connection: 78.63.22.16:63155 id: 0
+[23:27:27] [join] Milancholi has joined the server (0:78.63.22.16)
+[23:27:45] sscanf warning: String buffer overflow.
+[23:27:45] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[23:46:54] [part] Milancholi has left the server (0:1)
+[23:47:07] [connection] 78.63.22.16:54719 requests connection cookie.
+[23:47:08] [connection] incoming connection: 78.63.22.16:54719 id: 0
+[23:47:08] [join] Milancholi has joined the server (0:78.63.22.16)
+[23:47:17] sscanf warning: String buffer overflow.
+[23:47:17] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[23:50:03] [POKER-DEBUG] key pressed by 0, nearest table -1, money 3000000, playing 0
+[23:54:14] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[23:54:23] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[23:54:31] [part] Milancholi has left the server (0:1)
+[23:54:58] [connection] 78.63.22.16:53920 requests connection cookie.
+[23:54:59] [connection] incoming connection: 78.63.22.16:53920 id: 0
+[23:54:59] [join] Hollas_Amigos has joined the server (0:78.63.22.16)
+[23:55:08] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[23:55:08] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[23:55:13] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[23:55:13] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[23:55:53] [part] Hollas_Amigos has left the server (0:1)
+[23:56:10] [connection] 78.63.22.16:58505 requests connection cookie.
+[23:56:11] [connection] incoming connection: 78.63.22.16:58505 id: 0
+[23:56:14] [join] Hollas_Amigos has joined the server (0:78.63.22.16)
+[23:56:23] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[23:57:11] *** Streamer Plugin: Streamer_RemoveArrayData: Invalid ID specified.
+[23:57:36] [part] Hollas_Amigos has left the server (0:1)
+[23:57:51] [connection] 78.63.22.16:61771 requests connection cookie.
+[23:57:52] [connection] incoming connection: 78.63.22.16:61771 id: 0
+[23:57:53] [join] Milancholi has joined the server (0:78.63.22.16)
+[23:58:03] sscanf warning: String buffer overflow.
+[23:58:03] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[00:02:29] [part] Milancholi has left the server (0:1)
+[00:02:40] [connection] 78.63.22.16:50971 requests connection cookie.
+[00:02:41] [connection] incoming connection: 78.63.22.16:50971 id: 0
+[00:02:41] [join] Milancholi has joined the server (0:78.63.22.16)
+[00:02:50] sscanf warning: String buffer overflow.
+[00:02:50] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[00:09:19] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[00:09:19] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[00:09:21] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[00:09:21] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[00:09:23] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[00:20:24] [part] Milancholi has left the server (0:1)
+[00:20:35] [connection] 78.63.22.16:59931 requests connection cookie.
+[00:20:36] [connection] incoming connection: 78.63.22.16:59931 id: 0
+[00:20:36] [join] Milancholi has joined the server (0:78.63.22.16)
+[00:20:47] sscanf warning: String buffer overflow.
+[00:20:47] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[00:23:42] [part] Milancholi has left the server (0:1)
+[19:44:06] [connection] 78.63.22.16:52087 requests connection cookie.
+[19:44:07] [connection] incoming connection: 78.63.22.16:52087 id: 0
+[19:44:07] [join] Milancholi has joined the server (0:78.63.22.16)
+[19:44:20] sscanf warning: String buffer overflow.
+[19:44:20] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[19:55:32] [part] Milancholi has left the server (0:1)
+[12:49:14] [connection] 78.63.22.16:63219 requests connection cookie.
+[12:49:15] [connection] incoming connection: 78.63.22.16:63219 id: 0
+[12:49:16] [join] Milancholi has joined the server (0:78.63.22.16)
+[12:49:24] sscanf warning: String buffer overflow.
+[12:49:24] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[12:56:36] [part] Milancholi has left the server (0:1)
+[13:14:21] [connection] 78.63.22.16:55029 requests connection cookie.
+[13:14:22] [connection] incoming connection: 78.63.22.16:55029 id: 0
+[13:14:22] [join] Milancholi has joined the server (0:78.63.22.16)
+[13:14:37] sscanf warning: String buffer overflow.
+[13:14:37] LauncherAddon: Interface_Arizona: Expecting 3 parameter(s), but found 4
+[13:20:57] [part] Milancholi has left the server (0:1)

@@ -1,0 +1,58 @@
+[22:55:51 11/02/26] [ERROR] mysql_tquery - invalid connection handle (id: 0)
+[22:55:51 11/02/26] [ERROR] mysql_tquery - invalid connection handle (id: 0)
+[22:55:53 11/02/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[22:55:53 11/02/26] [WARNING] cache_get_row_count - no active cache
+[22:55:53 11/02/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[22:56:22 11/02/26] [ERROR] mysql_tquery - invalid connection handle (id: 0)
+[22:56:22 11/02/26] [ERROR] mysql_tquery - invalid connection handle (id: 0)
+[22:56:24 11/02/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[22:56:24 11/02/26] [WARNING] cache_get_row_count - no active cache
+[22:56:24 11/02/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[23:00:21 11/02/26] [ERROR] mysql_tquery - invalid connection handle (id: 0)
+[23:00:21 11/02/26] [ERROR] mysql_tquery - invalid connection handle (id: 0)
+[23:00:23 11/02/26] [ERROR] CMySQLQuery::Execute - (error #1146) Table 'gs113459.farminfo' doesn't exist (Query: "SELECT * FROM farminfo")
+[23:00:23 11/02/26] [WARNING] cache_get_row_count - no active cache
+[23:00:23 11/02/26] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[23:04:47 11/02/26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("CarHint") (Query: "SELECT * FROM `accounts` WHERE `ID` = '5' LIMIT 1")
+[23:04:47 11/02/26] [ERROR] cache_get_field_content_int - invalid datatype
+[23:04:53 11/02/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[23:04:53 11/02/26] [ERROR] cache_get_row_int - invalid datatype
+[23:05:08 11/02/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'CarHint' in 'SET' (Query: "UPDATE `accounts` SET `CarHint` = '1' WHERE `ID` = '5'")
+[23:27:45 11/02/26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("CarHint") (Query: "SELECT * FROM `accounts` WHERE `ID` = '5' LIMIT 1")
+[23:27:45 11/02/26] [ERROR] cache_get_field_content_int - invalid datatype
+[23:27:51 11/02/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[23:27:51 11/02/26] [ERROR] cache_get_row_int - invalid datatype
+[23:42:18 11/02/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'SAG-Eur' in 'SET' (Query: "UPDATE `accounts` SET `SAG-Eur` = '187001717' WHERE `ID` = '5'")
+[23:46:38 11/02/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'CarHint' in 'SET' (Query: "UPDATE `accounts` SET `CarHint` = '1' WHERE `ID` = '5'")
+[23:47:17 11/02/26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("CarHint") (Query: "SELECT * FROM `accounts` WHERE `ID` = '5' LIMIT 1")
+[23:47:17 11/02/26] [ERROR] cache_get_field_content_int - invalid datatype
+[23:47:23 11/02/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[23:47:23 11/02/26] [ERROR] cache_get_row_int - invalid datatype
+[23:48:02 11/02/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'CarHint' in 'SET' (Query: "UPDATE `accounts` SET `CarHint` = '1' WHERE `ID` = '5'")
+[23:55:08 11/02/26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("CarHint") (Query: "SELECT * FROM `accounts` WHERE `ID` = '27' LIMIT 1")
+[23:55:08 11/02/26] [ERROR] cache_get_field_content_int - invalid datatype
+[23:56:23 11/02/26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("CarHint") (Query: "SELECT * FROM `accounts` WHERE `ID` = '27' LIMIT 1")
+[23:56:23 11/02/26] [ERROR] cache_get_field_content_int - invalid datatype
+[23:58:03 11/02/26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("CarHint") (Query: "SELECT * FROM `accounts` WHERE `ID` = '5' LIMIT 1")
+[23:58:03 11/02/26] [ERROR] cache_get_field_content_int - invalid datatype
+[23:58:14 11/02/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[23:58:14 11/02/26] [ERROR] cache_get_row_int - invalid datatype
+[00:02:50 11/03/26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("CarHint") (Query: "SELECT * FROM `accounts` WHERE `ID` = '5' LIMIT 1")
+[00:02:50 11/03/26] [ERROR] cache_get_field_content_int - invalid datatype
+[00:04:14 11/03/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[00:04:14 11/03/26] [ERROR] cache_get_row_int - invalid datatype
+[00:20:47 11/03/26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("CarHint") (Query: "SELECT * FROM `accounts` WHERE `ID` = '5' LIMIT 1")
+[00:20:47 11/03/26] [ERROR] cache_get_field_content_int - invalid datatype
+[00:20:53 11/03/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[00:20:53 11/03/26] [ERROR] cache_get_row_int - invalid datatype
+[19:44:20 11/03/26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("CarHint") (Query: "SELECT * FROM `accounts` WHERE `ID` = '5' LIMIT 1")
+[19:44:20 11/03/26] [ERROR] cache_get_field_content_int - invalid datatype
+[19:44:44 11/03/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[19:44:44 11/03/26] [ERROR] cache_get_row_int - invalid datatype
+[12:49:24 11/04/26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("CarHint") (Query: "SELECT * FROM `accounts` WHERE `ID` = '5' LIMIT 1")
+[12:49:24 11/04/26] [ERROR] cache_get_field_content_int - invalid datatype
+[12:50:29 11/04/26] [ERROR] CMySQLQuery::Execute[] - (error #1054) Unknown column 'CarHint' in 'SET' (Query: "UPDATE `accounts` SET `CarHint` = '1' WHERE `ID` = '5'")
+[13:14:37 11/04/26] [WARNING] CMySQLResult::GetRowDataByName - field not found ("CarHint") (Query: "SELECT * FROM `accounts` WHERE `ID` = '5' LIMIT 1")
+[13:14:37 11/04/26] [ERROR] cache_get_field_content_int - invalid datatype
+[13:15:03 11/04/26] [WARNING] CMySQLResult::GetRowData - invalid row ('0') or field index ('0') (Query: "SELECT * FROM admin WHERE name = 'Milancholi'")
+[13:15:03 11/04/26] [ERROR] cache_get_row_int - invalid datatype
